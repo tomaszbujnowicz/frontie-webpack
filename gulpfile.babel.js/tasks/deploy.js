@@ -12,7 +12,7 @@ import ghPages from 'gulp-gh-pages';
 import { paths } from "../config";
 
 // Task
-export function publish() {
-  return src(paths.dest)
+export function deploy() {
+  return src(paths.deploy)
     .pipe(ghPages())
  }

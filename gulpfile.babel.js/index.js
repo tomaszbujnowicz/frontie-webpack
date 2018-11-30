@@ -16,7 +16,7 @@ import { templates } from './tasks/templates';
 import { images } from './tasks/images';
 import { fonts } from './tasks/fonts';
 import { copy } from './tasks/copy';
-import { publish } from './tasks/deploy';
+import { deploy } from './tasks/deploy';
 
 // Config
 import { paths } from './config';
@@ -41,9 +41,6 @@ export const dev = series(
   watchFiles
 );
 
-export const deploy = series(
-  build,
-  publish
-);
+exports.deploy = deploy;
 
 export default dev;

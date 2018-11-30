@@ -6,6 +6,7 @@
 export const paths = {
   src: './src',
   dest: './dist',
+  deploy: './dist/**/*',
   styles: {
     src: 'src/styles/main.scss',
     watch: 'src/styles/**/*.scss',
