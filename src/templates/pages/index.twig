@@ -1,0 +1,73 @@
+{% extends '../layouts/default.twig' %}
+{% set head_title = 'Index' %}
+{% set body_class = 'index' %}
+
+{% block page %}
+
+  <style>
+    body {
+      background-color: #f5f5f5;
+      padding: 1rem;
+    }
+    .demo {
+      background-color: white;
+      border: 1px solid #eee;
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 1rem;
+    }
+    .demo-title {
+      font-size: 1.75rem;
+    }
+    .demo-subtitle {
+      color: #777;
+      font-size: 1rem;
+    }
+    .demo-list {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+      font-size: 1.125rem;
+    }
+    .demo-list li {
+      display: block;
+      padding: .75rem 0;
+      border-bottom: 1px solid #eee;
+    }
+    .demo-list li:last-child {
+      border-bottom: none;
+    }
+    @media (min-width: 768px) {
+      body {
+        padding: 4rem 2rem;
+      }
+      .demo {
+        padding: 2rem;
+      }
+      .demo-title {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+
+  <div class="demo">
+    <h1 class="demo-title">
+      Project Name
+    </h1>
+    <p class="demo-subtitle">
+      This is the demo index page with basic styles for listing all of your pages.
+      <br>
+      Tip: can be useful when showing the site preview to a client.
+    </p>
+    <ul class="demo-list">
+      <li>
+        <a href="page.html">Sample Page</a>
+      </li>
+      <li>
+        <a href="demo.html">Demo</a>
+      </li>
+    </ul>
+  </div>
+
+{% endblock %}
