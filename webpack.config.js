@@ -32,7 +32,6 @@ const webpackConfig = {
   },
 
   module: {
-    noParse: /\/node_modules\/(jquery|backbone)/,
     rules: [
       {
         test: /^(?!.*\.{test,min}\.js$).*\.js$/,
