@@ -15,7 +15,7 @@ import { paths } from "../config";
 
 // Task
 export function images(cb) {
-return src([ paths.images.src ], { 'dot': true /* include hidden files */ } )
+return src(paths.images.src)
     .pipe(plumber({errorHandler}))
     .pipe(changed(paths.images.dest))
     .pipe(dest(paths.images.dest));

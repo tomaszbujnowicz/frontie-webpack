@@ -13,7 +13,7 @@ import { paths } from "../config";
 // Task
 export function copy(cb) {
   return src(paths.copy.src)
-    .pipe(changed(paths.images.dest))
+    .pipe(changed(paths.copy.dest))
     .pipe(dest(paths.copy.dest))
     cb();
  }

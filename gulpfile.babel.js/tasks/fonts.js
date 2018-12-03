@@ -12,7 +12,7 @@ import { paths } from "../config";
 
 // Task
 export function fonts(cb) {
-  return src([ paths.fonts.src ], { 'dot': true /* include hidden files */ } )
+  return src(paths.fonts.src)
     .pipe(changed(paths.fonts.dest))
     .pipe(dest(paths.fonts.dest))
     cb();
