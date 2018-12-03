@@ -42,7 +42,16 @@ const webpackConfig = {
             presets: ['@babel/preset-env']
           }
         }
-      }
+      },
+      {
+        test: /\.s?css$/,
+        include: /node_modules/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+        ],
+      }      
     ]
   },
 
