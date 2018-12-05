@@ -51,7 +51,7 @@ Clone this repository and run
 |  |--styles/             # →  Styles
 |  |--templates/          # →  Site templates (Twig.js)
 |  |  |--layouts/         # →  Base templates
-|  |  |--components/      # →  Components templates (e.g. navbar)
+|  |  |--components/      # →  Component templates (e.g. navbar)
 |  |  |--pages/           # →  Page templates
 |--.babelrc               # →  Babel presets
 |--.eslintrc              # →  ESLint config
