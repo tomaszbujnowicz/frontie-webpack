@@ -38,29 +38,38 @@ Clone this repository and run
 ## Structure
 
 ```
-|--dist/                  # →  Static version of the website ready to upload (never edit)
+|--dist/                   # →  Static version of the website ready to upload (never edit)
 |
-|--gulpfile.babel.js/     # →  Gulpfile config and tasks
-|--node_modules/          # →  Node.js packages (never edit)
-|--src/                   # →  Source files
-|  |--fonts/              # →  Fonts
-|  |--img/                # →  Images
-|  |--scripts/            # →  JS
-|  |  |--modules/         # →  JS Modules (e.g. navbar)
-|  |  |--app.js           # →  JS main file
-|  |--styles/             # →  Styles
-|  |--templates/          # →  Site templates (Twig.js)
-|  |  |--layouts/         # →  Base templates
-|  |  |--components/      # →  Component templates (e.g. navbar)
-|  |  |--pages/           # →  Page templates
-|--.babelrc               # →  Babel presets
-|--.eslintrc              # →  ESLint config
-|--.gitignore             # →  Gitignore
-|--.stylelintrc           # →  Stylelint config
-|--package-lock.json      # →  Node.js lock file (never edit)
-|--package.json           # →  Node.js dependencies and scripts
-|--webpack.config.js      # →  Webpack config
-|--yarn.lock              # →  Yarn lock file (never edit)
+|--gulpfile.babel.js/      # →  Gulpfile config and tasks
+|--node_modules/           # →  Node.js packages (never edit)
+|--src/                    # →  Source files
+|  |--assets/              # →  Assets
+|  |  |--fonts/            # →  Assets: Fonts
+|  |  |--img/              # →  Assets: Images
+|  |--modules/             # →  Modules: Multi-part components e.g. Navbar (HTML, CSS and JS)
+|  |--scripts/             # →  JS
+|  |  |--components/       # →  JS: Components
+|  |  |--app.js            # →  JS: Main file
+|  |--styles/              # →  Styles
+|  |  |--base/             # →  Styles: Base
+|  |  |--components/       # →  Styles: Components (rich design UI styling)
+|  |  |--elements/         # →  Styles: Elements (essential interface elements)
+|  |  |--vendor            # →  Styles: Vendor
+|  |  |--_typography.scss  # →  Styles: Typography
+|  |  |--_variables.scss   # →  Styles: Variables
+|  |  |--main.scss         # →  Styles: Main stylesheet file
+|  |--templates/           # →  Site templates (Twig.js)
+|  |  |--layouts/          # →  Templates: Layouts
+|  |  |--components/       # →  Templates: Components
+|  |  |--pages/            # →  Templates: Pages
+|--.babelrc                # →  Babel presets
+|--.eslintrc               # →  ESLint config
+|--.gitignore              # →  Gitignore
+|--.stylelintrc            # →  Stylelint config
+|--package-lock.json       # →  Node.js lock file (never edit)
+|--package.json            # →  Node.js dependencies and scripts
+|--webpack.config.js       # →  Webpack config
+|--yarn.lock               # →  Yarn lock file (never edit)
 ```
 
 ## Copyright and license

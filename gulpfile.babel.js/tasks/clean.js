@@ -10,7 +10,6 @@ import del from 'del';
 import { paths } from "../config";
 
 // Task
-export function clean(cb) {
+export function clean() {
   return del([ paths.dest ]);
-  cb();
 }

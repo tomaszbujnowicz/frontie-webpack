@@ -1,15 +1,16 @@
 {#
-  .navbar--fixed
-  If navbar shouldn't be fixed,
-  remove the class "navbar--fixed" below and top padding from body {} in _navbar.scss
-  CSS: /sass/components/_navbar.scss
+  HTML: navbar.twig
+  CSS: /modules/navbar/navbar.scss
+  JS: /modules/navbar/navbar.js
 
-  .js-navbar
-  Navbar becomes automatically transparent when scrolling more than 100px down
-  We add class "navbar--scrolled" to the "navbar", you can tweak opacity in _navbar.scss
+  Functionality:
 
-  Source CSS: /styles/modules/_navbar.scss
-  Source JS: /scripts/modules/_navbar.js
+  Fixed to top:
+    If navbar shouldn't be fixed, remove the class "navbar--fixed" and top padding from body {} in navbar.scss
+
+  Transparent when scrolling:
+    Navbar becomes transparent when scrolling more than 100px down
+    We add class "navbar--scrolled" to the "navbar", you can tweak opacity in navbar.scss
 #}
 
   <nav class="navbar navbar--fixed js-navbar">
@@ -39,9 +40,6 @@
           <ul class="navbar__menu">
             <li class="menu-item{% if menu_active == 'sample-page' %} current-menu-item{% endif %}">
               <a href="page.html">Sample Page</a>
-            </li>
-            <li class="menu-item{% if menu_active == 'demo' %} current-menu-item{% endif %}">
-              <a href="demo.html">Demo</a>
             </li>
           </ul>
         </div>

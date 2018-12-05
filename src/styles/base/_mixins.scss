@@ -87,7 +87,7 @@
    @include responsive-font-size(xs, sm, md, lg, xl);
 
  * In case you want to omit the media query breakpoint please use ''
-   e.g. @include responsive-font-size(1rem, '', '', 1.5rem, '', 2.5rem);
+   e.g. @include responsive-font-size(12px, '', '', '', 20px);
  */
 @mixin responsive-font-size($font-size-xs: null, $font-size-sm: null, $font-size-md: null, $font-size-lg: null, $font-size-xl: null) {
   @if ($font-size-xs != '') {

@@ -13,10 +13,9 @@ import errorHandler from '../util/errorHandler.js';
 import { paths } from "../config";
 
 // Task
-export function templates(cb) {
+export function templates() {
   return src(paths.templates.src)
     .pipe(plumber({errorHandler}))
     .pipe(twig())
     .pipe(dest(paths.templates.dest))
-    cb();
 };

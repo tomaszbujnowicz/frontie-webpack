@@ -32,36 +32,6 @@ figure {
 
 img {
   vertical-align: middle;
-  border-style: none; // Remove the border on images inside links in IE 10-.
   max-width: 100%;
   height: auto;
-}
-
-svg:not(:root) {
-  overflow: hidden; // Hide the overflow in IE
-}
-
-input,
-button,
-select,
-optgroup,
-textarea {
-  margin: 0; // Remove the margin in Firefox and Safari
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-}
-
-button,
-input {
-  overflow: visible; // Show the overflow in Edge
-}
-
-button,
-select {
-  text-transform: none; // Remove the inheritance of text transform in Firefox
-}
-
-table {
-  border-collapse: collapse; // Prevent double borders
 }

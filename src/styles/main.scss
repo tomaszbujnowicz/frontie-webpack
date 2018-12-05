@@ -8,9 +8,9 @@
 @import 'vendor/normalize';
 
 // Base
+@import 'base/minireset';
 @import 'base/print';
 @import 'base/mixins';
-@import 'base/minireset';
 
 // Variables
 @import 'variables';
@@ -18,8 +18,14 @@
 // Typography
 @import 'typography';
 
-// Components
+// Elements (essential interface elements)
+@import 'elements/**/*.scss';
+
+// Components (rich design UI styling)
 @import 'components/**/*.scss';
+
+// Modules (Multi-part components e.g. Navbar (HTML, CSS and JS))
+@import '../modules/**/*.scss';
 
 /**
  * Custom styles

@@ -14,10 +14,9 @@ import errorHandler from '../util/errorHandler.js';
 import { paths } from "../config";
 
 // Task
-export function images(cb) {
+export function images() {
 return src(paths.images.src)
     .pipe(plumber({errorHandler}))
     .pipe(changed(paths.images.dest))
     .pipe(dest(paths.images.dest));
-    cb();
 }

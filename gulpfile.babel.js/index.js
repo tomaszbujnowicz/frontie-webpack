@@ -23,9 +23,9 @@ import { paths } from './config';
 
 // Gulp Tasks
 function watchFiles() {
-  gulp.watch(paths.styles.watch, styles);
-  gulp.watch(paths.scripts.watch, series(scripts, reload));
-  gulp.watch(paths.templates.watch, series(templates, reload));
+  gulp.watch([paths.styles.watch, paths.styles.modules], styles);
+  gulp.watch([paths.scripts.watch, paths.scripts.modules], series(scripts, reload));
+  gulp.watch([paths.templates.watch, paths.templates.modules], series(templates, reload));
   gulp.watch(paths.images.src, series(images, reload));
   gulp.watch(paths.fonts.src, series(fonts, reload));
 }

@@ -11,9 +11,8 @@ import changed from "gulp-changed";
 import { paths } from "../config";
 
 // Task
-export function copy(cb) {
+export function copy() {
   return src(paths.copy.src)
     .pipe(changed(paths.copy.dest))
     .pipe(dest(paths.copy.dest))
-    cb();
  }
