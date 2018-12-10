@@ -152,15 +152,7 @@ $z-index-navbar-toggler: 1010;
   }
 }
 
-// Prevent vertical scrollbar when navbar is opened on smaller devices
-
-body.navbar--opened {
-  overflow: hidden;
-}
-
-/**
- * Navbar Fixed
- */
+// Navbar Fixed
 
 .navbar.navbar--fixed {
   position: fixed;
@@ -169,13 +161,36 @@ body.navbar--opened {
   width: 100%;
 }
 
-// Make navbar transparent when scrolling more than 100px down
+// Prevent vertical scrollbar when navbar is opened on smaller devices
 
-.navbar.navbar--scrolled {
+body.navbar--opened {
+  overflow: hidden;
+}
+
+// Make navbar transparent when scrolling down
+
+.navbar.navbar--fixed-transparent.navbar--scrolled {
   transition: $transition-base;
   opacity: .25;
   &:hover {
     opacity: 1;
+  }
+}
+
+// Navbar slides out of view when scrolling down and slides back in when scrolling up
+
+// Navbar slides out of view when scrolling down and slides back in when scrolling up
+
+.navbar.navbar--fixed-showhide {
+  transition: $transition-base;
+  body.navbar--opened & {
+    transform: none;
+  }
+  &.is-hidden {
+    transform: translateY(-100%);
+  }
+  &.is-visible {
+    transform: translateY(0);
   }
 }
 

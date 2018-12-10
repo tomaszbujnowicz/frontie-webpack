@@ -3,17 +3,22 @@
   CSS: /modules/navbar/navbar.scss
   JS: /modules/navbar/navbar.js
 
-  Functionality:
-
   Fixed to top:
-    If navbar shouldn't be fixed, remove the class "navbar--fixed" and top padding from body {} in navbar.scss
+    "navbar--fixed"
+    If navbar shouldn't be fixed, remove the class "navbar--fixed" and top padding from "body" in the navbar.scss
 
-  Transparent when scrolling:
-    Navbar becomes transparent when scrolling more than 100px down
-    We add class "navbar--scrolled" to the "navbar", you can tweak opacity in navbar.scss
+  Fixed to top animations (add some animations by adding the following classes to the navbar):
+    It works when we scroll more than more than 150px from to the top.
+    You can change it in navbar.js
+
+    "navbar--fixed-transparent"
+      Navbar becomes transparent when scrolling down.
+
+    "navbar--fixed-showhide"
+      Navbar slides out of view when scrolling down and slides back in when scrolling up
 #}
 
-  <nav class="navbar navbar--fixed js-navbar">
+  <nav class="navbar navbar--fixed navbar--fixed-showhide js-navbar">
     <div class="container">
       <div class="navbar__wrapper">
         <a class="navbar__brand" href="index.html">
