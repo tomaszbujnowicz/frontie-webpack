@@ -4,11 +4,14 @@
 
 import notifier from "node-notifier";
 
-export function errorHandler (error) {
+function errorHandler(error) {
   notifier.notify({
-    title: 'Gulp error',
-    message: error.message
+    title: 'Gulp Error',
+    message: error.message,
+    timeout: 3
   });
-  console.error(error.message);
+  console.error('\x1b[31m', error.message ,'\x1b[0m');
   this.emit('end');
 }
+
+export default errorHandler;

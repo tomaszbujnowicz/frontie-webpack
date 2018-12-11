@@ -8,6 +8,9 @@ import webpack from 'webpack';
 // Config
 import { paths } from "./gulpfile.babel.js/config";
 
+// Plugins
+var WebpackNotifierPlugin = require('webpack-notifier');
+
 const webpackConfig = {
 
   mode: process.env.NODE_ENV ? "production" : "development",
@@ -51,7 +54,7 @@ const webpackConfig = {
           'css-loader',
           'sass-loader',
         ],
-      }      
+      }
     ]
   },
 
@@ -59,6 +62,9 @@ const webpackConfig = {
     // ensure that we get a production build of any dependencies
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"production"'
+    }),
+    new WebpackNotifierPlugin({
+      skipFirstNotification: true
     })
   ]
 

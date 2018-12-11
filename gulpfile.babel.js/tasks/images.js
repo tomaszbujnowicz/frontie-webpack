@@ -15,7 +15,7 @@ import { paths } from "../config";
 
 // Task
 export function images() {
-return src(paths.images.src)
+  return src(paths.images.src)
     .pipe(plumber({errorHandler}))
     .pipe(changed(paths.images.dest))
     .pipe(dest(paths.images.dest));

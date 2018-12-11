@@ -40,6 +40,7 @@
     "stylelint-order": "^2.0.0",
     "stylelint-scss": "^3.4.1",
     "webpack": "^4.27.1",
+    "webpack-notifier": "^1.7.0",
     "webpack-stream": "^5.2.1"
   },
   "scripts": {
