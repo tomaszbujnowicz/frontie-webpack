@@ -20,13 +20,13 @@ These tools make it a solid front-end boilerplate to get a new project off the g
 ### Requirements
 Make sure all dependencies have been installed before moving on:
 
-* [npm](https://www.npmjs.com/get-npm) or [yarn](https://yarnpkg.com/lang/en/)
+* [yarn](https://yarnpkg.com/lang/en/) or [npm](https://www.npmjs.com/get-npm)
 * [Node.js](https://nodejs.org/en/download/)
 * [Gulp](http://gulpjs.com/)
 
 ### Quick start: Installation
 Clone this repository and run
-- `npm install` or `yarn` to install dependencies
+- `yarn` or `npm install` to install dependencies
 
 ### Tasks
 | Task Name | Description | Environment |
