@@ -83,6 +83,7 @@ $z-index-navbar-toggler: 1010;
       height: 32px;
       cursor: pointer;
       z-index: $z-index-navbar-toggler;
+      transition: $transition-base;
     }
     &__toggler-line {
       transition: $transition-base;
@@ -129,6 +130,11 @@ $z-index-navbar-toggler: 1010;
         }
         &:nth-child(2) {
           opacity: 0;
+        }
+      }
+      &__toggler {
+        &:hover {
+          transform: rotate(90deg);
         }
       }
     }
