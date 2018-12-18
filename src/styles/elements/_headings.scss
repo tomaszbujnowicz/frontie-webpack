@@ -1,0 +1,147 @@
+/**
+ * Headings
+ */
+
+$headings-margin-bottom: 1rem !default;
+$headings-font-family: $font-family !default;
+$headings-font-weight: 500 !default;
+$headings-line-height: 1.5 !default;
+$headings-color: inherit !default;
+
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+$sm-multiplier: .875;
+$md-multiplier: 1;
+$lg-multiplier: 1.125;
+$xl-multiplier: 1.25;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-top: 0;
+  margin-bottom: $headings-margin-bottom;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+}
+
+h1,
+.h1 {
+  font-size: $h1-font-size * $sm-multiplier;
+}
+h2,
+.h2 {
+  font-size: $h2-font-size * $sm-multiplier;
+}
+h3,
+.h3 {
+  font-size: $h3-font-size * $sm-multiplier;
+}
+h4,
+.h4 {
+  font-size: $h4-font-size * $sm-multiplier;
+}
+h5,
+.h5 {
+  font-size: $h5-font-size * $sm-multiplier;
+}
+h6,
+.h6 {
+  font-size: $h6-font-size * $sm-multiplier;
+}
+
+@include media-breakpoint-up(md) {
+  h1,
+  .h1 {
+    font-size: $h1-font-size * $md-multiplier;
+  }
+  h2,
+  .h3 {
+    font-size: $h2-font-size * $md-multiplier;
+  }
+  h3,
+  .h3 {
+    font-size: $h3-font-size * $md-multiplier;
+  }
+  h4,
+  .h4 {
+    font-size: $h4-font-size * $md-multiplier;
+  }
+  h5,
+  .h5 {
+    font-size: $h5-font-size * $md-multiplier;
+  }
+  h6,
+  .h6 {
+    font-size: $h6-font-size * $md-multiplier;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  h1,
+  .h1 {
+    font-size: $h1-font-size * $lg-multiplier;
+  }
+  h2,
+  .h3 {
+    font-size: $h2-font-size * $lg-multiplier;
+  }
+  h3,
+  .h3 {
+    font-size: $h3-font-size * $lg-multiplier;
+  }
+  h4,
+  .h4 {
+    font-size: $h4-font-size * $lg-multiplier;
+  }
+  h5,
+  .h5 {
+    font-size: $h5-font-size * $lg-multiplier;
+  }
+  h6,
+  .h6 {
+    font-size: $h6-font-size * $lg-multiplier;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  h1,
+  .h1 {
+    font-size: $h1-font-size * $xl-multiplier;
+  }
+  h2,
+  .h3 {
+    font-size: $h2-font-size * $xl-multiplier;
+  }
+  h3,
+  .h3 {
+    font-size: $h3-font-size * $xl-multiplier;
+  }
+  h4,
+  .h4 {
+    font-size: $h4-font-size * $xl-multiplier;
+  }
+  h5,
+  .h5 {
+    font-size: $h5-font-size * $xl-multiplier;
+  }
+  h6,
+  .h6 {
+    font-size: $h6-font-size * $lg-multiplier;
+  }
+}

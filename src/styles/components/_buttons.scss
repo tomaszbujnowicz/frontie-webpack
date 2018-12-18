@@ -2,19 +2,19 @@
  * Buttons
  */
 
-$btn-bg: $primary;
-$btn-text-color: white;
-$btn-font-weight: inherit;
-$btn-font-size: inherit;
-$btn-padding-x: .75rem;
-$btn-padding-y: .5rem;
-$btn-border-color: transparent;
-$btn-border-width: 1px;
-$btn-border-radius: 0;
+$btn-bg: $primary !default;
+$btn-text-color: white !default;
+$btn-font-weight: inherit !default;
+$btn-font-size: inherit !default;
+$btn-padding-x: .75rem !default;
+$btn-padding-y: .5rem !default;
+$btn-border-color: transparent !default;
+$btn-border-width: 1px !default;
+$btn-border-radius: 0 !default;
 
-$btn-hover-bg: darken($primary, 10%);
-$btn-hover-text-color: white;
-$btn-hover-border-color: transparent;
+$btn-hover-bg: darken($primary, 10%) !default;
+$btn-hover-text-color: white !default;
+$btn-hover-border-color: transparent !default;
 
 .btn {
   display: inline-block;
@@ -48,6 +48,9 @@ $btn-hover-border-color: transparent;
     border-color: $btn-hover-border-color;
   }
 }
+
+// Size Variants
+// Style Variants
 
 .btn-block {
   display: block;

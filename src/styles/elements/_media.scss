@@ -1,0 +1,31 @@
+/**
+ * Media
+ */
+
+// Fluid images for responsive purposes.
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+// If a `width` and/or `height` attribute have been explicitly defined, let’s not make the image fluid.
+
+img[width],
+img[height] {
+  max-width: none;
+}
+
+figure {
+  margin: 0;
+}
+
+object,
+iframe,
+embed,
+canvas,
+video,
+audio {
+  max-width: 100%;
+}

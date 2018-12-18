@@ -3,30 +3,30 @@
  * Author: Author Name, E-mail, Website
  */
 
-// Vendor
-@import "vendor/bootstrap";
-@import 'vendor/normalize';
-
-// Base
-@import 'base/minireset';
-@import 'base/print';
-@import 'base/mixins';
-
-// Variables
-@import 'variables';
-
-// Typography
-@import 'typography';
-
-// Elements (essential interface elements)
-@import 'elements/**/*.scss';
-
-// Components (rich design UI styling)
-@import 'components/**/*.scss';
-
-// Modules (Multi-part components e.g. Navbar (HTML, CSS and JS))
-@import '../modules/**/*.scss';
-
 /**
- * Custom styles
+ * Styles via ITCSS Methodology
+ *
+ * This is where all of the stylesheets are compiled.
+ * They are processed in the order they are imported to ensure the consistent increase of specificity.
+ *
+ *  1. Settings...........Global configuration and variables
+ *  2. Tools..............Functions and mixins
+ *  3. Generic............Ground zero styles (normalizing rules, box-sizing etc...)
+ *  4. Elements...........Unclassed (bare) HTML elements (like H1, Ul, A etc...)
+ *  5. Objects............Common non-cosmetic structural design patterns
+ *  6. Components.........Specific cosmetic elements of UI
+ *  7. Utilities..........Helpers and overrides
+ *
+ *    Modules.............Multi-part components e.g. Navbar (HTML, CSS and JS).
+ *    Shame...............All the CSS declarations, hacks and things we are not proud of.
  */
+
+@import 'settings/**/*.scss';
+@import 'tools/**/*.scss';
+@import 'generic/**/*.scss';
+@import 'elements/**/*.scss';
+@import 'objects/**/*.scss';
+@import 'components/**/*.scss';
+@import 'utilities/**/*.scss';
+@import '../modules/**/*.scss';
+@import 'shame';

@@ -2,19 +2,24 @@
  * Navbar
  */
 
-$navbar-height-desktop: 80px;
-$navbar-height-mobile: 50px;
-$navbar-bg: #fafafa;
-$navbar-link-color: $primary;
-$navbar-hover-link-color: darken($primary, 15%);
-$z-index-navbar: 1000;
-$z-index-navbar-toggler: 1010;
+ $navbar: (
+   'height-desktop': 80px,
+   'height-mobile': 50px,
+   'bg-color': #fafafa,
+   'link-color': $primary,
+   'hover-link-color': darken($primary, 15%),
+   'toggler-size': 8px,
+   'z-index': 1000,
+   'z-index-toggler': 1010
+ );
+
+@function navbar($key) {
+  @return map-get($navbar, $key);
+}
 
 .navbar {
-
-  background-color: $navbar-bg;
-  z-index: $z-index-navbar;
-
+  background-color: navbar(bg-color);
+  z-index: navbar(z-index);
   &__wrapper {
     display: flex;
     align-items: center;
@@ -26,42 +31,42 @@ $z-index-navbar-toggler: 1010;
   }
   &__toggler {
     display: none;
-    background: none;
-    border: none;
-    border-radius: 0;
     &:focus {
       outline: none;
     }
   }
   &__menu {
     display: flex;
-    list-style: none;
     margin: 0;
     padding: 0;
+    list-style: none;
   }
   .menu-item {
     a {
       transition: $transition-base;
-      color: $navbar-link-color;
-      &:hover {
-        color: $navbar-hover-link-color;
-        text-decoration: none;
-      }
+      color: navbar(link-color);
     }
   }
+  .menu-item,
   .current-menu-item {
     a {
-      color: $navbar-hover-link-color;
+      color: navbar(hover-link-color);
       text-decoration: none;
     }
   }
 
-  @include media-breakpoint-down(sm) {
+  // Media: Small devices and down
+
+  @include media-breakpoint-up(sm) {
     &__wrapper {
-      height: $navbar-height-mobile;
+      height: navbar(height-mobile);
+    }
+    &__collapse,
+    &__toggler,
+    &__toggler-link {
+      transition: $transition-base;
     }
     &__collapse {
-      transition: $transition-base;
       opacity: 0;
       visibility: hidden;
       position: fixed;
@@ -78,27 +83,30 @@ $z-index-navbar-toggler: 1010;
     &__toggler {
       display: inline-block;
       position: relative;
+      margin: 0;
       margin-left: auto;
-      width: 40px;
-      height: 32px;
+      padding: 0;
+      background: none;
+      border: none;
+      border-radius: 0;
+      width: navbar(toggler-size) * 5;
+      height: navbar(toggler-size) * 4;
       cursor: pointer;
-      z-index: $z-index-navbar-toggler;
-      transition: $transition-base;
+      z-index: navbar(z-index-toggler);
     }
     &__toggler-line {
-      transition: $transition-base;
       display: block;
       position: absolute;
-      top: 8px;
-      left: 8px;
+      top: navbar(toggler-size);
+      left: navbar(toggler-size);
       background-color: black;
       height: 1px;
-      width: 24px;
+      width: navbar(toggler-size) * 3;
       &:nth-child(2) {
-        top: 16px;
+        top: navbar(toggler-size) * 2;
       }
       &:nth-child(3) {
-        top: 24px;
+        top: navbar(toggler-size) * 3;
       }
     }
     &__menu {
@@ -106,7 +114,7 @@ $z-index-navbar-toggler: 1010;
       justify-content: center;
       flex-direction: column;
       min-height: 100vh;
-      background-color: $navbar-bg;
+      background-color: navbar(bg-color);
       padding: 2rem 0; // add some top / bottom padding in case there is more items that doesn't fit in the viewport
     }
     .menu-item {
@@ -121,15 +129,15 @@ $z-index-navbar-toggler: 1010;
       }
       &__toggler-line {
         &:nth-child(1) {
-          top: 15px;
+          top: navbar(toggler-size) * 2;
           transform: rotate(45deg);
-        }
-        &:nth-child(3) {
-          top: 15px;
-          transform: rotate(-45deg);
         }
         &:nth-child(2) {
           opacity: 0;
+        }
+        &:nth-child(3) {
+          top: navbar(toggler-size) * 2;
+          transform: rotate(-45deg);
         }
       }
       &__toggler {
@@ -140,9 +148,11 @@ $z-index-navbar-toggler: 1010;
     }
   }
 
+  // Media: Medium devices and up
+
   @include media-breakpoint-up(md) {
     &__wrapper {
-      height: $navbar-height-desktop;
+      height: navbar(height-desktop);
     }
     &__brand {
       margin-right: auto;
@@ -156,15 +166,41 @@ $z-index-navbar-toggler: 1010;
       }
     }
   }
-}
 
-// Navbar Fixed
+  // Navbar Fixed
 
-.navbar.navbar--fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  &.navbar--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  // Make navbar transparent when scrolling down
+
+  &.navbar--fixed-transparent.navbar--scrolled {
+    transition: $transition-base;
+    opacity: .25;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  // Navbar slides out of view when scrolling down and slides back in when scrolling up
+
+  &.navbar--fixed-showhide {
+    transition: $transition-base;
+    body.navbar--opened & {
+      transform: none;
+    }
+    &.is-hidden {
+      transform: translateY(-100%);
+    }
+    &.is-visible {
+      transform: translateY(0);
+    }
+  }
+
 }
 
 // Prevent vertical scrollbar when navbar is opened on smaller devices
@@ -173,40 +209,13 @@ body.navbar--opened {
   overflow: hidden;
 }
 
-// Make navbar transparent when scrolling down
-
-.navbar.navbar--fixed-transparent.navbar--scrolled {
-  transition: $transition-base;
-  opacity: .25;
-  &:hover {
-    opacity: 1;
-  }
-}
-
-// Navbar slides out of view when scrolling down and slides back in when scrolling up
-
-// Navbar slides out of view when scrolling down and slides back in when scrolling up
-
-.navbar.navbar--fixed-showhide {
-  transition: $transition-base;
-  body.navbar--opened & {
-    transform: none;
-  }
-  &.is-hidden {
-    transform: translateY(-100%);
-  }
-  &.is-visible {
-    transform: translateY(0);
-  }
-}
-
 // When the navbar is fixed you should also add some padding to body tag as well - most likely that should be height of the navbar
 
 body {
   @include media-breakpoint-down(sm) {
-    padding-top: $navbar-height-mobile;
+    padding-top: navbar(height-mobile);
   }
   @include media-breakpoint-up(md) {
-    padding-top: $navbar-height-desktop;
+    padding-top: navbar(height-desktop);
   }
 }

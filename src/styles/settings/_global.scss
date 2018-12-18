@@ -1,0 +1,18 @@
+/**
+ * Global
+ *
+ * !default Flag
+ * When building a library, a framework, a grid system or any piece of Sass
+ * that is intended to be distributed and used by external developers,
+ * all configuration variables should be defined with the !default flag
+ * so they can be overwritten.
+ */
+
+// Fonts
+$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-size-base: 1rem !default;
+$line-height-base: 1.5 !default;
+$body-color: #222 !default;
+
+// Transition
+$transition-base: all .2s ease-in-out !default;
