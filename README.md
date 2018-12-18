@@ -9,7 +9,7 @@ These tools make it a solid front-end boilerplate to get a new project off the g
 | :------------- | :------------- |
 | Task Runner | [Gulp](http://gulpjs.com/)
 | CSS | [SASS](http://sass-lang.com/), [Autoprefixer](https://github.com/postcss/autoprefixer), [Source Maps](https://www.npmjs.com/package/gulp-sourcemaps), [Stylelint](https://stylelint.io/)
-| CSS Architecture | [Inverted Triangle CSS architecture](https://developer.helpscout.com/seed/glossary/itcss/)
+| CSS Architecture | [Inverted Triangle CSS architecture](https://developer.helpscout.com/seed/glossary/itcss/), [CSS Guidelines](https://cssguidelin.es/)
 | Bootstrap 4 | [Grid System](https://getbootstrap.com/docs/4.1/layout/grid/), [Responsive Breakpoints](https://getbootstrap.com/docs/4.1/layout/overview/#responsive-breakpoints)
 | JS | [Webpack](https://webpack.js.org/), [Babel](http://babeljs.io/), [ESLint](http://eslint.org/)
 | Live Reload | [BrowserSync](http://www.browsersync.io/)
