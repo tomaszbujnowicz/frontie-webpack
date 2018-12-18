@@ -8,7 +8,7 @@ These tools make it a solid front-end boilerplate to get a new project off the g
 | Features | Description |
 | :------------- | :------------- |
 | Task Runner | [Gulp](http://gulpjs.com/)
-| CSS | [SASS](http://sass-lang.com/), [Inverted Triangle CSS architecture](https://developer.helpscout.com/seed/glossary/itcss/), [CSS Guidelines](https://cssguidelin.es/), [BEM](http://getbem.com/)
+| CSS | [SASS](http://sass-lang.com/), [ITCSS](https://developer.helpscout.com/seed/glossary/itcss/), [CSS Guidelines](https://cssguidelin.es/), [BEM](http://getbem.com/)
 | CSS Tools | [Autoprefixer](https://github.com/postcss/autoprefixer), [Source Maps](https://www.npmjs.com/package/gulp-sourcemaps), [Stylelint](https://stylelint.io/)
 | Bootstrap 4 | [Grid System](https://getbootstrap.com/docs/4.1/layout/grid/), [Responsive Breakpoints](https://getbootstrap.com/docs/4.1/layout/overview/#responsive-breakpoints)
 | JS | [Webpack](https://webpack.js.org/), [Babel](http://babeljs.io/), [ESLint](http://eslint.org/)
