@@ -57,7 +57,7 @@
 
   // Media: Small devices and down
 
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-down(sm) {
     &__wrapper {
       height: navbar(height-mobile);
     }
