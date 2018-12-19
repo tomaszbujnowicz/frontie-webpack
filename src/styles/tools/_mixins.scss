@@ -20,7 +20,7 @@
  * Usage:
    @include list-none;
  */
-@mixin list-none {
+@mixin list-unstyled {
   list-style: none;
   padding-left: 0;
 }

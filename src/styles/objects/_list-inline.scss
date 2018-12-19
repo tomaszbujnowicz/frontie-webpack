@@ -2,11 +2,11 @@
  * List Inline
  */
 
-.o-list-inline {
+.list-inline {
   list-style: none;
-  margin-left: 0;
-}
-
-.o-list-inline__item {
-  display: inline-block;
+  padding-left: 0;
+  &__item {
+    display: inline-block;
+    margin-right: 1rem;
+  }
 }
