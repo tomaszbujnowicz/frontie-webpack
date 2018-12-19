@@ -2,16 +2,16 @@
  * Navbar
  */
 
- $navbar: (
-   'height-desktop': 80px,
-   'height-mobile': 50px,
-   'bg-color': #fafafa,
-   'link-color': $primary,
-   'hover-link-color': darken($primary, 15%),
-   'toggler-size': 8px,
-   'z-index': 1000,
-   'z-index-toggler': 1010
- );
+$navbar: (
+ 'height-desktop': 80px,
+ 'height-mobile': 50px,
+ 'bg-color': #fafafa,
+ 'link-color': $primary,
+ 'hover-link-color': darken($primary, 15%),
+ 'toggler-size': 8px,
+ 'z-index': 1000,
+ 'z-index-toggler': 1010
+);
 
 @function navbar($key) {
   @return map-get($navbar, $key);
