@@ -15,10 +15,10 @@ $h4-font-size: $font-size-base * 1.5 !default;
 $h5-font-size: $font-size-base * 1.25 !default;
 $h6-font-size: $font-size-base !default;
 
-$sm-multiplier: .875;
-$md-multiplier: 1;
-$lg-multiplier: 1.125;
-$xl-multiplier: 1.25;
+$headings-sm: .875 !default;
+$headings-md: 1 !default;
+$headings-lg: 1.125 !default;
+$headings-xl: 1.25 !default;
 
 h1,
 h2,
@@ -42,106 +42,106 @@ h6,
 
 h1,
 .h1 {
-  font-size: $h1-font-size * $sm-multiplier;
+  font-size: $h1-font-size * $headings-sm;
 }
 h2,
 .h2 {
-  font-size: $h2-font-size * $sm-multiplier;
+  font-size: $h2-font-size * $headings-sm;
 }
 h3,
 .h3 {
-  font-size: $h3-font-size * $sm-multiplier;
+  font-size: $h3-font-size * $headings-sm;
 }
 h4,
 .h4 {
-  font-size: $h4-font-size * $sm-multiplier;
+  font-size: $h4-font-size * $headings-sm;
 }
 h5,
 .h5 {
-  font-size: $h5-font-size * $sm-multiplier;
+  font-size: $h5-font-size * $headings-sm;
 }
 h6,
 .h6 {
-  font-size: $h6-font-size * $sm-multiplier;
+  font-size: $h6-font-size * $headings-sm;
 }
 
 @include media-breakpoint-up(md) {
   h1,
   .h1 {
-    font-size: $h1-font-size * $md-multiplier;
+    font-size: $h1-font-size * $headings-md;
   }
   h2,
   .h3 {
-    font-size: $h2-font-size * $md-multiplier;
+    font-size: $h2-font-size * $headings-md;
   }
   h3,
   .h3 {
-    font-size: $h3-font-size * $md-multiplier;
+    font-size: $h3-font-size * $headings-md;
   }
   h4,
   .h4 {
-    font-size: $h4-font-size * $md-multiplier;
+    font-size: $h4-font-size * $headings-md;
   }
   h5,
   .h5 {
-    font-size: $h5-font-size * $md-multiplier;
+    font-size: $h5-font-size * $headings-md;
   }
   h6,
   .h6 {
-    font-size: $h6-font-size * $md-multiplier;
+    font-size: $h6-font-size * $headings-md;
   }
 }
 
 @include media-breakpoint-up(lg) {
   h1,
   .h1 {
-    font-size: $h1-font-size * $lg-multiplier;
+    font-size: $h1-font-size * $headings-lg;
   }
   h2,
   .h3 {
-    font-size: $h2-font-size * $lg-multiplier;
+    font-size: $h2-font-size * $headings-lg;
   }
   h3,
   .h3 {
-    font-size: $h3-font-size * $lg-multiplier;
+    font-size: $h3-font-size * $headings-lg;
   }
   h4,
   .h4 {
-    font-size: $h4-font-size * $lg-multiplier;
+    font-size: $h4-font-size * $headings-lg;
   }
   h5,
   .h5 {
-    font-size: $h5-font-size * $lg-multiplier;
+    font-size: $h5-font-size * $headings-lg;
   }
   h6,
   .h6 {
-    font-size: $h6-font-size * $lg-multiplier;
+    font-size: $h6-font-size * $headings-lg;
   }
 }
 
 @include media-breakpoint-up(xl) {
   h1,
   .h1 {
-    font-size: $h1-font-size * $xl-multiplier;
+    font-size: $h1-font-size * $headings-xl;
   }
   h2,
   .h3 {
-    font-size: $h2-font-size * $xl-multiplier;
+    font-size: $h2-font-size * $headings-xl;
   }
   h3,
   .h3 {
-    font-size: $h3-font-size * $xl-multiplier;
+    font-size: $h3-font-size * $headings-xl;
   }
   h4,
   .h4 {
-    font-size: $h4-font-size * $xl-multiplier;
+    font-size: $h4-font-size * $headings-xl;
   }
   h5,
   .h5 {
-    font-size: $h5-font-size * $xl-multiplier;
+    font-size: $h5-font-size * $headings-xl;
   }
   h6,
   .h6 {
-    font-size: $h6-font-size * $lg-multiplier;
+    font-size: $h6-font-size * $headings-lg;
   }
 }

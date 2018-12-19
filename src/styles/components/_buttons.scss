@@ -5,7 +5,7 @@
 $btn-bg: $primary !default;
 $btn-text-color: white !default;
 $btn-font-weight: inherit !default;
-$btn-font-size: inherit !default;
+$btn-font-size: 1rem !default;
 $btn-padding-x: .75rem !default;
 $btn-padding-y: .5rem !default;
 $btn-border-color: transparent !default;
@@ -15,6 +15,9 @@ $btn-border-radius: 0 !default;
 $btn-hover-bg: darken($primary, 10%) !default;
 $btn-hover-text-color: white !default;
 $btn-hover-border-color: transparent !default;
+
+$btn-sm: .875 !default;
+$btn-lg: 1.25 !default;
 
 .btn {
   display: inline-block;
@@ -38,25 +41,34 @@ $btn-hover-border-color: transparent !default;
     text-decoration: none;
   }
 
-  &:focus {
-    outline: 0;
-  }
-
   &:hover {
     background-color: $btn-hover-bg;
     color: $btn-hover-text-color;
     border-color: $btn-hover-border-color;
   }
+
+  &:focus {
+    outline: 0;
+  }
 }
 
 // Size Variants
-// Style Variants
+.btn-sm {
+  font-size: $btn-font-size * $btn-sm;
+  padding: ($btn-padding-y * $btn-sm) ($btn-padding-x * $btn-sm);
+}
+.btn-lg {
+  font-size: $btn-font-size * $btn-lg;
+  padding: ($btn-padding-y * $btn-lg) ($btn-padding-x * $btn-lg);
+}
 
+// Button Block
 .btn-block {
   display: block;
   width: 100%;
 }
 
+// Button Outline
 .btn-outline {
   border: 1px solid $btn-bg;
   background-color: transparent;
@@ -65,5 +77,21 @@ $btn-hover-border-color: transparent !default;
     border-color: $btn-bg;
     background-color: $btn-bg;
     color: $btn-hover-text-color;
+  }
+}
+
+// Button Link
+.btn-link {
+  box-shadow: none;
+  background: transparent;
+  border: 0;
+  color: black;
+  text-shadow: none;
+  text-transform: none;
+
+  &:hover,
+  &:focus {
+    background: transparent;
+    color: black;
   }
 }
