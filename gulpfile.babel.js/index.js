@@ -41,6 +41,13 @@ export const dev = series(
   watchFiles
 );
 
+export const devWatch = series(
+  serve,
+  watchFiles
+);
+
 exports.deploy = deploy;
+
+exports.watch = devWatch;
 
 export default dev;

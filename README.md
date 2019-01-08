@@ -33,6 +33,7 @@ Clone this repository and run
 | Task Name | Description | Environment |
 | :------------- | :------------- | :------------- |
 | `yarn start` or `npm run start` | Generate a development environment, start the server and watch for changes | Development
+| `yarn watch` or `npm run watch` | Start the server and watch for changes | Development
 | `yarn build` or `npm run build` | Compile production code | Production
 | `yarn deploy` or `npm run deploy` | Compile production code and deploy to GitHub Pages | Production
 
