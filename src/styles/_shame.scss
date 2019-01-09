@@ -4,3 +4,24 @@
  * This is a place for hacky, nasty code that should be replaced and moved to the correct partial.
  * Ideally, this is empty.
  */
+
+/*
+  Sass Techniques
+  CSS Snippets
+*/
+
+.MyComponent {
+  $block: &;
+  $xmasTheme: #{&}--xmasTheme;
+
+  &-title {
+    #{$xmasTheme} & {
+    }
+  }
+}
+
+/* Compiles to
+.MyComponent {}
+.MyComponent-title {}
+.MyComponent--xmasTheme .MyComponent-title {}
+*/
