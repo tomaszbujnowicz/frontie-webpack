@@ -1,5 +1,4 @@
 /**
- * Bootstrap 4.2.1
  * Imported via /node_modules
  *
  * Modifications
@@ -12,7 +11,7 @@
 */
 
 /*!
- * Bootstrap Grid v4.2.1 (https://getbootstrap.com/)
+ * Bootstrap Grid v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -58,6 +57,10 @@ $container-max-widths: (
 $grid-columns:                12 !default;
 $grid-gutter-width:           30px !default;
 $enable-grid-classes:         true !default;
+
+// Utilities
+
+$displays: none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex !default;
 
 @import "bootstrap/scss/mixins/breakpoints";
 @import "bootstrap/scss/mixins/grid-framework";
