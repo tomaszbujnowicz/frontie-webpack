@@ -25,8 +25,10 @@ $navbar: (
     align-items: center;
   }
   &__brand {
+    color: navbar(link-color);
     &:hover {
       text-decoration: none;
+      color: navbar(hover-link-color);
     }
   }
   &__toggler {
@@ -42,6 +44,7 @@ $navbar: (
     list-style: none;
   }
   .menu-item {
+    margin-bottom: 0;
     a {
       transition: $transition-base;
       color: navbar(link-color);
@@ -50,9 +53,12 @@ $navbar: (
   .menu-item,
   .current-menu-item {
     a {
-      color: navbar(hover-link-color);
       text-decoration: none;
     }
+  }
+  .menu-item a:hover,
+  .current-menu-item {
+    color: navbar(hover-link-color);
   }
 
   // Media: Small devices and down
