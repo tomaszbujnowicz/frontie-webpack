@@ -28,6 +28,7 @@ function watchFiles() {
   gulp.watch([paths.templates.watch, paths.templates.modules], series(templates, reload));
   gulp.watch(paths.images.src, series(images, reload));
   gulp.watch(paths.fonts.src, series(fonts, reload));
+  gulp.watch(paths.copy.src, series(copy, reload));
 }
 
 export const build = series(
