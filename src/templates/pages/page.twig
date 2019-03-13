@@ -11,12 +11,10 @@
     <div class="row">
       <div class="col-sm-8 offset-sm-2">
         <div class="section">
-          <h1>Headline 1</h1>
-          <h2>Headline 2</h2>
-          <h3>Headline 3</h3>
-          <h4>Headline 4</h4>
-          <h5>Headline 5</h5>
-          <h6>Headline 6</h6>
+          {# Twig Comment #}
+          {% for i in 1..6 %}
+            <h{{i}}>Headline {{ i }}</h{{i}}>
+          {% endfor %}
         </div>
         <div class="section">
           <h3>Paragraph</h3>
@@ -125,7 +123,7 @@
         <div class="section">
           <h3>Module: Flickity Carousel</h3>
           {% include '../../modules/carousel/carousel.twig' %}
-        </div>        
+        </div>
       </div>
     </div>
   </div>
