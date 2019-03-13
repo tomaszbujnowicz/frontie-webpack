@@ -1,0 +1,10 @@
+/**
+ * Pseudo elements after / before
+ * Usage
+   @include pseudo;
+ */
+@mixin pseudo($display: block, $position: absolute, $content: ''){
+  content: $content;
+  display: $display;
+  position: $position;
+}

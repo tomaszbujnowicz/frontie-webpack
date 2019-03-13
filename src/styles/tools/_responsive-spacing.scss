@@ -1,0 +1,131 @@
+/**
+ * Responsive spacing for different media query breakpoints
+ * Usage
+   @include responsive-space('mb', 10px, 20px, 30px, 40px, 50px);
+   @include responsive-space('type, xs, sm, md, lg, xl);
+
+ * In case you want to omit the media query breakpoint please use ''
+   e.g. @include responsive-space('mb', 10px, '', '', 40px, 50px);
+
+   Type:
+
+   m  : margin
+   mt : margin-top
+   mr : margin-right
+   mb : margin-bottom
+   ml : margin-left
+   mx : (horizontal) margin-left and margin-right
+   my : (vertical) margin-top and margin bottom
+
+   p  : padding
+   pt : padding-top
+   pr : padding-right
+   pb : padding-bottom
+   pl : padding-left
+   px : (horizontal) padding-left and padding-right
+   py : (vertical) padding-top and padding bottom
+ */
+@mixin responsive-space($type: null, $space-xs: null, $space-sm: null, $space-md: null, $space-lg: null, $space-xl: null, $type_1: null, $type_2: null) {
+  @if ($type == 'm') {
+    $type: 'margin';
+  }
+  @if ($type == 'mt') {
+    $type: 'margin-top';
+  }
+  @if ($type == 'mr') {
+    $type: 'margin-right';
+  }
+  @if ($type == 'mb') {
+    $type: 'margin-bottom';
+  }
+  @if ($type == 'ml') {
+    $type: 'margin-left';
+  }
+  @if ($type == 'mx') {
+    $type_1: 'margin-left';
+    $type_2: 'margin-right';
+  }
+  @if ($type == 'my') {
+    $type_1: 'margin-top';
+    $type_2: 'margin-bottom';
+  }
+
+  @if ($type == 'p') {
+    $type: 'padding';
+  }
+  @if ($type == 'pt') {
+    $type: 'padding-top';
+  }
+  @if ($type == 'pr') {
+    $type: 'padding-right';
+  }
+  @if ($type == 'pb') {
+    $type: 'padding-bottom';
+  }
+  @if ($type == 'pl') {
+    $type: 'padding-left';
+  }
+  @if ($type == 'px') {
+    $type_1: 'padding-left';
+    $type_2: 'padding-right';
+  }
+  @if ($type == 'py') {
+    $type_1: 'padding-top';
+    $type_2: 'padding-bottom';
+  }
+
+  @if ( ($type == 'mx') or ($type == 'my') or ($type == 'py') or ($type == 'px') ) {
+    @if ($space-xs != '') {
+      #{$type_1}: $space-xs;
+      #{$type_2}: $space-xs;
+    }
+    @if ($space-sm != '') {
+      @include media-breakpoint-up(sm) {
+        #{$type_1}: $space-sm;
+        #{$type_2}: $space-sm;
+      }
+    }
+    @if ($space-md != '') {
+      @include media-breakpoint-up(md) {
+        #{$type_1}: $space-md;
+        #{$type_2}: $space-md;
+      }
+    }
+    @if ($space-lg != '') {
+      @include media-breakpoint-up(lg) {
+        #{$type_1}: $space-lg;
+        #{$type_2}: $space-lg;
+      }
+    }
+    @if ($space-xl != '') {
+      @include media-breakpoint-up(xl) {
+        #{$type_1}: $space-xl;
+        #{$type_2}: $space-xl;
+      }
+    }
+  } @else {
+    @if ($space-xs != '') {
+      #{$type}: $space-xs;
+    }
+    @if ($space-sm != '') {
+      @include media-breakpoint-up(sm) {
+        #{$type}: $space-sm;
+      }
+    }
+    @if ($space-md != '') {
+      @include media-breakpoint-up(md) {
+        #{$type}: $space-md;
+      }
+    }
+    @if ($space-lg != '') {
+      @include media-breakpoint-up(lg) {
+        #{$type}: $space-lg;
+      }
+    }
+    @if ($space-xl != '') {
+      @include media-breakpoint-up(xl) {
+        #{$type}: $space-xl;
+      }
+    }
+  }
+}

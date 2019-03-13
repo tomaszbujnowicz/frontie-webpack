@@ -1,0 +1,10 @@
+/**
+ * Set max width for an element and make it centered
+ * Usage
+   @include max-width(600px);
+ */
+@mixin max-width-center($max-width) {
+  max-width: $max-width;
+  margin-right: auto;
+  margin-left: auto;
+}
