@@ -13,6 +13,36 @@
   <body>
 
     
+  <style>
+    /* Some inline styling for the demo purpose */
+    .demo {
+      padding: 4rem 0;
+    }
+    .section {
+      margin-bottom: 4rem;
+      padding-bottom: 4rem;
+      border-bottom: 1px solid #ccc;
+    }
+    .section-title {
+      color: rgba(0,0,0,.65);
+    }
+    .section-title small {
+      display: block;
+    }
+    pre {
+      font-size: .875rem;
+    }
+    .highlight {
+      background-color: #f8f9fa;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      border-top: 1px solid #eee;
+    }
+    code.hljs {
+      background-color: transparent;
+    }
+  </style>
+
   
 
   <nav class="navbar navbar--fixed navbar--fixed-transparent js-navbar">
@@ -41,124 +71,327 @@
     </div>
   </nav>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-8 offset-sm-2">
-        <div class="section">
-          <h1>Headline 1</h1>
-          <h2>Headline 2</h2>
-          <h3>Headline 3</h3>
-          <h4>Headline 4</h4>
-          <h5>Headline 5</h5>
-          <h6>Headline 6</h6>
-        </div>
-        <div class="section">
-          <h3>Paragraph</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur <a href="#">sample link</a> adipisicing elit. Dolores explicabo architecto perferendis ut nemo! Sapiente, eum quidem placeat, blanditiis, maiores, labore omnis incidunt repellendus suscipit enim sunt libero id obcaecati.
+  <div class="demo">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-3">
+          <p class="section-title">
+            Frontie Webpack
+            <small>
+<a href="https://github.com/tomaszbujnowicz/frontie-webpack">GitHub</a>
+            </small>
           </p>
-          <p>You can use the mark tag to <mark>highlight</mark> text.</p>
-          <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-          <p><u>This line of text will render as underlined</u></p>
-          <p><strong>This line rendered as bold text.</strong></p>
-          <p><em>This line rendered as italicized text.</em></p>
         </div>
-        <div class="section">
-          <h3>List</h3>
-          <ul>
-            <li>Lorem ipsum dolor sit amet</li>
-            <li>Consectetur adipiscing elit</li>
-            <li>Integer molestie lorem at massa</li>
-            <li>Facilisis in pretium nisl aliquet</li>
-            <li>Nulla volutpat aliquam velit
-              <ul>
-                <li>Phasellus iaculis neque</li>
-                <li>Purus sodales ultricies</li>
-                <li>Vestibulum laoreet porttitor sem</li>
-                <li>Ac tristique libero volutpat at</li>
-              </ul>
-            </li>
-            <li>Faucibus porta lacus fringilla vel</li>
-            <li>Aenean sit amet erat nunc</li>
-            <li>Eget porttitor lorem</li>
-          </ul>
-          <ol>
-            <li>Lorem ipsum dolor sit amet</li>
-            <li>Consectetur adipiscing elit</li>
-            <li>Integer molestie lorem at massa</li>
-            <li>Facilisis in pretium nisl aliquet</li>
-            <li>Nulla volutpat aliquam velit</li>
-            <li>Faucibus porta lacus fringilla vel</li>
-            <li>Aenean sit amet erat nunc</li>
-            <li>Eget porttitor lorem</li>
-          </ol>
+        <div class="col-sm-9">
+          <div class="section">
+            <p>
+              This is just a demo page.
+            </p>
+          </div>
         </div>
-        <div class="section">
-          <h3>List unstyled</h3>
-          <ul class="list-unstyled">
-            <li>Lorem ipsum dolor sit amet</li>
-            <li>Consectetur adipiscing elit</li>
-            <li>Integer molestie lorem at massa</li>
-            <li>Facilisis in pretium nisl aliquet</li>
-            <li>Nulla volutpat aliquam velit
-              <ul>
-                <li>Phasellus iaculis neque</li>
-                <li>Purus sodales ultricies</li>
-                <li>Vestibulum laoreet porttitor sem</li>
-                <li>Ac tristique libero volutpat at</li>
-              </ul>
-            </li>
-            <li>Faucibus porta lacus fringilla vel</li>
-            <li>Aenean sit amet erat nunc</li>
-            <li>Eget porttitor lorem</li>
-          </ul>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <p class="section-title">
+            Headings
+          </p>
         </div>
-        <div class="section">
-          <h3>List inline</h3>
-          <ul class="list-inline">
-            <li class="list-inline__item">Lorem ipsum</li>
-            <li class="list-inline__item">Phasellus iaculis</li>
-            <li class="list-inline__item">Nulla volutpat</li>
-          </ul>
+        <div class="col-sm-9">
+          <div class="section">
+            
+                          <h1>Headline 1</h1>
+                          <h2>Headline 2</h2>
+                          <h3>Headline 3</h3>
+                          <h4>Headline 4</h4>
+                          <h5>Headline 5</h5>
+                          <h6>Headline 6</h6>
+                      </div>
         </div>
-        <div class="section">
-          <h3>Bootstrap Grid</h3>
-          <div class="row">
-            <div class="col-sm">
-              One of three columns
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <p class="section-title">
+            Paragraph
+          </p>
+        </div>
+        <div class="col-sm-9">
+          <div class="section">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur <a href="#">sample link</a> adipisicing elit. Dolores explicabo architecto perferendis ut nemo! Sapiente, eum quidem placeat, blanditiis, maiores, labore.
+            </p>
+            <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+            <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+            <p><u>This line of text will render as underlined</u></p>
+            <p><strong>This line rendered as bold text.</strong></p>
+            <p><em>This line rendered as italicized text.</em></p>
+
+            <div class="highlight">
+              <pre><code class="html">
+&lt;p&gt;
+  Lorem ipsum dolor sit amet, consectetur &lt;a href=&quot;#&quot;&gt;sample link&lt;/a&gt; ...
+&lt;/p&gt;
+&lt;p&gt;You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;This line of text will render as underlined&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This line rendered as bold text.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This line rendered as italicized text.&lt;/em&gt;&lt;/p&gt;
+              </code></pre>
             </div>
-            <div class="col-sm">
-              One of three columns
-            </div>
-            <div class="col-sm">
-              One of three columns
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <p class="section-title">
+            List
+            <small>Unordered</small>
+          </p>
+        </div>
+        <div class="col-sm-9">
+          <div class="section">
+            <ul>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+                <ul>
+                  <li>Phasellus iaculis neque</li>
+                  <li>Purus sodales ultricies</li>
+                </ul>
+              </li>
+              <li>Faucibus porta lacus fringilla vel</li>
+              <li>Aenean sit amet erat nunc</li>
+            </ul>
+            <div class="highlight">
+              <pre><code class="html">
+&lt;ul&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+  &lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Phasellus iaculis neque&lt;/li&gt;
+      &lt;li&gt;Purus sodales ultricies&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Faucibus porta lacus fringilla vel&lt;/li&gt;
+  &lt;li&gt;Aenean sit amet erat nunc&lt;/li&gt;
+&lt;/ul&gt;
+              </code></pre>
             </div>
           </div>
         </div>
-        <div class="section">
-          <h3>Component: Buttons</h3>
-          <p>
-            <a href="#" class="btn btn-sm">Small Button</a>
-          </p>
-          <p>
-            <a href="#" class="btn">Default Button</a>
-          </p>
-          <p>
-            <a href="#" class="btn btn-lg">Large Button</a>
-          </p>
-          <p>
-            <a href="#" class="btn btn-outline">Button Outline</a>
-          </p>
-          <p>
-            <a href="#" class="btn btn-link">Link Button</a>
-          </p>
-          <p>
-            <a href="#" class="btn btn-block">Button Block</a>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <p class="section-title">
+            List
+            <small>Ordered</small>
           </p>
         </div>
-        <div class="section">
-          <h3>Module: Flickity Carousel</h3>
-          <div class="carousel js-carousel is-hidden">
+        <div class="col-sm-9">
+          <div class="section">
+            <ol>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Integer molestie lorem at massa</li>
+            </ol>
+            <div class="highlight">
+              <pre><code class="html">
+&lt;ol&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+  &lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+  &lt;li&gt;Integer molestie lorem at massa&lt;/li&gt;
+&lt;/ol&gt;
+              </code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <p class="section-title">
+            List
+            <small>Unstyled</small>
+          </p>
+        </div>
+        <div class="col-sm-9">
+          <div class="section">
+            <ul class="list-unstyled">
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+                <ul>
+                  <li>Phasellus iaculis neque</li>
+                  <li>Purus sodales ultricies</li>
+                </ul>
+              </li>
+              <li>Faucibus porta lacus fringilla vel</li>
+              <li>Aenean sit amet erat nunc</li>
+            </ul>
+            <div class="highlight">
+              <pre><code class="html">
+&lt;ul class=&quot;list-unstyled&quot;&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+  &lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Phasellus iaculis neque&lt;/li&gt;
+      &lt;li&gt;Purus sodales ultricies&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Faucibus porta lacus fringilla vel&lt;/li&gt;
+  &lt;li&gt;Aenean sit amet erat nunc&lt;/li&gt;
+&lt;/ul&gt;
+              </code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <p class="section-title">
+            List
+            <small>Inline</small>
+          </p>
+        </div>
+        <div class="col-sm-9">
+          <div class="section">
+            <ul class="list-inline">
+              <li class="list-inline__item">Lorem ipsum</li>
+              <li class="list-inline__item">Phasellus iaculis</li>
+              <li class="list-inline__item">Nulla volutpat</li>
+            </ul>
+            <div class="highlight">
+              <pre><code class="html">
+&lt;ul class=&quot;list-inline&quot;&gt;
+  &lt;li class=&quot;list-inline__item&quot;&gt;Lorem ipsum&lt;/li&gt;
+  &lt;li class=&quot;list-inline__item&quot;&gt;Phasellus iaculis&lt;/li&gt;
+  &lt;li class=&quot;list-inline__item&quot;&gt;Nulla volutpat&lt;/li&gt;
+&lt;/ul&gt;
+              </code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <p class="section-title">
+            Bootstrap Grid
+            <small><a href="https://getbootstrap.com/docs/4.3/layout/grid/">Docs</a></small>
+          </p>
+        </div>
+        <div class="col-sm-9">
+          <div class="section">
+            <div class="row">
+              <div class="col-sm">
+                One of three columns
+              </div>
+              <div class="col-sm">
+                One of three columns
+              </div>
+              <div class="col-sm">
+                One of three columns
+              </div>
+            </div>
+            <div class="highlight">
+              <pre><code class="html">
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-sm&quot;&gt;
+    One of three columns
+  &lt;/div&gt;
+  &lt;div class=&quot;col-sm&quot;&gt;
+    One of three columns
+  &lt;/div&gt;
+  &lt;div class=&quot;col-sm&quot;&gt;
+    One of three columns
+  &lt;/div&gt;
+&lt;/div&gt;
+              </code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <p class="section-title">
+            Bootstrap Responsive Breakpoints
+            <small><a href="https://getbootstrap.com/docs/4.3/layout/overview/#responsive-breakpoints">Docs</a></small>
+          </p>
+        </div>
+        <div class="col-sm-9">
+          <div class="section">
+
+            <div class="highlight">
+              <pre><code class="css">
+@include media-breakpoint-up(sm) { ... }
+@include media-breakpoint-up(md) { ... }
+@include media-breakpoint-up(lg) { ... }
+@include media-breakpoint-up(xl) { ... }
+
+@include media-breakpoint-down(xs) { ... }
+@include media-breakpoint-down(sm) { ... }
+@include media-breakpoint-down(md) { ... }
+@include media-breakpoint-down(lg) { ... }
+
+@include media-breakpoint-only(xs) { ... }
+@include media-breakpoint-only(sm) { ... }
+@include media-breakpoint-only(md) { ... }
+@include media-breakpoint-only(lg) { ... }
+@include media-breakpoint-only(xl) { ... }
+
+@include media-breakpoint-between(md, xl) { ... }
+              </code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <p class="section-title">
+            Component: Buttons
+          </p>
+        </div>
+        <div class="col-sm-9">
+          <div class="section">
+            <p>
+              <a href="#" class="btn btn-sm">Small Button</a>
+              <a href="#" class="btn">Default Button</a>
+              <a href="#" class="btn btn-lg">Large Button</a>
+              <a href="#" class="btn btn-outline">Button Outline</a>
+              <a href="#" class="btn btn-link">Link Button</a>
+            </p>
+            <p>
+              <a href="#" class="btn btn-block">Button Block</a>
+            </p>
+            <div class="highlight">
+              <pre><code class="html">
+  &lt;a href=&quot;#&quot; class=&quot;btn btn-sm&quot;&gt;Small Button&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Default Button&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;btn btn-lg&quot;&gt;Large Button&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;btn btn-outline&quot;&gt;Button Outline&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;Link Button&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;btn btn-block&quot;&gt;Button Block&lt;/a&gt;
+              </code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <p class="section-title">
+            Module: Flickity Carousel
+          </p>
+        </div>
+        <div class="col-sm-9">
+          <div class="section">
+            <div class="carousel js-carousel is-hidden">
     <div class="carousel-cell">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste fuga tempora, nam eligendi hic possimus quae quod officiis, aut, harum, commodi maiores repellendus. Nihil dolorem dicta fugiat at quas pariatur.
   </div>
@@ -178,9 +411,11 @@
     Architecto laborum, autem officiis fugiat, iure quis modi nam, laudantium totam incidunt maxime sapiente omnis vitae doloribus voluptatibus ex. Vitae maiores, enim! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
   </div>
   </div>
-        </div>        
+          </div>
+        </div>
       </div>
     </div>
+
   </div>
 
   <div class="footer">
@@ -188,6 +423,18 @@
     Hi, I am footer component.
   </div>
 </div>
+
+  <!-- https://highlightjs.org/ -->
+  <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      document.querySelectorAll('pre code').forEach((block) => {
+        hljs.highlightBlock(block);
+      });
+    });
+  </script>
 
 
     <script src="js/vendor.js"></script>
