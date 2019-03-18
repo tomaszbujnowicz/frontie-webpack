@@ -12,16 +12,28 @@
 
 .MyComponent {
   $block: &;
-  $xmasTheme: #{&}--xmasTheme;
+  $theme: #{&}--theme;
 
-  &-title {
-    #{$xmasTheme} & {
+  &__child {
+    color: yellow;
+    #{$theme} & {
+      color: blue;
+    }
+  }
+
+  &--reversed {
+    background: white;
+    #{ $block }__child {
+      background: rebeccapurple;
     }
   }
 }
 
-/* Compiles to
-.MyComponent {}
-.MyComponent-title {}
-.MyComponent--xmasTheme .MyComponent-title {}
+/*
+ * Compiles to:
+ * .MyComponent {}
+ * .MyComponent__child {}
+ * .MyComponent--theme .MyComponent__child {}
+ * .MyComponent--reversed {}
+ * .MyComponent--reversed .MyComponent__child {}
 */
