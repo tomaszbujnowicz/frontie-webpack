@@ -68,10 +68,21 @@
         </div>
         <div class="col-sm-9">
           <div class="section">
-            {# Twig Comment #}
+            {# This is Twig Comment #}
+            {# This is sample for loop written in Twig.js #}
             {% for i in 1..6 %}
               <h{{i}}>Headline {{ i }}</h{{i}}>
             {% endfor %}
+            <div class="highlight">
+              <pre><code class="html">
+&lt;h1&gt;Headline 1&lt;/h1&gt;
+&lt;h2&gt;Headline 2&lt;/h2&gt;
+&lt;h3&gt;Headline 3&lt;/h3&gt;
+&lt;h4&gt;Headline 4&lt;/h4&gt;
+&lt;h5&gt;Headline 5&lt;/h5&gt;
+&lt;h6&gt;Headline 6&lt;/h6&gt;
+              </code></pre>
+            </div>
           </div>
         </div>
       </div>
@@ -85,18 +96,34 @@
         <div class="col-sm-9">
           <div class="section">
             <p>
-              Lorem ipsum dolor sit amet, consectetur <a href="#">sample link</a> adipisicing elit. Dolores explicabo architecto perferendis ut nemo! Sapiente, eum quidem placeat, blanditiis, maiores, labore.
+              Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores explicabo architecto perferendis ut nemo! Sapiente, eum quidem placeat, blanditiis, maiores, labore.
             </p>
-            <p>You can use the mark tag to <mark>highlight</mark> text.</p>
-            <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-            <p><u>This line of text will render as underlined</u></p>
-            <p><strong>This line rendered as bold text.</strong></p>
-            <p><em>This line rendered as italicized text.</em></p>
+            <p>
+              <a href="#">Sample link</a>
+            </p>
+            <p>
+              You can use the mark tag to <mark>highlight</mark> text.
+            </p>
+            <p>
+              <s>This line of text is meant to be treated as no longer accurate.</s>
+            </p>
+            <p>
+              <u>This line of text will render as underlined</u>
+            </p>
+            <p>
+              <strong>This line rendered as bold text.</strong>
+            </p>
+            <p>
+              <em>This line rendered as italicized text.</em>
+            </p>
 
             <div class="highlight">
               <pre><code class="html">
 &lt;p&gt;
-  Lorem ipsum dolor sit amet, consectetur &lt;a href=&quot;#&quot;&gt;sample link&lt;/a&gt; ...
+  Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores explicabo architecto perferendis ut nemo! Sapiente, eum quidem placeat, blanditiis, maiores, labore.
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;a href=&quot;#&quot;&gt;Sample link&lt;/a&gt;
 &lt;/p&gt;
 &lt;p&gt;You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;
 &lt;p&gt;&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;&lt;/p&gt;
