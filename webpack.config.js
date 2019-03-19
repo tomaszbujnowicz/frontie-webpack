@@ -28,7 +28,8 @@ const webpackConfig = {
         commons: {
           test: /[\\/]node_modules[\\/]/,
           name: 'vendor',
-          chunks: 'all'
+          chunks: 'all',
+          minSize: 0
         }
       }
     }
