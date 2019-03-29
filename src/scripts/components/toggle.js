@@ -3,27 +3,21 @@
  * https://gomakethings.com/how-to-show-and-hide-elements-with-vanilla-javascript/
  */
 
-export function showhide() {
+export function toggle() {
 
+  // Show an element
   var show = function (elem) {
-  	elem.style.display = 'block';
+  	elem.classList.remove('is-hidden');
   };
 
+  // Hide an element
   var hide = function (elem) {
-  	elem.style.display = 'none';
+  	elem.classList.add('is-hidden');
   };
 
+  // Toggle element visibility
   var toggle = function (elem) {
-
-  	// If the element is visible, hide it
-  	if (window.getComputedStyle(elem).display === 'block') {
-  		hide(elem);
-  		return;
-  	}
-
-  	// Otherwise, show it
-  	show(elem);
-
+  	elem.classList.toggle('is-hidden');
   };
 
   // Listen for click events
@@ -46,4 +40,4 @@ export function showhide() {
 
 }
 
-export default showhide;
+export default toggle;
