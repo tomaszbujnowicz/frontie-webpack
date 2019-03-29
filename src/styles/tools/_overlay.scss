@@ -1,8 +1,10 @@
 /**
  * Overlay
- * Usage
-   @include overlay();
+ *
+ * Usage:
+ * @include overlay();
  */
+
 @mixin overlay() {
   position: absolute;
   top: 0;

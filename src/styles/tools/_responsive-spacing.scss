@@ -1,11 +1,11 @@
 /**
  * Responsive spacing for different media query breakpoints
  * Usage
-   @include responsive-space('mb', 10px, 20px, 30px, 40px, 50px);
-   @include responsive-space('type, xs, sm, md, lg, xl);
+ * @include responsive-space('mb', 10px, 20px, 30px, 40px, 50px);
+ * @include responsive-space('type, xs, sm, md, lg, xl);
 
- * In case you want to omit the media query breakpoint please use ''
-   e.g. @include responsive-space('mb', 10px, '', '', 40px, 50px);
+ * If you want to omit specific breakpoint please use ''
+ * e.g. @include responsive-space('mb', 10px, '', '', 40px, 50px);
 
    Type:
 
@@ -25,6 +25,7 @@
    px : (horizontal) padding-left and padding-right
    py : (vertical) padding-top and padding bottom
  */
+
 @mixin responsive-space($type: null, $space-xs: null, $space-sm: null, $space-md: null, $space-lg: null, $space-xl: null, $type_1: null, $type_2: null) {
   @if ($type == 'm') {
     $type: 'margin';

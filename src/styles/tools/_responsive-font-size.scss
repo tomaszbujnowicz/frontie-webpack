@@ -1,12 +1,14 @@
 /**
- * Responsive font size for different media query breakpoints
- * Usage
-   @include responsive-font-size(12px, 14px, 16px, 18px, 20px);
-   @include responsive-font-size(xs, sm, md, lg, xl);
-
- * In case you want to omit the media query breakpoint please use ''
-   e.g. @include responsive-font-size(12px, '', '', '', 20px);
+ * Responsive font size for various media query breakpoints
+ *
+ * Usage:
+ * @include responsive-font-size(12px, 14px, 16px, 18px, 20px);
+ * @include responsive-font-size(xs, sm, md, lg, xl);
+ *
+ * If you want to omit specific breakpoint please use ''
+ * e.g. @include responsive-font-size(12px, '', '', '', 20px);
  */
+
 @mixin responsive-font-size($font-size-xs: null, $font-size-sm: null, $font-size-md: null, $font-size-lg: null, $font-size-xl: null) {
   @if ($font-size-xs != '') {
     font-size: $font-size-xs;

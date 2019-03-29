@@ -1,8 +1,10 @@
 /**
  * Clearfix
+ *
  * Usage:
-   @include clearfix;
+ * @include clearfix;
  */
+
 @mixin clearfix() {
   &::after {
     display: block;

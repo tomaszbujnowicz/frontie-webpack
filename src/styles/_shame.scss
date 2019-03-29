@@ -1,8 +1,8 @@
 /**
  * Shame file
  *
- * This is a place for hacky, nasty code that should be replaced and moved to the correct partial.
- * Ideally, this is empty.
+ * This is a place for hacky, nasty code that should be replaced
+ * and moved to the correct partial. Ideally, this is empty.
  */
 
 /*
@@ -15,17 +15,11 @@
   $theme: #{&}--theme;
 
   &__child {
-    color: yellow;
-    #{$theme} & {
-      color: blue;
-    }
+    #{$theme} & {}
   }
 
   &--reversed {
-    background: white;
-    #{ $block }__child {
-      background: rebeccapurple;
-    }
+    #{ $block }__child {}
   }
 }
 

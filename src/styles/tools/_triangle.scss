@@ -1,10 +1,12 @@
 /**
  * Triangle
  * Usage:
-   @include css-triangle(red, up, 20px);
-   @include css-triangle(red, down);
+ * @include triangle(red, up, 20px);
+ *
+ * Color, direction, size
  */
-@mixin css-triangle($color, $direction, $size: 6px, $position: absolute, $round: false){
+
+@mixin triangle($color, $direction, $size: 6px, $position: absolute, $round: false){
   content: '';
   display: block;
   position: $position;
