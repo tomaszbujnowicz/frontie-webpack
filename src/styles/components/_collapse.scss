@@ -1,0 +1,16 @@
+/**
+ * Collapse
+ * https://medium.com/dailyjs/mimicking-bootstraps-collapse-with-vanilla-javascript-b3bb389040e7
+ */
+
+.collapse {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .5s cubic-bezier(0, 1, 0, 1);
+
+  &.show {
+    max-height: 99em;
+    transition: max-height .5s ease-in-out;
+  }
+}

@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "flickity": "^2.2.0"
+    "flickity": "^2.2.0",
+    "sweet-scroll": "^4.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.0",

@@ -70,4 +70,4 @@ Clone this repository and run
 
 ## Copyright and license
 
-Copyright 2018 Tomasz Bujnowicz under the [MIT license](http://opensource.org/licenses/MIT).
+Copyright 2018-2019 Tomasz Bujnowicz under the [MIT license](http://opensource.org/licenses/MIT).

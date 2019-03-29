@@ -71,16 +71,16 @@
             {# This is Twig Comment #}
             {# This is sample for loop written in Twig.js #}
             {% for i in 1..6 %}
-              <h{{i}}>Headline {{ i }}</h{{i}}>
+              <h{{i}}>Responsive Headline {{ i }}</h{{i}}>
             {% endfor %}
             <div class="highlight">
               <pre><code class="html">
-&lt;h1&gt;Headline 1&lt;/h1&gt;
-&lt;h2&gt;Headline 2&lt;/h2&gt;
-&lt;h3&gt;Headline 3&lt;/h3&gt;
-&lt;h4&gt;Headline 4&lt;/h4&gt;
-&lt;h5&gt;Headline 5&lt;/h5&gt;
-&lt;h6&gt;Headline 6&lt;/h6&gt;
+&lt;h1&gt;Responsive Headline 1&lt;/h1&gt;
+&lt;h2&gt;Responsive Headline 2&lt;/h2&gt;
+&lt;h3&gt;Responsive Headline 3&lt;/h3&gt;
+&lt;h4&gt;Responsive Headline 4&lt;/h4&gt;
+&lt;h5&gt;Responsive Headline 5&lt;/h5&gt;
+&lt;h6&gt;Responsive Headline 6&lt;/h6&gt;
               </code></pre>
             </div>
           </div>
@@ -346,6 +346,101 @@
       <div class="row">
         <div class="col-sm-3">
           <p class="section-title">
+            JS Component: Toggle Element
+            <small><a href="https://gomakethings.com/how-to-show-and-hide-elements-with-vanilla-javascript/">Docs</a></small>
+          </p>
+        </div>
+        <div class="col-sm-9">
+          <div class="section">
+            <p>
+              <a class="js-toggle" href="#example">Toggle element</a>
+            </p>
+            <p id="example" class="is-hidden">
+              Here's some text we want to toggle visibility of. Let's do it!
+            </p>
+            <div class="highlight">
+              <pre><code class="html">
+&lt;p&gt;
+  &lt;a class=&quot;js-toggle&quot; href=&quot;#example&quot;&gt;Toggle element&lt;/a&gt;
+&lt;/p&gt;
+&lt;p id=&quot;example&quot; class=&quot;is-hidden&quot;&gt;
+  Here&apos;s some text we want to toggle visibility of. Let&apos;s do it!
+&lt;/p&gt;
+              </code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <p class="section-title">
+            JS Component: Collapse
+            <small><a href="https://medium.com/dailyjs/mimicking-bootstraps-collapse-with-vanilla-javascript-b3bb389040e7">Docs</a></small>
+          </p>
+        </div>
+        <div class="col-sm-9">
+          <div class="section">
+            <div class="collapse collapse-more-1">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident doloribus, eos rem. Nostrum possimus reiciendis, neque iure repudiandae explicabo hic veritatis ad, deleniti provident soluta, facere, voluptates tenetur quae. Maiores!
+            </div>
+            <p>
+              <a
+                href="#"
+                data-toggle="collapse"
+                data-target=".collapse.collapse-more-1"
+                data-text-closed="Read More"
+                data-text-opened="Read Less">Read More</a>
+            </p>
+            <div class="highlight">
+              <pre><code class="html">
+&lt;div class=&quot;collapse collapse-more-1&quot;&gt;
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident doloribus, eos rem. Nostrum possimus reiciendis, neque iure repudiandae explicabo hic veritatis ad, deleniti provident soluta, facere, voluptates tenetur quae. Maiores!
+&lt;/div&gt;
+&lt;p&gt;
+  &lt;a
+    href=&quot;#&quot;
+    data-toggle=&quot;collapse&quot;
+    data-target=&quot;.collapse.collapse-more-1&quot;
+    data-text-closed=&quot;Read More&quot;
+    data-text-opened=&quot;Read Less&quot;&gt;Read More&lt;/a&gt;
+&lt;/p&gt;
+              </code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <p class="section-title">
+            JS Component: Smooth Scroll
+            <small><a href="https://github.com/tsuyoshiwada/sweet-scroll">Docs</a></small>
+          </p>
+        </div>
+        <div class="col-sm-9">
+          <div class="section">
+            <p>
+              <a href="#buttons" data-scroll>Scroll to buttons section</a>
+            </p>
+            <p>
+              <a href="#" data-scroll="0">Scroll to top</a>
+            </p>
+            <div class="highlight">
+              <pre><code class="html">
+&lt;a href=&quot;#buttons&quot; data-scroll&gt;Scroll to buttons section&lt;/a&gt;
+&lt;div id=&quot;buttons&quot;&gt;Introduction&lt;/div&gt;
+...
+&lt;a href=&quot;#&quot; data-scroll=&quot;0&quot;&gt;Scroll to top&lt;/a&gt;
+              </code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="buttons">
+        <div class="col-sm-3">
+          <p class="section-title">
             Component: Buttons
           </p>
         </div>
@@ -374,6 +469,7 @@
           </div>
         </div>
       </div>
+
       <div class="row">
         <div class="col-sm-3">
           <p class="section-title">
