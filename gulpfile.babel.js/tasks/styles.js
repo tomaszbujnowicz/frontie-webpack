@@ -27,9 +27,7 @@ export function scss() {
     .pipe(gulpif(isProd, sourcemaps.init() ))
     .pipe(sassGlob())
     .pipe(sass({
-      includePaths: [
-        'node_modules'
-      ],
+      includePaths: ['node_modules'],
       outputStyle: 'compressed'
     }))
     .pipe(postcss([
