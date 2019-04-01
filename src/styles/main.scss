@@ -6,32 +6,35 @@
  */
 
 /**
- * Styles via ITCSS Methodology
- *
  * This is where all of the stylesheets are compiled.
  * They are processed in the order they are imported
  * to ensure the consistent increase of specificity.
  *
- *  1. Settings.........Global configuration and variables.
+ *    ITCSS Methodology: Inverted Triangle CSS
  *
- *  2. Tools............Functions and mixins.
+ *    **************   1. Settings
+ *     ************    2. Tools
+ *      **********     3. Generic
+ *       ********      4. Elements
+ *        ******       5. Objects
+ *         ****        6. Components
+ *          **         7. Utilities
  *
- *  3. Generic..........Ground zero styles (normalizing.css, box-sizing etc...)
+ * 1. Settings.........Global configuration and variables.
+ * 2. Tools............Functions and mixins.
+ * 3. Generic..........Ground zero styles.
+ *                     (normalizing.css, box-sizing etc...)
+ * 4. Elements.........Unclassed (bare) HTML element
+ *                     (like H1, Ul, A etc...)
+ * 5. Objects..........Common non-cosmetic structural design patterns.
+ *                     e.g containers, rows, grids, colums etc...
+ * 6. Components.......Specific cosmetic elements of UI.
+ *                     e.g. buttons, forms, header, footer etc...
+ * 7. Utilities........Helpers and overrides.
  *
- *  4. Elements.........Unclassed (bare) HTML elements (like H1, Ul, A etc...)
- *
- *  5. Objects..........Common non-cosmetic structural design patterns.
- *                      e.g containers, rows, grids, colums etc...
- *
- *  6. Components.......Specific cosmetic elements of UI
- *                      e.g. buttons, forms, header, footer etc...
- *
- *  7. Utilities........Helpers and overrides.
- *
- *  8. Modules..........Multi-part components.
- *                      e.g. Navbar (HTML, CSS and JS).
- *
- *     Shame............All the CSS, hacks and things we are not proud of.
+ *    Modules..........Multi-part components.
+ *                     e.g. Navbar (HTML, CSS and JS).
+ *    Shame............All the CSS, hacks and things we are not proud of.
  */
 
 @import 'settings/**/*.scss';
