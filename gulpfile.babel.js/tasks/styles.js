@@ -31,9 +31,8 @@ export function scss() {
       includePaths: ['node_modules'],
       outputStyle: 'compressed'
     }))
-    .pipe(postcss([
-      autoprefixer({ browsers: 'last 2 versions' })
-    ]))
+    .pipe(postcss([ autoprefixer() ]))
+
     .pipe(gulpif(isProd, sourcemaps.write('.') ))
     .pipe(dest(paths.styles.dest))
     .pipe(browserSync.stream())

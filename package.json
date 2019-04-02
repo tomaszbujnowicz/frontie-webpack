@@ -50,6 +50,9 @@
     "build": "cross-env NODE_ENV=production gulp build",
     "deploy": "cross-env NODE_ENV=production gulp deploy"
   },
+  "browserslist": [
+    "last 2 versions"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tomaszbujnowicz/frontie-webpack.git"
@@ -77,8 +80,8 @@
   ],
   "author": {
     "name": "Tomasz Bujnowicz",
-    "email": "tomasz@prollective.com",
-    "url": "https://prollective.com"
+    "email": "hi@tomaszbujnowicz.com",
+    "url": "https://www.tomaszbujnowicz.com"
   },
   "license": "MIT",
   "bugs": {
