@@ -1,5 +1,5 @@
 /*
- * @title Styles
+ * @title Templates
  * @description A task to compile templates via Twig.js
  */
 

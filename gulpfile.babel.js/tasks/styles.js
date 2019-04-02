@@ -1,6 +1,6 @@
 /*
  * @title Styles
- * @description A task to compile Sass to CSS
+ * @description A task to compile Sass to CSS.
  */
 
 // Dependencies
@@ -14,12 +14,13 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import gulpStylelint from 'gulp-stylelint';
 import errorHandler from '../util/errorHandler.js';
+import { isProd } from "../util/env.js"
 
 import { reload } from '../tasks/server';
 import browserSync from 'browser-sync'
 
 // Config
-import { paths, isProd } from "../config";
+import { paths } from "../config";
 
 export function scss() {
   return src(paths.styles.src)

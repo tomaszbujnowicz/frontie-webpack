@@ -39,5 +39,3 @@ export const paths = {
     dest: 'dist/'
   }
 };
-
-export const isProd = process.env.NODE_ENV === 'production';

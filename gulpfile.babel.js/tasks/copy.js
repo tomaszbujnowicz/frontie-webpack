@@ -1,6 +1,6 @@
 /*
  * @title Copy
- * @description A task to copy font files to the output directory
+ * @description A task to copy font files to the output directory.
  */
 
 // Dependencies

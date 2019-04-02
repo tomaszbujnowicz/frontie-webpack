@@ -1,6 +1,6 @@
 /*
  * @title Fonts
- * @description A task to copy fonts
+ * @description A task to copy fonts.
  */
 
 // Dependencies

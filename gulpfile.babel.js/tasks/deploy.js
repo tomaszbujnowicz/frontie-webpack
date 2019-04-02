@@ -1,6 +1,6 @@
 /*
  * @title Deploy
- * @description Publish contents to Github pages
+ * @description Publish contents to Github pages.
  */
 
 // Dependencies

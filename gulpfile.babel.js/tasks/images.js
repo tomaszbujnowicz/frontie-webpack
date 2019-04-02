@@ -1,6 +1,6 @@
 /*
  * @title Images
- * @description A task to copy images
+ * @description A task to copy images.
  */
 
 // Dependencies

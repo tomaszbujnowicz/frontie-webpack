@@ -1,6 +1,6 @@
 /*
  * @title Clean
- * @description A task to delete the output directory
+ * @description A task to delete the output directory.
  */
 
 // Dependencies

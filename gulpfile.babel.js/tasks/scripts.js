@@ -1,6 +1,6 @@
 /*
  * @title Scripts
- * @description A task to concatenate and compress js files via webpack
+ * @description A task to concatenate and compress js files via webpack.
  */
 
 // Dependencies
@@ -12,9 +12,10 @@ import gulpWebpack from 'webpack-stream';
 import gulpEslint from 'gulp-eslint';
 import plumber from 'gulp-plumber';
 import errorHandler from '../util/errorHandler.js';
+import { isProd } from "../util/env.js"
 
 // Config
-import { paths, isProd } from "../config";
+import { paths } from "../config";
 
 // Task
 export function esTranspile() {

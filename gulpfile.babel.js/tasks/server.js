@@ -1,6 +1,6 @@
 /*
  * @title Server
- * @description A task to initialise a local server
+ * @description A task to initialise a local server.
  */
 
 // Dependencies
