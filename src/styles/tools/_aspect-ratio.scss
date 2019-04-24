@@ -1,12 +1,12 @@
 /**
- * Responsive ratio
+ * Aspect Ratio
  *
  * Usage:
  * @include responsive-ratio(16,9);
  * @include responsive-ratio(4,3);
  */
 
-@mixin responsive-ratio($x,$y, $pseudo: false) {
+@mixin aspect-ratio($x,$y, $pseudo: false) {
   $padding: unquote(($y / $x) * 100 + '%');
   @if $pseudo {
     &:before {
