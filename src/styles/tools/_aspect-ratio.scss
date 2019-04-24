@@ -2,8 +2,8 @@
  * Aspect Ratio
  *
  * Usage:
- * @include responsive-ratio(16,9);
- * @include responsive-ratio(4,3);
+ * @include aspect-ratio(16,9);
+ * @include aspect-ratio(4,3);
  */
 
 @mixin aspect-ratio($x,$y, $pseudo: false) {
