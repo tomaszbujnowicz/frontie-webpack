@@ -49,6 +49,10 @@
     code.hljs {
       background-color: transparent;
     }
+
+    .mb {
+      margin-bottom: 3rem;
+    }
   </style>
 
 
@@ -96,6 +100,126 @@
           <div class="section">
             <p>
               This is just a demo page.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <p class="section-title">
+            Text: Colors
+          </p>
+        </div>
+        <div class="col-sm-9">
+          <div class="section">
+            <p class="text-default">
+              .text-default
+            </p>
+            <p class="text-primary">
+              .text-primary
+            </p>
+            <p class="text-secondary">
+              .text-secondary
+            </p>
+            <p class="text-success">
+              .text-success
+            </p>
+            <p class="text-error">
+              .text-error
+            </p>
+            <p class="text-white">
+              .text-white
+            </p>
+            <p class="text-black">
+              .text-black
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <p class="section-title">
+            Text: Alignment
+          </p>
+        </div>
+        <div class="col-sm-9">
+          <div class="section">
+            <p class="text-left">
+              .text-left
+            </p>
+            <p class="text-center">
+              .text-center
+            </p>
+            <p class="text-right">
+              .text-right
+            </p>
+            <p class="text-justify">
+              .text-justify
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <p class="section-title">
+            Font: Family
+          </p>
+        </div>
+        <div class="col-sm-9">
+          <div class="section">
+            <p class="font-family-base">
+              .font-family-base
+            </p>
+            <p class="font-family-sans">
+              .font-family-sans
+            </p>
+            <p class="font-family-serif">
+              .font-family-serif
+            </p>
+            <p class="font-family-mono">
+              .font-family-mono
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <p class="section-title">
+            Font: Weights
+          </p>
+        </div>
+        <div class="col-sm-9">
+          <div class="section">
+            <p class="font-weight-hairline">
+              .font-weight-hairline
+            </p>
+            <p class="font-weight-thin">
+              .font-weight-thin
+            </p>
+            <p class="font-weight-light">
+              .font-weight-light
+            </p>
+            <p class="font-weight-normal">
+              .font-weight-normal
+            </p>
+            <p class="font-weight-medium">
+              .font-weight-medium
+            </p>
+            <p class="font-weight-semibold">
+              .font-weight-semibold
+            </p>
+            <p class="font-weight-bold">
+              .font-weight-bold
+            </p>
+            <p class="font-weight-extrabold">
+              .font-weight-extrabold
+            </p>
+            <p class="font-weight-black">
+              .font-weight-black
             </p>
           </div>
         </div>
@@ -251,6 +375,35 @@
         <div class="col-sm-3">
           <p class="section-title">
             List
+            <small>Description</small>
+          </p>
+        </div>
+        <div class="col-sm-9">
+          <div class="section">
+            <dl>
+              <dt>Term 1</dt>
+              <dd>Consectetur adipiscing elit</dd>
+              <dt>Term 2</dt>
+              <dd>Faucibus porta lacus fringilla vel</dd>
+            </dl>
+            <div class="highlight">
+              <pre><code class="html">
+&lt;dl&gt;
+  &lt;dt&gt;Term 1&lt;/dt&gt;
+  &lt;dd&gt;Consectetur adipiscing elit&lt;/dd&gt;
+  &lt;dt&gt;Term 2&lt;/dt&gt;
+  &lt;dd&gt;Faucibus porta lacus fringilla vel&lt;/dd&gt;
+&lt;/dl&gt;
+              </code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <p class="section-title">
+            List
             <small>Unstyled</small>
           </p>
         </div>
@@ -316,6 +469,32 @@
       <div class="row">
         <div class="col-sm-3">
           <p class="section-title">
+            Blockquote
+          </p>
+        </div>
+        <div class="col-sm-9">
+          <div class="section">
+            <blockquote>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod atque accusamus voluptate optio ea! Pariatur ipsam nihil, maiores dignissimos blanditiis natus, nostrum voluptas eveniet accusantium iste recusandae cum laborum reiciendis.
+              </p>
+              <cite>- John Doe</cite>
+            </blockquote>
+            <div class="highlight">
+              <pre><code class="html">
+&lt;blockquote&gt;
+  &lt;p&gt;...&lt;/p&gt;
+  &lt;cite&gt;...&lt;/cite&gt;
+&lt;/blockquote&gt;
+              </code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <p class="section-title">
             Bootstrap Grid
             <small><a href="https://getbootstrap.com/docs/4.3/layout/grid/">Docs</a></small>
           </p>
@@ -355,7 +534,8 @@
       <div class="row">
         <div class="col-sm-3">
           <p class="section-title">
-            Bootstrap Responsive Breakpoints
+            Bootstrap Responsive Breakpoints<br>
+            Media Queries
             <small><a href="https://getbootstrap.com/docs/4.3/layout/overview/#responsive-breakpoints">Docs</a></small>
           </p>
         </div>
@@ -485,26 +665,99 @@
         </div>
         <div class="col-sm-9">
           <div class="section">
+
             <p>
-              <a href="#" class="btn btn-sm">Small Button</a>
-              <a href="#" class="btn">Default Button</a>
-              <a href="#" class="btn btn-lg">Large Button</a>
+              <button class="btn">Button</button>
+              <button class="btn" disabled>Button Disabled</button>
+            </p>
+            <div class="highlight mb">
+              <pre><code class="html">
+&lt;button class=&quot;btn&quot;&gt;Button&lt;/button&gt;
+&lt;button class=&quot;btn&quot; disabled&gt;Button Disabled&lt;/button&gt;
+              </code></pre>
+            </div>
+
+            <p>
+              <a href="#" class="btn btn-sm">Button SM</a>
+              <a href="#" class="btn">Button</a>
+              <a href="#" class="btn btn-lg">Button LG</a>
+            </p>
+            <div class="highlight mb">
+              <pre><code class="html">
+&lt;a href=&quot;#&quot; class=&quot;btn btn-sm&quot;&gt;Button SM&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-lg&quot;&gt;Button LG&lt;/a&gt;
+              </code></pre>
+            </div>
+
+            <p>
               <a href="#" class="btn btn-outline">Button Outline</a>
-              <a href="#" class="btn btn-link">Link Button</a>
+            </p>
+            <p>
+              <a href="#" class="btn btn-link">Button Link</a>
             </p>
             <p>
               <a href="#" class="btn btn-block">Button Block</a>
             </p>
-            <div class="highlight">
+
+            <div class="highlight mb">
               <pre><code class="html">
-  &lt;a href=&quot;#&quot; class=&quot;btn btn-sm&quot;&gt;Small Button&lt;/a&gt;
-  &lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Default Button&lt;/a&gt;
-  &lt;a href=&quot;#&quot; class=&quot;btn btn-lg&quot;&gt;Large Button&lt;/a&gt;
-  &lt;a href=&quot;#&quot; class=&quot;btn btn-outline&quot;&gt;Button Outline&lt;/a&gt;
-  &lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;Link Button&lt;/a&gt;
-  &lt;a href=&quot;#&quot; class=&quot;btn btn-block&quot;&gt;Button Block&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline&quot;&gt;Button Outline&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;Button Link&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-block&quot;&gt;Button Block&lt;/a&gt;
               </code></pre>
             </div>
+
+            <p>
+              <a href="#" class="btn btn-primary">Primary</a>
+              <a href="#" class="btn btn-secondary">Secondary</a>
+              <a href="#" class="btn btn-success">Success</a>
+              <a href="#" class="btn btn-error">Error</a>
+              <a href="#" class="btn btn-white">White</a>
+              <a href="#" class="btn btn-black">Black</a>
+            </p>
+            <p>
+              <a href="#" class="btn btn-outline btn-primary">Primary</a>
+              <a href="#" class="btn btn-outline btn-secondary">Secondary</a>
+              <a href="#" class="btn btn-outline btn-success">Success</a>
+              <a href="#" class="btn btn-outline btn-error">Error</a>
+              <a href="#" class="btn btn-outline btn-white">White</a>
+              <a href="#" class="btn btn-outline btn-black">Black</a>
+            </p>
+            <p>
+              <a href="#" class="btn btn-link btn-primary">Primary</a>
+              <a href="#" class="btn btn-link btn-secondary">Secondary</a>
+              <a href="#" class="btn btn-link btn-success">Success</a>
+              <a href="#" class="btn btn-link btn-error">Error</a>
+              <a href="#" class="btn btn-link btn-white">White</a>
+              <a href="#" class="btn btn-link btn-black">Black</a>
+            </p>
+
+            <div class="highlight">
+              <pre><code class="html">
+&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary&quot;&gt;Secondary&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-success&quot;&gt;Success&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-error&quot;&gt;Error&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-white&quot;&gt;White&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-black&quot;&gt;Black&lt;/a&gt;
+
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline btn-primary&quot;&gt;Primary&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline btn-secondary&quot;&gt;Secondary&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline btn-success&quot;&gt;Success&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline btn-error&quot;&gt;Error&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline btn-white&quot;&gt;White&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline btn-black&quot;&gt;Black&lt;/a&gt;
+
+&lt;a href=&quot;#&quot; class=&quot;btn btn-link btn-primary&quot;&gt;Primary&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-link btn-secondary&quot;&gt;Secondary&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-link btn-success&quot;&gt;Success&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-link btn-error&quot;&gt;Error&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-link btn-white&quot;&gt;White&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-link btn-black&quot;&gt;Black&lt;/a&gt;
+              </code></pre>
+            </div>
+
           </div>
         </div>
       </div>
