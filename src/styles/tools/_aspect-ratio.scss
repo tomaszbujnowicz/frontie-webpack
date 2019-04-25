@@ -5,7 +5,7 @@
    @include aspect-ratio(4,3);
    @include aspect-ratio(4,4, true);
  */
- 
+
 @mixin aspect-ratio($x,$y, $pseudo: false) {
   $padding: unquote(($y / $x) * 100 + '%');
   background-size: cover;
