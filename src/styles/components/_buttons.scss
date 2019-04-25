@@ -30,6 +30,7 @@ $btn-lg: 1.25 !default;
   white-space: nowrap;
   font-size: $btn-font-size;
   font-weight: $btn-font-weight;
+  line-height: $line-height-base;
   cursor: pointer;
   transition: $transition-base;
   user-select: none;
@@ -80,12 +81,13 @@ $btn-lg: 1.25 !default;
   }
 }
 
+
 // Button Link
 .btn-link {
   box-shadow: none;
   background: transparent;
   border: 0;
-  color: black;
+  color: $primary;
   text-shadow: none;
   text-transform: none;
 
@@ -93,5 +95,147 @@ $btn-lg: 1.25 !default;
   &:focus {
     background: transparent;
     color: black;
+  }
+}
+
+// Button Disabled
+.btn:disabled {
+  opacity: .65;
+  pointer-events: none;
+}
+
+// Button Colors
+.btn-primary {
+  background-color: $primary;
+  &:hover {
+    background-color: darken($primary, 10%);
+  }
+  &.btn-outline {
+    background-color: transparent;
+    border-color: $primary;
+    &:hover {
+      background-color: darken($primary, 10%);
+      color: $white;
+    }
+  }
+  &.btn-link {
+    background-color: transparent;
+    color: $primary;
+    &:hover {
+      color: darken($primary, 10%);
+    }
+  }
+}
+.btn-secondary {
+  background-color: $secondary;
+  &:hover {
+    background-color: darken($secondary, 10%);
+  }
+  &.btn-outline {
+    background-color: transparent;
+    border-color: $secondary;
+    color: $secondary;
+    &:hover {
+      background-color: darken($secondary, 10%);
+      color: $white;
+    }
+  }
+  &.btn-link {
+    background-color: transparent;
+    color: $secondary;
+    &:hover {
+      color: darken($secondary, 10%);
+    }
+  }
+}
+.btn-success {
+  background-color: $success;
+  &:hover {
+    background-color: darken($success, 10%);
+  }
+  &.btn-outline {
+    background-color: transparent;
+    border-color: $success;
+    color: $success;
+    &:hover {
+      background-color: darken($success, 10%);
+      color: $white;
+    }
+  }
+  &.btn-link {
+    background-color: transparent;
+    color: $success;
+    &:hover {
+      color: darken($success, 10%);
+    }
+  }
+}
+.btn-error {
+  background-color: $error;
+  &:hover {
+    background-color: darken($error, 10%);
+  }
+  &.btn-outline {
+    background-color: transparent;
+    border-color: $error;
+    color: $error;
+    &:hover {
+      background-color: darken($error, 10%);
+      color: $white;
+    }
+  }
+  &.btn-link {
+    background-color: transparent;
+    color: $error;
+    &:hover {
+      color: darken($error, 10%);
+    }
+  }
+}
+.btn-white {
+  background-color: $white;
+  color: $white;
+  &:hover {
+    background-color: darken($black, 10%);
+    color: $white;
+  }
+  &.btn-outline {
+    background-color: transparent;
+    border-color: $white;
+    color: $white;
+    &:hover {
+      background-color: darken($black, 10%);
+      color: $white;
+    }
+  }
+  &.btn-link {
+    background-color: transparent;
+    color: $white;
+    &:hover {
+      color: $black;
+    }
+  }
+}
+.btn-black {
+  background-color: $black;
+  &:hover {
+    background-color: lighten($black, 10%);
+  }
+  &.btn-outline {
+    background-color: transparent;
+    border-color: $black;
+    color: $black;
+    &:hover {
+      background-color: lighten($black, 10%);
+      color: $white;
+    }
+  }
+  &.btn-link {
+    background-color: transparent;
+    color: $black;
+    &:hover {
+      background-color: lighten($black, 10%);
+      color: $white;
+    }
   }
 }

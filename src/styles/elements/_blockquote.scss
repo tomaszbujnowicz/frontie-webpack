@@ -1,0 +1,15 @@
+/**
+ * Blockquote
+ */
+
+blockquote {
+  font-size: 1.125rem;
+  p {
+    &:before {
+      content: open-quote;
+    }
+    &:after {
+      content: close-quote;
+    }
+  }
+}
