@@ -8,6 +8,21 @@
  * so they can be overwritten.
  */
 
-$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-sans: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-serif: Georgia, "Times New Roman", Times, serif !default;
+$font-family-mono: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+$font-family: $font-family-sans;
+
 $font-size-base: 1rem !default;
 $line-height-base: 1.5 !default;
+
+$font-hairline: 100 !default;
+$font-thin: 200 !default;
+$font-light: 300 !default;
+$font-normal: 400 !default;
+$font-medium: 500 !default;
+$font-semibold: 600 !default;
+$font-bold: 700 !default;
+$font-extrabold: 800 !default;
+$font-black: 900 !default;
