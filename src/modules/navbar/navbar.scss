@@ -57,7 +57,7 @@ $navbar: (
     }
   }
   .menu-item a:hover,
-  .current-menu-item {
+  .current-menu-item a {
     color: navbar(hover-link-color);
   }
 

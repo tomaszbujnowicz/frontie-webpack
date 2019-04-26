@@ -1,7 +1,7 @@
 {% extends '../layouts/default.twig' %}
-{% set head_title = 'Sample Page' %}
+{% set head_title = 'Demo Page' %}
 {% set body_class = '' %}
-{% set menu_active = 'sample-page' %}
+{% set menu_active = 'demo-page' %}
 
 {% block page %}
 
@@ -11,6 +11,11 @@
       margin-bottom: 7rem;
       padding-bottom: 7rem;
       border-bottom: 5px solid #f5f5f5;
+    }
+    .section--last {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border: none;
     }
     .section-title {
       font-size: 1.5rem;
@@ -29,8 +34,8 @@
       margin-bottom: .5rem;
     }
     .demo-sidebar ul {
-      margin-bottom: 2.5rem;
-      font-size: .875rem;
+      margin-bottom: 1.5rem;
+      font-size: .8125rem;
     }
     .demo-sidebar a {
       color: #3d4852;
@@ -195,6 +200,15 @@
               <a href="#carousel" data-scroll>
                 Carousel
               </a>
+            </li>
+          </ul>
+
+          <h3 class="demo-sidebar__title">
+            Mixins
+          </h3>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#mixins" data-scroll>Overview</a>
             </li>
           </ul>
 
@@ -492,22 +506,26 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
 
           </div>
 
-          <h2 class="section-title">
-            List: Inline
-          </h2>
-          <ul class="list-inline">
-            <li class="list-inline__item">Lorem ipsum</li>
-            <li class="list-inline__item">Phasellus iaculis</li>
-            <li class="list-inline__item">Nulla volutpat</li>
-          </ul>
-          <div class="highlight">
-            <pre><code class="html">
-&lt;ul class=&quot;list-inline&quot;&gt;
-  &lt;li class=&quot;list-inline__item&quot;&gt;Lorem ipsum&lt;/li&gt;
-  &lt;li class=&quot;list-inline__item&quot;&gt;Phasellus iaculis&lt;/li&gt;
-  &lt;li class=&quot;list-inline__item&quot;&gt;Nulla volutpat&lt;/li&gt;
-&lt;/ul&gt;
-            </code></pre>
+          <div class="section section--last">
+
+            <h2 class="section-title">
+              List: Inline
+            </h2>
+            <ul class="list-inline">
+              <li class="list-inline__item">Lorem ipsum</li>
+              <li class="list-inline__item">Phasellus iaculis</li>
+              <li class="list-inline__item">Nulla volutpat</li>
+            </ul>
+            <div class="highlight">
+              <pre><code class="html">
+  &lt;ul class=&quot;list-inline&quot;&gt;
+    &lt;li class=&quot;list-inline__item&quot;&gt;Lorem ipsum&lt;/li&gt;
+    &lt;li class=&quot;list-inline__item&quot;&gt;Phasellus iaculis&lt;/li&gt;
+    &lt;li class=&quot;list-inline__item&quot;&gt;Nulla volutpat&lt;/li&gt;
+  &lt;/ul&gt;
+              </code></pre>
+            </div>
+            
           </div>
 
         </div>
@@ -836,6 +854,224 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
             </code></pre>
           </div>
           {% include '../../modules/carousel/carousel.twig' %}
+        </div>
+
+        <div id="mixins" class="section">
+          <h2 class="section-title">
+            Mixins
+          </h2>
+
+          <div class="section">
+            <h2 class="section-title">
+              Mixin: Aspect ratio
+            </h2>
+            <p>
+              You can define various aspect ratios. e.g.:<br>
+            </p>
+            <div class="row mb">
+              <div class="col-sm">
+                <p>
+                  Ratio 4:3
+                </p>
+                <div class="ratio-4-3" style="background-color: #f5f5f5;"></div>
+              </div>
+              <div class="col-sm">
+                <p>
+                  Ratio 16:9
+                </p>
+                <div class="ratio-16-9" style="background-color: #f5f5f5;"></div>
+              </div>
+            </div>
+            <p>CSS</p>
+            <div class="highlight mb">
+              <pre><code class="css">
+@include aspect-ratio(16,9);
+              </code></pre>
+            </div>
+            <p>HTML</p>
+            <div class="highlight mb">
+              <pre><code class="html">
+&lt;div class=&quot;ratio-4-3&quot; style=&quot;background-image: url(&apos;...&apos;)&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;ratio-16-9&quot; style=&quot;background-image: url(&apos;...&apos;)&quot;&gt;&lt;/div&gt;
+              </code></pre>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2 class="section-title">
+              Mixin: Clearfix
+            </h2>
+            <p>CSS</p>
+            <div class="highlight mb">
+              <pre><code class="css">
+@include clearfix;
+              </code></pre>
+            </div>
+            <p>HTML</p>
+            <div class="highlight mb">
+              <pre><code class="html">
+&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+              </code></pre>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2 class="section-title">
+              Mixin: Max Width Center
+            </h2>
+            <p>
+              Set max width for an element and make it centered
+            </p>
+            <p>CSS</p>
+            <div class="highlight mb">
+              <pre><code class="css">
+@include max-width(600px);
+              </code></pre>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2 class="section-title">
+              Mixin: Overlay
+            </h2>
+            <p>
+              Absolute element with top,right,bottom,left = 0
+            </p>
+            <p>CSS</p>
+            <div class="highlight mb">
+              <pre><code class="css">
+@include overlay();
+              </code></pre>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2 class="section-title">
+              Mixin: Pseudo
+            </h2>
+            <p>
+              Pseudo elements after / before
+            </p>
+            <p>CSS</p>
+            <div class="highlight mb">
+              <pre><code class="css">
+ @include pseudo;
+              </code></pre>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2 class="section-title">
+              Mixin: Rem
+            </h2>
+            <p>
+              Px to rem
+            </p>
+            <p>CSS</p>
+            <div class="highlight mb">
+              <pre><code class="css">
+font-size: rem(20)
+margin: rem(40) rem(40);
+              </code></pre>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2 class="section-title">
+              Mixin: Responsive Font Size
+            </h2>
+            <p>
+              Responsive font size for various media query breakpoints
+            </p>
+            <p>CSS</p>
+            <div class="highlight mb">
+              <pre><code class="css">
+@include responsive-font-size(xs, sm, md, lg, xl);
+@include responsive-font-size(12px, 14px, 16px, 18px, 20px);
+
+If you want to omit specific breakpoint please use ''
+@include responsive-font-size(12px, '', '', '', 20px);
+              </code></pre>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2 class="section-title">
+              Mixin: Responsive Size
+            </h2>
+            <p>
+              Responsive size for different media query breakpoints
+            </p>
+            <p>CSS</p>
+            <div class="highlight mb">
+              <pre><code class="css">
+Type:
+h    : height,
+minh : min-height,
+maxh : max-height,
+w    : width,
+minw : min-width,
+maxw : max-width
+
+@include responsive-size('type, xs, sm, md, lg, xl);
+@include responsive-size('h', 10px, 20px, 30px, 40px, 50px);
+
+If you want to omit specific breakpoint please use ''
+@include responsive-size('h', 10px, '', '', 40px, 50px);
+              </code></pre>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2 class="section-title">
+              Mixin: Responsive Spacing
+            </h2>
+            <p>
+              Responsive spacing for different media query breakpoints
+            </p>
+            <p>CSS</p>
+            <div class="highlight mb">
+              <pre><code class="css">
+@include responsive-space('type, xs, sm, md, lg, xl);
+@include responsive-space('mb', 10px, 20px, 30px, 40px, 50px);
+
+If you want to omit specific breakpoint please use ''
+@include responsive-space('mb', 10px, '', '', 40px, 50px);
+
+Type:
+m  : margin
+mt : margin-top
+mr : margin-right
+mb : margin-bottom
+ml : margin-left
+mx : (horizontal) margin-left and margin-right
+my : (vertical) margin-top and margin bottom
+
+p  : padding
+pt : padding-top
+pr : padding-right
+pb : padding-bottom
+pl : padding-left
+px : (horizontal) padding-left and padding-right
+py : (vertical) padding-top and padding bottom
+              </code></pre>
+            </div>
+          </div>
+
+          <div class="section section--last">
+            <h2 class="section-title">
+              Mixin: Triangle
+            </h2>
+            <p>
+              CSS triangle
+            </p>
+            <div class="highlight mb">
+              <pre><code class="css">
+@include triangle(red, up, 20px);
+              </code></pre>
+            </div>
+          </div>
+
         </div>
 
       </div>
