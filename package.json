@@ -1,7 +1,7 @@
 {
   "name": "frontie-webpack",
-  "version": "1.0.0",
-  "description": "Frontie Webpack - Front-end Boilerplate. Gulp 4 + Webpack 4 + Babel + BrowserSync + Sass + ITCSS + Twig.js",
+  "version": "1.1.0",
+  "description": "Frontie Webpack - Front-end Boilerplate | Gulp 4 + Webpack 4 + Babel + ITCSS Architecture + BEM Methodology + Twig.js",
   "main": "index.js",
   "dependencies": {
     "bootstrap": "^4.3.1",
@@ -62,8 +62,8 @@
     "gulp4",
     "gulpjs",
     "webpack",
-    "browsersync",
     "webpack4",
+    "browsersync",
     "babel",
     "browsersync",
     "sass",
@@ -76,7 +76,8 @@
     "front-end starter",
     "boilerplate",
     "workflow",
-    "itcss"
+    "itcss",
+    "bem"
   ],
   "author": {
     "name": "Tomasz Bujnowicz",
