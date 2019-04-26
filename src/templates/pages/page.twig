@@ -58,20 +58,22 @@
         display: flex;
       }
       .demo-sidebar {
-        width: 230px;
+        width: 210px;
         position: fixed;
         top: 80px;
       }
       .demo-sidebar-wrapper {
-        overflow-y: auto;
         margin-bottom: 0;
         border: none;
         padding-right: 2rem;
+        height: calc(100vh - 110px + 2rem);
+        overflow-y: auto;
       }
       .demo-content {
         width: 70%;
         max-width: 680px;
-        margin-left: 230px;
+        margin-left: 210px;
+        padding-left: 2rem;
       }
     }
   </style>
