@@ -6,20 +6,34 @@
 {% block page %}
 
   <style>
-    /* Some inline styling for the demo purpose */
-    .demo {
-      padding: 4rem 0;
-    }
+    /* Inline styling for the demo purpose */
     .section {
-      margin-bottom: 4rem;
-      padding-bottom: 4rem;
-      border-bottom: 1px solid #ccc;
+      margin-bottom: 7rem;
+      padding-bottom: 7rem;
+      border-bottom: 5px solid #f5f5f5;
     }
     .section-title {
-      color: rgba(0,0,0,.65);
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      padding-top: 1.5rem;
     }
-    .section-title small {
-      display: block;
+    .demo-sidebar-wrapper {
+      padding: 2rem 0;
+      border-bottom: 5px solid #f5f5f5;
+      margin-bottom: 5rem;
+    }
+    .demo-sidebar__title {
+      font-size: .875rem;
+      text-transform: uppercase;
+      color: #b8c2cc;
+      margin-bottom: .5rem;
+    }
+    .demo-sidebar ul {
+      margin-bottom: 2.5rem;
+      font-size: .875rem;
+    }
+    .demo-sidebar a {
+      color: #3d4852;
     }
     pre {
       font-size: .875rem;
@@ -37,238 +51,337 @@
     .mb {
       margin-bottom: 3rem;
     }
+    @media (min-width: 768px) {
+      .demo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+      }
+      .demo-sidebar {
+        width: 230px;
+        position: fixed;
+        top: 80px;
+      }
+      .demo-sidebar-wrapper {
+        overflow-y: auto;
+        margin-bottom: 0;
+        border: none;
+        padding-right: 2rem;
+      }
+      .demo-content {
+        width: 70%;
+        max-width: 680px;
+        margin-left: 230px;
+        padding-top: 1.75rem;
+      }
+    }
   </style>
 
   {% include '../../modules/navbar/navbar.twig' %}
 
-  <div class="demo">
+  <div class="container">
 
-    <div class="container">
+    <div class="demo">
 
-      <div class="row">
-        <div class="col-sm-3">
-          <p class="section-title">
+      <div class="demo-sidebar">
+
+        <div class="demo-sidebar-wrapper">
+
+          <h3 class="demo-sidebar__title">
+            Typography
+          </h3>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#colors" data-scroll>
+                Colors
+              </a>
+            </li>
+            <li>
+              <a href="#alignment" data-scroll>
+                Text Alignment
+              </a>
+            </li>
+            <li>
+              <a href="#font-family" data-scroll>
+                Font Family
+              </a>
+            </li>
+            <li>
+              <a href="#font-weights" data-scroll>
+                Font Weights
+              </a>
+            </li>
+            <li>
+              <a href="#headings" data-scroll>
+                Headings
+              </a>
+            </li>
+            <li>
+              <a href="#paragraph" data-scroll>
+                Paragraph
+              </a>
+            </li>
+            <li>
+              <a href="#lists" data-scroll>
+                Lists
+              </a>
+            </li>
+            <li>
+              <a href="#blockquote" data-scroll>
+                Blockquote
+              </a>
+            </li>
+          </ul>
+
+          <h3 class="demo-sidebar__title">
+            Bootstrap
+          </h3>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#bootstrap-grid" data-scroll>
+                Grid
+              </a>
+            </li>
+            <li>
+              <a href="#bootstrap-media-queries" data-scroll>
+                Responsive Breakpoints
+              </a>
+            </li>
+          </ul>
+
+          <h3 class="demo-sidebar__title">
+            JS Modules
+          </h3>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#js-toggle" data-scroll>
+                Toggle Element
+              </a>
+            </li>
+            <li>
+              <a href="#js-collapse" data-scroll>
+                Collapse
+              </a>
+            </li>
+            <li>
+              <a href="#js-smooth-scroll" data-scroll>
+                Smooth Scroll
+              </a>
+            </li>
+          </ul>
+
+          <h3 class="demo-sidebar__title">
+            Components
+          </h3>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#buttons" data-scroll>
+                Buttons
+              </a>
+            </li>
+          </ul>
+
+          <h3 class="demo-sidebar__title">
+            Modules
+          </h3>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#navbar" data-scroll>
+                Navbar
+              </a>
+            </li>
+            <li>
+              <a href="#carousel" data-scroll>
+                Carousel
+              </a>
+            </li>
+          </ul>
+
+          <h3 class="demo-sidebar__title">
             Frontie Webpack
-            <small>
-<a href="https://github.com/tomaszbujnowicz/frontie-webpack">GitHub</a>
-            </small>
-          </p>
+          </h3>
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://github.com/tomaszbujnowicz/frontie-webpack">GitHub</a>
+            </li>
+          </ul>
+
         </div>
-        <div class="col-sm-9">
-          <div class="section">
-            <p>
-              This is just a demo page.
-            </p>
-          </div>
-        </div>
+
       </div>
 
-      <div class="row">
-        <div class="col-sm-3">
-          <p class="section-title">
-            Text: Colors
+      <div class="demo-content">
+
+        <div id="colors" class="section">
+          <h2 class="section-title">
+            Colors
+          </h2>
+          <p class="text-default">
+            .text-default
+          </p>
+          <p class="text-primary">
+            .text-primary
+          </p>
+          <p class="text-secondary">
+            .text-secondary
+          </p>
+          <p class="text-success">
+            .text-success
+          </p>
+          <p class="text-error">
+            .text-error
+          </p>
+          <p class="text-white">
+            .text-white
+          </p>
+          <p class="text-black">
+            .text-black
           </p>
         </div>
-        <div class="col-sm-9">
-          <div class="section">
-            <p class="text-default">
-              .text-default
-            </p>
-            <p class="text-primary">
-              .text-primary
-            </p>
-            <p class="text-secondary">
-              .text-secondary
-            </p>
-            <p class="text-success">
-              .text-success
-            </p>
-            <p class="text-error">
-              .text-error
-            </p>
-            <p class="text-white">
-              .text-white
-            </p>
-            <p class="text-black">
-              .text-black
-            </p>
-          </div>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-sm-3">
-          <p class="section-title">
-            Text: Alignment
+        <div id="alignment" class="section">
+          <h2 class="section-title">
+            Text Alignment
+          </h2>
+          <p class="text-left">
+            .text-left
+          </p>
+          <p class="text-center">
+            .text-center
+          </p>
+          <p class="text-right">
+            .text-right
+          </p>
+          <p class="text-justify">
+            .text-justify
           </p>
         </div>
-        <div class="col-sm-9">
-          <div class="section">
-            <p class="text-left">
-              .text-left
-            </p>
-            <p class="text-center">
-              .text-center
-            </p>
-            <p class="text-right">
-              .text-right
-            </p>
-            <p class="text-justify">
-              .text-justify
-            </p>
-          </div>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-sm-3">
-          <p class="section-title">
-            Font: Family
+        <div id="font-family" class="section">
+          <h2 class="section-title">
+            Font Family
+          </h2>
+          <p class="font-family-base">
+            .font-family-base
+          </p>
+          <p class="font-family-sans">
+            .font-family-sans
+          </p>
+          <p class="font-family-serif">
+            .font-family-serif
+          </p>
+          <p class="font-family-mono">
+            .font-family-mono
           </p>
         </div>
-        <div class="col-sm-9">
-          <div class="section">
-            <p class="font-family-base">
-              .font-family-base
-            </p>
-            <p class="font-family-sans">
-              .font-family-sans
-            </p>
-            <p class="font-family-serif">
-              .font-family-serif
-            </p>
-            <p class="font-family-mono">
-              .font-family-mono
-            </p>
-          </div>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-sm-3">
-          <p class="section-title">
-            Font: Weights
+        <div id="font-weights" class="section">
+          <h2 class="section-title">
+            Font Weights
+          </h2>
+          <p class="font-weight-hairline">
+            .font-weight-hairline
+          </p>
+          <p class="font-weight-thin">
+            .font-weight-thin
+          </p>
+          <p class="font-weight-light">
+            .font-weight-light
+          </p>
+          <p class="font-weight-normal">
+            .font-weight-normal
+          </p>
+          <p class="font-weight-medium">
+            .font-weight-medium
+          </p>
+          <p class="font-weight-semibold">
+            .font-weight-semibold
+          </p>
+          <p class="font-weight-bold">
+            .font-weight-bold
+          </p>
+          <p class="font-weight-extrabold">
+            .font-weight-extrabold
+          </p>
+          <p class="font-weight-black">
+            .font-weight-black
           </p>
         </div>
-        <div class="col-sm-9">
-          <div class="section">
-            <p class="font-weight-hairline">
-              .font-weight-hairline
-            </p>
-            <p class="font-weight-thin">
-              .font-weight-thin
-            </p>
-            <p class="font-weight-light">
-              .font-weight-light
-            </p>
-            <p class="font-weight-normal">
-              .font-weight-normal
-            </p>
-            <p class="font-weight-medium">
-              .font-weight-medium
-            </p>
-            <p class="font-weight-semibold">
-              .font-weight-semibold
-            </p>
-            <p class="font-weight-bold">
-              .font-weight-bold
-            </p>
-            <p class="font-weight-extrabold">
-              .font-weight-extrabold
-            </p>
-            <p class="font-weight-black">
-              .font-weight-black
-            </p>
-          </div>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-sm-3">
-          <p class="section-title">
+        <div id="headings" class="section">
+          <h2 class="section-title">
             Headings
-          </p>
-        </div>
-        <div class="col-sm-9">
-          <div class="section">
-            {# This is Twig Comment #}
-            {# This is sample for loop written in Twig.js #}
-            {% for i in 1..6 %}
-              <h{{i}}>Responsive Headline {{ i }}</h{{i}}>
-            {% endfor %}
-            <div class="highlight">
-              <pre><code class="html">
+          </h2>
+          {# This is Twig Comment #}
+          {# This is sample for loop written in Twig.js #}
+          {% for i in 1..6 %}
+            <h{{i}}>Responsive Headline {{ i }}</h{{i}}>
+          {% endfor %}
+          <div class="highlight">
+            <pre><code class="html">
 &lt;h1&gt;Responsive Headline 1&lt;/h1&gt;
 &lt;h2&gt;Responsive Headline 2&lt;/h2&gt;
 &lt;h3&gt;Responsive Headline 3&lt;/h3&gt;
 &lt;h4&gt;Responsive Headline 4&lt;/h4&gt;
 &lt;h5&gt;Responsive Headline 5&lt;/h5&gt;
 &lt;h6&gt;Responsive Headline 6&lt;/h6&gt;
-              </code></pre>
-            </div>
+            </code></pre>
           </div>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="col-sm-3">
-          <p class="section-title">
+        <div id="paragraph" class="section">
+          <h2 class="section-title">
             Paragraph
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores explicabo architecto perferendis ut nemo! Sapiente, eum quidem placeat, blanditiis, maiores, labore.
           </p>
-        </div>
-        <div class="col-sm-9">
-          <div class="section">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores explicabo architecto perferendis ut nemo! Sapiente, eum quidem placeat, blanditiis, maiores, labore.
-            </p>
-            <p>
-              <a href="#">Sample link</a>
-            </p>
-            <p>
-              You can use the mark tag to <mark>highlight</mark> text.
-            </p>
-            <p>
-              <s>This line of text is meant to be treated as no longer accurate.</s>
-            </p>
-            <p>
-              <u>This line of text will render as underlined</u>
-            </p>
-            <p>
-              <strong>This line rendered as bold text.</strong>
-            </p>
-            <p>
-              <em>This line rendered as italicized text.</em>
-            </p>
+          <p>
+            <a href="#">Sample link</a>
+          </p>
+          <p>
+            You can use the mark tag to <mark>highlight</mark> text.
+          </p>
+          <p>
+            <s>This line of text is meant to be treated as no longer accurate.</s>
+          </p>
+          <p>
+            <u>This line of text will render as underlined</u>
+          </p>
+          <p>
+            <strong>This line rendered as bold text.</strong>
+          </p>
+          <p>
+            <em>This line rendered as italicized text.</em>
+          </p>
 
-            <div class="highlight">
-              <pre><code class="html">
+          <div class="highlight">
+            <pre><code class="html">
 &lt;p&gt;
-  Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores explicabo architecto perferendis ut nemo! Sapiente, eum quidem placeat, blanditiis, maiores, labore.
+Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores explicabo architecto perferendis ut nemo! Sapiente, eum quidem placeat, blanditiis, maiores, labore.
 &lt;/p&gt;
 &lt;p&gt;
-  &lt;a href=&quot;#&quot;&gt;Sample link&lt;/a&gt;
+&lt;a href=&quot;#&quot;&gt;Sample link&lt;/a&gt;
 &lt;/p&gt;
 &lt;p&gt;You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;
 &lt;p&gt;&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;&lt;/p&gt;
 &lt;p&gt;&lt;u&gt;This line of text will render as underlined&lt;/u&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;This line rendered as bold text.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;This line rendered as italicized text.&lt;/em&gt;&lt;/p&gt;
-              </code></pre>
-            </div>
-
+            </code></pre>
           </div>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="col-sm-3">
-          <p class="section-title">
-            List
-            <small>Unordered</small>
-          </p>
-        </div>
-        <div class="col-sm-9">
+        <div id="lists" class="section">
+          <h2 class="section-title">
+            Lists
+          </h2>
+
           <div class="section">
+
+            <h2 class="section-title">
+              List: Unordered
+            </h2>
             <ul>
               <li>Lorem ipsum dolor sit amet</li>
               <li>Consectetur adipiscing elit
@@ -285,29 +398,24 @@
 &lt;ul&gt;
   &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
   &lt;li&gt;Consectetur adipiscing elit
-    &lt;ul&gt;
-      &lt;li&gt;Phasellus iaculis neque&lt;/li&gt;
-      &lt;li&gt;Purus sodales ultricies&lt;/li&gt;
-    &lt;/ul&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Phasellus iaculis neque&lt;/li&gt;
+    &lt;li&gt;Purus sodales ultricies&lt;/li&gt;
+  &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Faucibus porta lacus fringilla vel&lt;/li&gt;
   &lt;li&gt;Aenean sit amet erat nunc&lt;/li&gt;
 &lt;/ul&gt;
               </code></pre>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-sm-3">
-          <p class="section-title">
-            List
-            <small>Ordered</small>
-          </p>
-        </div>
-        <div class="col-sm-9">
+          </div>
+
           <div class="section">
+
+            <h2 class="section-title">
+              List: Ordered
+            </h2>
             <ol>
               <li>Lorem ipsum dolor sit amet</li>
               <li>Consectetur adipiscing elit</li>
@@ -322,19 +430,14 @@
 &lt;/ol&gt;
               </code></pre>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-sm-3">
-          <p class="section-title">
-            List
-            <small>Description</small>
-          </p>
-        </div>
-        <div class="col-sm-9">
+          </div>
+
           <div class="section">
+
+            <h2 class="section-title">
+              List: Description
+            </h2>
             <dl>
               <dt>Term 1</dt>
               <dd>Consectetur adipiscing elit</dd>
@@ -342,7 +445,7 @@
               <dd>Faucibus porta lacus fringilla vel</dd>
             </dl>
             <div class="highlight">
-              <pre><code class="html">
+            <pre><code class="html">
 &lt;dl&gt;
   &lt;dt&gt;Term 1&lt;/dt&gt;
   &lt;dd&gt;Consectetur adipiscing elit&lt;/dd&gt;
@@ -351,19 +454,14 @@
 &lt;/dl&gt;
               </code></pre>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-sm-3">
-          <p class="section-title">
-            List
-            <small>Unstyled</small>
-          </p>
-        </div>
-        <div class="col-sm-9">
+          </div>
+
           <div class="section">
+
+            <h2 class="section-title">
+              List: Unstyled
+            </h2>
             <ul class="list-unstyled">
               <li>Lorem ipsum dolor sit amet</li>
               <li>Consectetur adipiscing elit
@@ -380,82 +478,65 @@
 &lt;ul class=&quot;list-unstyled&quot;&gt;
   &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
   &lt;li&gt;Consectetur adipiscing elit
-    &lt;ul&gt;
-      &lt;li&gt;Phasellus iaculis neque&lt;/li&gt;
-      &lt;li&gt;Purus sodales ultricies&lt;/li&gt;
-    &lt;/ul&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Phasellus iaculis neque&lt;/li&gt;
+    &lt;li&gt;Purus sodales ultricies&lt;/li&gt;
+  &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Faucibus porta lacus fringilla vel&lt;/li&gt;
   &lt;li&gt;Aenean sit amet erat nunc&lt;/li&gt;
 &lt;/ul&gt;
               </code></pre>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-sm-3">
-          <p class="section-title">
-            List
-            <small>Inline</small>
-          </p>
-        </div>
-        <div class="col-sm-9">
-          <div class="section">
-            <ul class="list-inline">
-              <li class="list-inline__item">Lorem ipsum</li>
-              <li class="list-inline__item">Phasellus iaculis</li>
-              <li class="list-inline__item">Nulla volutpat</li>
-            </ul>
-            <div class="highlight">
-              <pre><code class="html">
+          </div>
+
+          <h2 class="section-title">
+            List: Inline
+          </h2>
+          <ul class="list-inline">
+            <li class="list-inline__item">Lorem ipsum</li>
+            <li class="list-inline__item">Phasellus iaculis</li>
+            <li class="list-inline__item">Nulla volutpat</li>
+          </ul>
+          <div class="highlight">
+            <pre><code class="html">
 &lt;ul class=&quot;list-inline&quot;&gt;
   &lt;li class=&quot;list-inline__item&quot;&gt;Lorem ipsum&lt;/li&gt;
   &lt;li class=&quot;list-inline__item&quot;&gt;Phasellus iaculis&lt;/li&gt;
   &lt;li class=&quot;list-inline__item&quot;&gt;Nulla volutpat&lt;/li&gt;
 &lt;/ul&gt;
-              </code></pre>
-            </div>
+            </code></pre>
           </div>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-sm-3">
-          <p class="section-title">
-            Blockquote
-          </p>
         </div>
-        <div class="col-sm-9">
-          <div class="section">
-            <blockquote>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod atque accusamus voluptate optio ea! Pariatur ipsam nihil, maiores dignissimos blanditiis natus, nostrum voluptas eveniet accusantium iste recusandae cum laborum reiciendis.
-              </p>
-              <cite>- John Doe</cite>
-            </blockquote>
-            <div class="highlight">
-              <pre><code class="html">
+
+        <div id="blockquote" class="section">
+          <h2 class="section-title">
+            Blockquote
+          </h2>
+          <blockquote>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod atque accusamus voluptate optio ea! Pariatur ipsam nihil, maiores dignissimos blanditiis natus, nostrum voluptas eveniet accusantium iste recusandae cum laborum reiciendis.
+            </p>
+            <cite>- John Doe</cite>
+          </blockquote>
+          <div class="highlight">
+            <pre><code class="html">
 &lt;blockquote&gt;
   &lt;p&gt;...&lt;/p&gt;
   &lt;cite&gt;...&lt;/cite&gt;
 &lt;/blockquote&gt;
-              </code></pre>
-            </div>
+            </code></pre>
           </div>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="col-sm-3">
-          <p class="section-title">
+        <div id="bootstrap-grid" class="section">
+          <h2 class="section-title">
             Bootstrap Grid
             <small><a href="https://getbootstrap.com/docs/4.3/layout/grid/">Docs</a></small>
-          </p>
-        </div>
-        <div class="col-sm-9">
-          <div class="section">
+          </h2>
+          <div class="mb">
             <div class="row">
               <div class="col-sm">
                 One of three columns
@@ -467,8 +548,9 @@
                 One of three columns
               </div>
             </div>
-            <div class="highlight">
-              <pre><code class="html">
+          </div>
+          <div class="highlight">
+            <pre><code class="html">
 &lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;col-sm&quot;&gt;
     One of three columns
@@ -480,25 +562,18 @@
     One of three columns
   &lt;/div&gt;
 &lt;/div&gt;
-              </code></pre>
-            </div>
+            </code></pre>
           </div>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="col-sm-3">
-          <p class="section-title">
+        <div id="bootstrap-media-queries" class="section">
+          <h2 class="section-title">
             Bootstrap Responsive Breakpoints<br>
             Media Queries
             <small><a href="https://getbootstrap.com/docs/4.3/layout/overview/#responsive-breakpoints">Docs</a></small>
-          </p>
-        </div>
-        <div class="col-sm-9">
-          <div class="section">
-
-            <div class="highlight">
-              <pre><code class="css">
+          </h2>
+          <div class="highlight">
+            <pre><code class="css">
 @include media-breakpoint-up(sm) { ... }
 @include media-breakpoint-up(md) { ... }
 @include media-breakpoint-up(lg) { ... }
@@ -516,185 +591,160 @@
 @include media-breakpoint-only(xl) { ... }
 
 @include media-breakpoint-between(md, xl) { ... }
-              </code></pre>
-            </div>
+            </code></pre>
           </div>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="col-sm-3">
-          <p class="section-title">
+        <div id="js-toggle" class="section">
+          <h2 class="section-title">
             JS Component: Toggle Element
             <small><a href="https://gomakethings.com/how-to-show-and-hide-elements-with-vanilla-javascript/">Docs</a></small>
+          </h2>
+          <p>
+            <a class="js-toggle" href="#example">Toggle element</a>
           </p>
-        </div>
-        <div class="col-sm-9">
-          <div class="section">
-            <p>
-              <a class="js-toggle" href="#example">Toggle element</a>
-            </p>
-            <p id="example" class="is-hidden">
-              Here's some text we want to toggle visibility of. Let's do it!
-            </p>
-            <div class="highlight">
-              <pre><code class="html">
+          <p id="example" class="is-hidden">
+            Here's some text we want to toggle visibility of. Let's do it!
+          </p>
+          <div class="highlight">
+            <pre><code class="html">
 &lt;p&gt;
   &lt;a class=&quot;js-toggle&quot; href=&quot;#example&quot;&gt;Toggle element&lt;/a&gt;
 &lt;/p&gt;
 &lt;p id=&quot;example&quot; class=&quot;is-hidden&quot;&gt;
   Here&apos;s some text we want to toggle visibility of. Let&apos;s do it!
 &lt;/p&gt;
-              </code></pre>
-            </div>
+            </code></pre>
           </div>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="col-sm-3">
-          <p class="section-title">
+        <div id="js-collapse" class="section">
+          <h2 class="section-title">
             JS Component: Collapse
             <small><a href="https://medium.com/dailyjs/mimicking-bootstraps-collapse-with-vanilla-javascript-b3bb389040e7">Docs</a></small>
+          </h2>
+          <div class="collapse collapse-more-1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident doloribus, eos rem. Nostrum possimus reiciendis, neque iure repudiandae explicabo hic veritatis ad, deleniti provident soluta, facere, voluptates tenetur quae. Maiores!
+          </div>
+          <p>
+            <a
+              href="#"
+              data-toggle="collapse"
+              data-target=".collapse.collapse-more-1"
+              data-text-closed="Read More"
+              data-text-opened="Read Less">Read More</a>
           </p>
-        </div>
-        <div class="col-sm-9">
-          <div class="section">
-            <div class="collapse collapse-more-1">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident doloribus, eos rem. Nostrum possimus reiciendis, neque iure repudiandae explicabo hic veritatis ad, deleniti provident soluta, facere, voluptates tenetur quae. Maiores!
-            </div>
-            <p>
-              <a
-                href="#"
-                data-toggle="collapse"
-                data-target=".collapse.collapse-more-1"
-                data-text-closed="Read More"
-                data-text-opened="Read Less">Read More</a>
-            </p>
-            <div class="highlight">
-              <pre><code class="html">
+          <div class="highlight">
+            <pre><code class="html">
 &lt;div class=&quot;collapse collapse-more-1&quot;&gt;
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident doloribus, eos rem. Nostrum possimus reiciendis, neque iure repudiandae explicabo hic veritatis ad, deleniti provident soluta, facere, voluptates tenetur quae. Maiores!
 &lt;/div&gt;
 &lt;p&gt;
-  &lt;a
-    href=&quot;#&quot;
-    data-toggle=&quot;collapse&quot;
-    data-target=&quot;.collapse.collapse-more-1&quot;
-    data-text-closed=&quot;Read More&quot;
-    data-text-opened=&quot;Read Less&quot;&gt;Read More&lt;/a&gt;
+&lt;a
+  href=&quot;#&quot;
+  data-toggle=&quot;collapse&quot;
+  data-target=&quot;.collapse.collapse-more-1&quot;
+  data-text-closed=&quot;Read More&quot;
+  data-text-opened=&quot;Read Less&quot;&gt;Read More&lt;/a&gt;
 &lt;/p&gt;
-              </code></pre>
-            </div>
+            </code></pre>
           </div>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="col-sm-3">
-          <p class="section-title">
+        <div id="js-smooth-scroll" class="section">
+          <h2 class="section-title">
             JS Component: Smooth Scroll
             <small><a href="https://github.com/tsuyoshiwada/sweet-scroll">Docs</a></small>
+          </h2>
+          <p>
+            <a href="#buttons" data-scroll>Scroll to buttons section</a>
           </p>
-        </div>
-        <div class="col-sm-9">
-          <div class="section">
-            <p>
-              <a href="#buttons" data-scroll>Scroll to buttons section</a>
-            </p>
-            <p>
-              <a href="#" data-scroll="0">Scroll to top</a>
-            </p>
-            <div class="highlight">
-              <pre><code class="html">
+          <p>
+            <a href="#" data-scroll="0">Scroll to top</a>
+          </p>
+          <div class="highlight">
+            <pre><code class="html">
 &lt;a href=&quot;#buttons&quot; data-scroll&gt;Scroll to buttons section&lt;/a&gt;
 &lt;div id=&quot;buttons&quot;&gt;Introduction&lt;/div&gt;
 ...
 &lt;a href=&quot;#&quot; data-scroll=&quot;0&quot;&gt;Scroll to top&lt;/a&gt;
-              </code></pre>
-            </div>
+            </code></pre>
           </div>
         </div>
-      </div>
 
-      <div class="row" id="buttons">
-        <div class="col-sm-3">
-          <p class="section-title">
+        <div id="buttons" class="section">
+          <h2 class="section-title">
             Component: Buttons
+          </h2>
+          <p>
+            <button class="btn">Button</button>
+            <button class="btn" disabled>Button Disabled</button>
           </p>
-        </div>
-        <div class="col-sm-9">
-          <div class="section">
-
-            <p>
-              <button class="btn">Button</button>
-              <button class="btn" disabled>Button Disabled</button>
-            </p>
-            <div class="highlight mb">
-              <pre><code class="html">
+          <div class="highlight mb">
+            <pre><code class="html">
 &lt;button class=&quot;btn&quot;&gt;Button&lt;/button&gt;
 &lt;button class=&quot;btn&quot; disabled&gt;Button Disabled&lt;/button&gt;
-              </code></pre>
-            </div>
+            </code></pre>
+          </div>
 
-            <p>
-              <a href="#" class="btn btn-sm">Button SM</a>
-              <a href="#" class="btn">Button</a>
-              <a href="#" class="btn btn-lg">Button LG</a>
-            </p>
-            <div class="highlight mb">
-              <pre><code class="html">
+          <p>
+            <a href="#" class="btn btn-sm">Button SM</a>
+            <a href="#" class="btn">Button</a>
+            <a href="#" class="btn btn-lg">Button LG</a>
+          </p>
+          <div class="highlight mb">
+            <pre><code class="html">
 &lt;a href=&quot;#&quot; class=&quot;btn btn-sm&quot;&gt;Button SM&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Button&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;btn btn-lg&quot;&gt;Button LG&lt;/a&gt;
-              </code></pre>
-            </div>
+            </code></pre>
+          </div>
 
-            <p>
-              <a href="#" class="btn btn-outline">Button Outline</a>
-            </p>
-            <p>
-              <a href="#" class="btn btn-link">Button Link</a>
-            </p>
-            <p>
-              <a href="#" class="btn btn-block">Button Block</a>
-            </p>
+          <p>
+            <a href="#" class="btn btn-outline">Button Outline</a>
+          </p>
+          <p>
+            <a href="#" class="btn btn-link">Button Link</a>
+          </p>
+          <p>
+            <a href="#" class="btn btn-block">Button Block</a>
+          </p>
 
-            <div class="highlight mb">
-              <pre><code class="html">
+          <div class="highlight mb">
+            <pre><code class="html">
 &lt;a href=&quot;#&quot; class=&quot;btn btn-outline&quot;&gt;Button Outline&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;Button Link&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;btn btn-block&quot;&gt;Button Block&lt;/a&gt;
-              </code></pre>
-            </div>
+            </code></pre>
+          </div>
 
-            <p>
-              <a href="#" class="btn btn-primary">Primary</a>
-              <a href="#" class="btn btn-secondary">Secondary</a>
-              <a href="#" class="btn btn-success">Success</a>
-              <a href="#" class="btn btn-error">Error</a>
-              <a href="#" class="btn btn-white">White</a>
-              <a href="#" class="btn btn-black">Black</a>
-            </p>
-            <p>
-              <a href="#" class="btn btn-outline btn-primary">Primary</a>
-              <a href="#" class="btn btn-outline btn-secondary">Secondary</a>
-              <a href="#" class="btn btn-outline btn-success">Success</a>
-              <a href="#" class="btn btn-outline btn-error">Error</a>
-              <a href="#" class="btn btn-outline btn-white">White</a>
-              <a href="#" class="btn btn-outline btn-black">Black</a>
-            </p>
-            <p>
-              <a href="#" class="btn btn-link btn-primary">Primary</a>
-              <a href="#" class="btn btn-link btn-secondary">Secondary</a>
-              <a href="#" class="btn btn-link btn-success">Success</a>
-              <a href="#" class="btn btn-link btn-error">Error</a>
-              <a href="#" class="btn btn-link btn-white">White</a>
-              <a href="#" class="btn btn-link btn-black">Black</a>
-            </p>
+          <p>
+            <a href="#" class="btn btn-primary">Primary</a>
+            <a href="#" class="btn btn-secondary">Secondary</a>
+            <a href="#" class="btn btn-success">Success</a>
+            <a href="#" class="btn btn-error">Error</a>
+            <a href="#" class="btn btn-white">White</a>
+            <a href="#" class="btn btn-black">Black</a>
+          </p>
+          <p>
+            <a href="#" class="btn btn-outline btn-primary">Primary</a>
+            <a href="#" class="btn btn-outline btn-secondary">Secondary</a>
+            <a href="#" class="btn btn-outline btn-success">Success</a>
+            <a href="#" class="btn btn-outline btn-error">Error</a>
+            <a href="#" class="btn btn-outline btn-white">White</a>
+            <a href="#" class="btn btn-outline btn-black">Black</a>
+          </p>
+          <p>
+            <a href="#" class="btn btn-link btn-primary">Primary</a>
+            <a href="#" class="btn btn-link btn-secondary">Secondary</a>
+            <a href="#" class="btn btn-link btn-success">Success</a>
+            <a href="#" class="btn btn-link btn-error">Error</a>
+            <a href="#" class="btn btn-link btn-white">White</a>
+            <a href="#" class="btn btn-link btn-black">Black</a>
+          </p>
 
-            <div class="highlight">
-              <pre><code class="html">
+          <div class="highlight">
+            <pre><code class="html">
 &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;btn btn-secondary&quot;&gt;Secondary&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;btn btn-success&quot;&gt;Success&lt;/a&gt;
@@ -715,25 +765,80 @@
 &lt;a href=&quot;#&quot; class=&quot;btn btn-link btn-error&quot;&gt;Error&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;btn btn-link btn-white&quot;&gt;White&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;btn btn-link btn-black&quot;&gt;Black&lt;/a&gt;
-              </code></pre>
-            </div>
-
+            </code></pre>
           </div>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="col-sm-3">
-          <p class="section-title">
-            Module: Flickity Carousel
+        <div id="navbar" class="section">
+          <h2 class="section-title">
+            Module: Navbar
+          </h2>
+          <p>
+            Default:
           </p>
-        </div>
-        <div class="col-sm-9">
-          <div class="section">
-            {% include '../../modules/carousel/carousel.twig' %}
+          <div class="highlight mb">
+            <pre><code class="html">
+&lt;nav class=&quot;navbar&quot;&gt;...&lt;/nav&gt;
+            </code></pre>
+          </div>
+          <p>
+            Fixed to top:
+          </p>
+          <div class="highlight mb">
+            <pre><code class="html">
+&lt;nav class=&quot;navbar navbar--fixed&quot;&gt;...&lt;/nav&gt;
+            </code></pre>
+          </div>
+
+          <p>
+            Fixed to top with "transparent animation":
+            <br>
+            Navbar becomes transparent when scrolling down.
+            <br>
+            It fires when we scroll more than 150px from to the top.
+          </p>
+          <div class="highlight mb">
+            <pre><code class="html">
+&lt;nav class=&quot;navbar navbar--fixed navbar--fixed-transparent js-navbar&quot;&gt;...&lt;/nav&gt;
+            </code></pre>
+          </div>
+
+          <p>
+            Fixed to top with "show / hide animation":
+            <br>
+            Navbar slides out of view when scrolling down and slides back in when scrolling up.
+            <br>
+            It fires when we scroll more than 150px from to the top.
+          </p>
+          <div class="highlight">
+            <pre><code class="html">
+&lt;nav class=&quot;navbar navbar--fixed navbar--fixed-showhide js-navbar&quot;&gt;...&lt;/nav&gt;
+            </code></pre>
           </div>
         </div>
+
+        <div id="carousel" class="section">
+          <h2 class="section-title">
+            Module: Flickity Carousel
+            <small><a href="https://flickity.metafizzy.co/">Docs</a></small>
+          </h2>
+          <p>
+            Fade in carousel for no Flash Of Unstyled Content (FOUC)
+          </p>
+          <div class="highlight mb">
+            <pre><code class="html">
+&lt;div class=&quot;carousel js-carousel is-hidden&quot;&gt;
+  &lt;div class=&quot;carousel-cell&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;carousel-cell&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;carousel-cell&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+          </div>
+          {% include '../../modules/carousel/carousel.twig' %}
+        </div>
+
       </div>
+
     </div>
 
   </div>
