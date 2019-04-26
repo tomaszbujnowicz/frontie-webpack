@@ -199,10 +199,10 @@ $navbar: (
     body.navbar--opened & {
       transform: none;
     }
-    &.is-hidden {
+    &.navbar-hidden {
       transform: translateY(-100%);
     }
-    &.is-visible {
+    &.navbar-visible {
       transform: translateY(0);
     }
   }

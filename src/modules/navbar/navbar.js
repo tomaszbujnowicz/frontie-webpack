@@ -78,12 +78,12 @@ export function navbar() {
           let windowY = window.scrollY;
           if (windowY < scrollPos) {
             // Scrolling UP
-            navbarElement.classList.add('is-visible');
-            navbarElement.classList.remove('is-hidden');
+            navbarElement.classList.add('navbar-visible');
+            navbarElement.classList.remove('navbar-hidden');
           } else {
             // Scrolling DOWN
-            navbarElement.classList.add('is-hidden');
-            navbarElement.classList.remove('is-visible');
+            navbarElement.classList.add('navbar-hidden');
+            navbarElement.classList.remove('navbar-visible');
           }
           scrollPos = windowY;
         }
