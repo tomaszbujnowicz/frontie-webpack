@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Sample Page &middot; Frontie</title>
+  <title>Demo Page &middot; Frontie</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,6 +20,12 @@
       margin-bottom: 7rem;
       padding-bottom: 7rem;
       border-bottom: 5px solid #f5f5f5;
+    }
+
+    .section--last {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border: none;
     }
 
     .section-title {
@@ -42,8 +48,8 @@
     }
 
     .demo-sidebar ul {
-      margin-bottom: 2.5rem;
-      font-size: .875rem;
+      margin-bottom: 1.5rem;
+      font-size: .8125rem;
     }
 
     .demo-sidebar a {
@@ -119,7 +125,7 @@
         <div class="navbar__collapse">
           <ul class="navbar__menu">
             <li class="menu-item current-menu-item">
-              <a href="page.html">Sample Page</a>
+              <a href="page.html">Demo Page</a>
             </li>
             <li class="menu-item">
               <a href="blank.html">Blank Page</a>
@@ -555,22 +561,26 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
 
           </div>
 
-          <h2 class="section-title">
-            List: Inline
-          </h2>
-          <ul class="list-inline">
-            <li class="list-inline__item">Lorem ipsum</li>
-            <li class="list-inline__item">Phasellus iaculis</li>
-            <li class="list-inline__item">Nulla volutpat</li>
-          </ul>
-          <div class="highlight">
-            <pre><code class="html">
-&lt;ul class=&quot;list-inline&quot;&gt;
-  &lt;li class=&quot;list-inline__item&quot;&gt;Lorem ipsum&lt;/li&gt;
-  &lt;li class=&quot;list-inline__item&quot;&gt;Phasellus iaculis&lt;/li&gt;
-  &lt;li class=&quot;list-inline__item&quot;&gt;Nulla volutpat&lt;/li&gt;
-&lt;/ul&gt;
-            </code></pre>
+          <div class="section section--last">
+
+            <h2 class="section-title">
+              List: Inline
+            </h2>
+            <ul class="list-inline">
+              <li class="list-inline__item">Lorem ipsum</li>
+              <li class="list-inline__item">Phasellus iaculis</li>
+              <li class="list-inline__item">Nulla volutpat</li>
+            </ul>
+            <div class="highlight">
+              <pre><code class="html">
+  &lt;ul class=&quot;list-inline&quot;&gt;
+    &lt;li class=&quot;list-inline__item&quot;&gt;Lorem ipsum&lt;/li&gt;
+    &lt;li class=&quot;list-inline__item&quot;&gt;Phasellus iaculis&lt;/li&gt;
+    &lt;li class=&quot;list-inline__item&quot;&gt;Nulla volutpat&lt;/li&gt;
+  &lt;/ul&gt;
+              </code></pre>
+            </div>
+
           </div>
 
         </div>
@@ -922,7 +932,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
 
           <div class="section">
             <h2 class="section-title">
-              Aspect ratio
+              Mixin: Aspect ratio
             </h2>
             <p>
               You can define various aspect ratios. e.g.:<br>
@@ -958,7 +968,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
 
           <div class="section">
             <h2 class="section-title">
-              Clearfix
+              Mixin: Clearfix
             </h2>
             <p>CSS</p>
             <div class="highlight mb">
@@ -976,7 +986,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
 
           <div class="section">
             <h2 class="section-title">
-              Max Width Center
+              Mixin: Max Width Center
             </h2>
             <p>
               Set max width for an element and make it centered
@@ -991,7 +1001,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
 
           <div class="section">
             <h2 class="section-title">
-              Overlay
+              Mixin: Overlay
             </h2>
             <p>
               Absolute element with top,right,bottom,left = 0
@@ -1006,7 +1016,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
 
           <div class="section">
             <h2 class="section-title">
-              Pseudo
+              Mixin: Pseudo
             </h2>
             <p>
               Pseudo elements after / before
@@ -1021,7 +1031,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
 
           <div class="section">
             <h2 class="section-title">
-              Rem
+              Mixin: Rem
             </h2>
             <p>
               Px to rem
@@ -1037,7 +1047,7 @@ margin: rem(40) rem(40);
 
           <div class="section">
             <h2 class="section-title">
-              Responsive Font Size
+              Mixin: Responsive Font Size
             </h2>
             <p>
               Responsive font size for various media query breakpoints
@@ -1056,7 +1066,7 @@ If you want to omit specific breakpoint please use ''
 
           <div class="section">
             <h2 class="section-title">
-              Responsive Size
+              Mixin: Responsive Size
             </h2>
             <p>
               Responsive size for different media query breakpoints
@@ -1083,7 +1093,7 @@ If you want to omit specific breakpoint please use ''
 
           <div class="section">
             <h2 class="section-title">
-              Responsive Spacing
+              Mixin: Responsive Spacing
             </h2>
             <p>
               Responsive spacing for different media query breakpoints
@@ -1117,9 +1127,9 @@ py : (vertical) padding-top and padding bottom
             </div>
           </div>
 
-          <div class="section">
+          <div class="section section--last">
             <h2 class="section-title">
-              Triangle
+              Mixin: Triangle
             </h2>
             <p>
               CSS triangle
