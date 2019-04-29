@@ -16,8 +16,8 @@
     <nav class="navbar navbar--fixed navbar--fixed-transparent js-navbar">
 
   * Fixed to top with "show / hide animation":
-  * Navbar slides out of view when scrolling down and slides back in
-  * when scrolling up.
+  * Navbar slides out of view when scrolling down
+  * and slides back in when scrolling up.
     <nav class="navbar navbar--fixed navbar--fixed-showhide js-navbar">
 
   * Notes:
@@ -36,29 +36,16 @@
           <span class="navbar__toggler-line"></span>
           <span class="navbar__toggler-line"></span>
         </button>
-
-        {#
-          In case you want to implement front-end in WordPress, please follow below instructions:
-          Replace everything inside including <div class="navbar__collapse"></div> with the following WordPress Menu code
-          <?php
-            wp_nav_menu( array(
-              'menu_class' => 'menu navbar__menu',
-              'container_class' => 'navbar__collapse'
-            ) );
-          ?>
-        #}
-
         <div class="navbar__collapse">
           <ul class="navbar__menu">
-            <li class="menu-item{% if menu_active == 'demo-page' %} current-menu-item{% endif %}">
-              <a href="demo.html">Demo Page</a>
+            <li class="navbar__item{% if menu_active == 'demo-page' %} navbar__item--selected{% endif %}">
+              <a class="navbar__link" href="demo.html">Demo Page</a>
             </li>
-            <li class="menu-item{% if menu_active == 'blank-page' %} current-menu-item{% endif %}">
-              <a href="blank.html">Blank Page</a>
+            <li class="navbar__item{% if menu_active == 'blank-page' %} navbar__item--selected{% endif %}">
+              <a class="navbar__link" href="blank.html">Blank Page</a>
             </li>
           </ul>
         </div>
-
       </div>
     </div>
   </nav>
