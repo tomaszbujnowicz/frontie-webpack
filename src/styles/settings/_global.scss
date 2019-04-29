@@ -21,15 +21,15 @@ $font-size-base: 1rem !default;
 $line-height-base: 1.5 !default;
 
 // Font Weight
-$font-hairline: 100 !default;
-$font-thin: 200 !default;
-$font-light: 300 !default;
-$font-normal: 400 !default;
-$font-medium: 500 !default;
-$font-semibold: 600 !default;
-$font-bold: 700 !default;
-$font-extrabold: 800 !default;
-$font-black: 900 !default;
+$font-weight-hairline: 100 !default;
+$font-weight-thin: 200 !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-semibold: 600 !default;
+$font-weight-bold: 700 !default;
+$font-weight-extrabold: 800 !default;
+$font-weight-black: 900 !default;
 
 // Paragraph
 $paragraph-margin-bottom: 1rem !default;
@@ -41,12 +41,12 @@ $headings-font-weight: 500 !default;
 $headings-line-height: 1.2 !default;
 $headings-color: inherit !default;
 
-$h1-font-size: $font-size-base * 2.5 !default;
-$h2-font-size: $font-size-base * 2 !default;
-$h3-font-size: $font-size-base * 1.75 !default;
-$h4-font-size: $font-size-base * 1.5 !default;
-$h5-font-size: $font-size-base * 1.25 !default;
-$h6-font-size: $font-size-base !default;
+$headings-font-size-h1: $font-size-base * 2.5 !default;
+$headings-font-size-h2: $font-size-base * 2 !default;
+$headings-font-size-h3: $font-size-base * 1.75 !default;
+$headings-font-size-h4: $font-size-base * 1.5 !default;
+$headings-font-size-h5: $font-size-base * 1.25 !default;
+$headings-font-size-h6: $font-size-base !default;
 
 $headings-xs: .875 !default;
 $headings-sm: .875 !default;

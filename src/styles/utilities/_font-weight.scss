@@ -3,29 +3,29 @@
  */
 
 .font-weight-hairline {
-  font-weight: 100;
+  font-weight: $font-weight-hairline;
 }
 .font-weight-thin {
-  font-weight: 200;
+  font-weight: $font-weight-thin;
 }
 .font-weight-light {
-  font-weight: 300;
+  font-weight: $font-weight-light;
 }
 .font-weight-normal {
-  font-weight: 400;
+  font-weight: $font-weight-normal;
 }
 .font-weight-medium {
-  font-weight: 500;
+  font-weight: $font-weight-medium;
 }
 .font-weight-semibold {
-  font-weight: 600;
+  font-weight: $font-weight-semibold;
 }
 .font-weight-bold {
-  font-weight: 700;
+  font-weight: $font-weight-bold;
 }
 .font-weight-extrabold	{
-  font-weight: 800;
+  font-weight: $font-weight-extrabold;
 }
 .font-weight-black {
-  font-weight: 900;
+  font-weight: $font-weight-black;
 }

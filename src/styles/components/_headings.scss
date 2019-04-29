@@ -25,65 +25,65 @@ h6,
 h1,
 .h1 {
   @include responsive-font-size(
-    $h1-font-size * $headings-xs,
-    $h1-font-size * $headings-sm,
-    $h1-font-size * $headings-md,
-    $h1-font-size * $headings-lg,
-    $h1-font-size * $headings-xl
+    $headings-font-size-h1 * $headings-xs,
+    $headings-font-size-h1 * $headings-sm,
+    $headings-font-size-h1 * $headings-md,
+    $headings-font-size-h1 * $headings-lg,
+    $headings-font-size-h1 * $headings-xl
   );
 }
 
 h2,
 .h2 {
   @include responsive-font-size(
-    $h2-font-size * $headings-xs,
-    $h2-font-size * $headings-sm,
-    $h2-font-size * $headings-md,
-    $h2-font-size * $headings-lg,
-    $h2-font-size * $headings-xl
+    $headings-font-size-h2 * $headings-xs,
+    $headings-font-size-h2 * $headings-sm,
+    $headings-font-size-h2 * $headings-md,
+    $headings-font-size-h2 * $headings-lg,
+    $headings-font-size-h2 * $headings-xl
   );
 }
 
 h3,
 .h3 {
   @include responsive-font-size(
-    $h3-font-size * $headings-xs,
-    $h3-font-size * $headings-sm,
-    $h3-font-size * $headings-md,
-    $h3-font-size * $headings-lg,
-    $h3-font-size * $headings-xl
+    $headings-font-size-h3 * $headings-xs,
+    $headings-font-size-h3 * $headings-sm,
+    $headings-font-size-h3 * $headings-md,
+    $headings-font-size-h3 * $headings-lg,
+    $headings-font-size-h3 * $headings-xl
   );
 }
 
 h4,
 .h4 {
   @include responsive-font-size(
-    $h4-font-size * $headings-xs,
-    $h4-font-size * $headings-sm,
-    $h4-font-size * $headings-md,
-    $h4-font-size * $headings-lg,
-    $h4-font-size * $headings-xl
+    $headings-font-size-h4 * $headings-xs,
+    $headings-font-size-h4 * $headings-sm,
+    $headings-font-size-h4 * $headings-md,
+    $headings-font-size-h4 * $headings-lg,
+    $headings-font-size-h4 * $headings-xl
   );
 }
 
 h5,
 .h5 {
   @include responsive-font-size(
-    $h5-font-size * $headings-xs,
-    $h5-font-size * $headings-sm,
-    $h5-font-size * $headings-md,
-    $h5-font-size * $headings-lg,
-    $h5-font-size * $headings-xl
+    $headings-font-size-h5 * $headings-xs,
+    $headings-font-size-h5 * $headings-sm,
+    $headings-font-size-h5 * $headings-md,
+    $headings-font-size-h5 * $headings-lg,
+    $headings-font-size-h5 * $headings-xl
   );
 }
 
 h6,
 .h6 {
   @include responsive-font-size(
-    $h6-font-size * $headings-xs,
-    $h6-font-size * $headings-sm,
-    $h6-font-size * $headings-md,
-    $h6-font-size * $headings-lg,
-    $h6-font-size * $headings-xl
+    $headings-font-size-h6 * $headings-xs,
+    $headings-font-size-h6 * $headings-sm,
+    $headings-font-size-h6 * $headings-md,
+    $headings-font-size-h6 * $headings-lg,
+    $headings-font-size-h6 * $headings-xl
   );
 }
