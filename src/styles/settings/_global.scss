@@ -8,15 +8,19 @@
  * so they can be overwritten.
  */
 
+// Font Family
 $font-family-sans: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $font-family-serif: Georgia, "Times New Roman", Times, serif !default;
 $font-family-mono: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-
 $font-family: $font-family-sans;
 
+// Font Size
 $font-size-base: 1rem !default;
+
+// Font Line Height
 $line-height-base: 1.5 !default;
 
+// Font Weight
 $font-hairline: 100 !default;
 $font-thin: 200 !default;
 $font-light: 300 !default;
@@ -26,3 +30,26 @@ $font-semibold: 600 !default;
 $font-bold: 700 !default;
 $font-extrabold: 800 !default;
 $font-black: 900 !default;
+
+// Paragraph
+$paragraph-margin-bottom: 1rem !default;
+
+// Headings
+$headings-margin-bottom: 1rem !default;
+$headings-font-family: $font-family !default;
+$headings-font-weight: 500 !default;
+$headings-line-height: 1.2 !default;
+$headings-color: inherit !default;
+
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+$headings-xs: .875 !default;
+$headings-sm: .875 !default;
+$headings-md: 1 !default;
+$headings-lg: 1.125 !default;
+$headings-xl: 1.25 !default;

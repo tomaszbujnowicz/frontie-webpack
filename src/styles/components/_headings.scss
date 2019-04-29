@@ -2,25 +2,6 @@
  * Headings
  */
 
-$headings-margin-bottom: 1rem !default;
-$headings-font-family: $font-family !default;
-$headings-font-weight: 500 !default;
-$headings-line-height: 1.2 !default;
-$headings-color: inherit !default;
-
-$h1-font-size: $font-size-base * 2.5 !default;
-$h2-font-size: $font-size-base * 2 !default;
-$h3-font-size: $font-size-base * 1.75 !default;
-$h4-font-size: $font-size-base * 1.5 !default;
-$h5-font-size: $font-size-base * 1.25 !default;
-$h6-font-size: $font-size-base !default;
-
-$headings-xs: .875 !default;
-$headings-sm: .875 !default;
-$headings-md: 1 !default;
-$headings-lg: 1.125 !default;
-$headings-xl: 1.25 !default;
-
 h1,
 h2,
 h3,
@@ -44,65 +25,65 @@ h6,
 h1,
 .h1 {
   @include responsive-font-size(
-    $h1-font-size * $headings-xs, // xs
-    $h1-font-size * $headings-sm, // sm
-    $h1-font-size * $headings-md, // md
-    $h1-font-size * $headings-lg, // lg
-    $h1-font-size * $headings-xl  // xl
+    $h1-font-size * $headings-xs,
+    $h1-font-size * $headings-sm,
+    $h1-font-size * $headings-md,
+    $h1-font-size * $headings-lg,
+    $h1-font-size * $headings-xl
   );
 }
 
 h2,
 .h2 {
   @include responsive-font-size(
-    $h2-font-size * $headings-xs, // xs
-    $h2-font-size * $headings-sm, // sm
-    $h2-font-size * $headings-md, // md
-    $h2-font-size * $headings-lg, // lg
-    $h2-font-size * $headings-xl  // xl
+    $h2-font-size * $headings-xs,
+    $h2-font-size * $headings-sm,
+    $h2-font-size * $headings-md,
+    $h2-font-size * $headings-lg,
+    $h2-font-size * $headings-xl
   );
 }
 
 h3,
 .h3 {
   @include responsive-font-size(
-    $h3-font-size * $headings-xs, // xs
-    $h3-font-size * $headings-sm, // sm
-    $h3-font-size * $headings-md, // md
-    $h3-font-size * $headings-lg, // lg
-    $h3-font-size * $headings-xl  // xl
+    $h3-font-size * $headings-xs,
+    $h3-font-size * $headings-sm,
+    $h3-font-size * $headings-md,
+    $h3-font-size * $headings-lg,
+    $h3-font-size * $headings-xl
   );
 }
 
 h4,
 .h4 {
   @include responsive-font-size(
-    $h4-font-size * $headings-xs, // xs
-    $h4-font-size * $headings-sm, // sm
-    $h4-font-size * $headings-md, // md
-    $h4-font-size * $headings-lg, // lg
-    $h4-font-size * $headings-xl  // xl
+    $h4-font-size * $headings-xs,
+    $h4-font-size * $headings-sm,
+    $h4-font-size * $headings-md,
+    $h4-font-size * $headings-lg,
+    $h4-font-size * $headings-xl
   );
 }
 
 h5,
 .h5 {
   @include responsive-font-size(
-    $h5-font-size * $headings-xs, // xs
-    $h5-font-size * $headings-sm, // sm
-    $h5-font-size * $headings-md, // md
-    $h5-font-size * $headings-lg, // lg
-    $h5-font-size * $headings-xl  // xl
+    $h5-font-size * $headings-xs,
+    $h5-font-size * $headings-sm,
+    $h5-font-size * $headings-md,
+    $h5-font-size * $headings-lg,
+    $h5-font-size * $headings-xl
   );
 }
 
 h6,
 .h6 {
   @include responsive-font-size(
-    $h6-font-size * $headings-xs, // xs
-    $h6-font-size * $headings-sm, // sm
-    $h6-font-size * $headings-md, // md
-    $h6-font-size * $headings-lg, // lg
-    $h6-font-size * $headings-xl  // xl
+    $h6-font-size * $headings-xs,
+    $h6-font-size * $headings-sm,
+    $h6-font-size * $headings-md,
+    $h6-font-size * $headings-lg,
+    $h6-font-size * $headings-xl
   );
 }

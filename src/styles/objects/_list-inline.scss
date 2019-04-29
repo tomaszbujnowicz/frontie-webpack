@@ -3,13 +3,5 @@
  */
 
 .list-inline {
-  list-style: none;
-  padding-left: 0;
-  &__item {
-    display: inline-block;
-    margin-bottom: 0;
-  }
-  &__item:not(:last-child) {
-    margin-right: 1rem;
-  }
+  @include list-inline;
 }
