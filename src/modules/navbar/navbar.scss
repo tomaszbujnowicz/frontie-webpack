@@ -39,9 +39,9 @@ $navbar: (
   }
   &__menu {
     display: flex;
+    list-style: none;
     margin: 0;
     padding: 0;
-    list-style: none;
   }
   .menu-item {
     margin-bottom: 0;
@@ -62,7 +62,6 @@ $navbar: (
   }
 
   // Media: Small devices and down
-
   @include media-breakpoint-down(sm) {
     &__wrapper {
       height: navbar(height-mobile);
@@ -121,12 +120,10 @@ $navbar: (
       flex-direction: column;
       min-height: 100vh;
       background-color: navbar(bg-color);
-      padding: 2rem 0; // add some top / bottom padding in case there is more items that doesn't fit in the viewport
+      padding: 2rem 0;
     }
-    .menu-item {
-      &:not(:last-child) {
-        margin-bottom: 1rem;
-      }
+    .menu-item:not(:last-child) {
+      margin-bottom: 1rem;
     }
     body.navbar--opened & {
       &__collapse {
@@ -155,7 +152,6 @@ $navbar: (
   }
 
   // Media: Medium devices and up
-
   @include media-breakpoint-up(md) {
     &__wrapper {
       height: navbar(height-desktop);
@@ -166,57 +162,14 @@ $navbar: (
     &__menu {
       flex-direction: row;
     }
-    .menu-item {
-      &:not(:last-child) {
-        margin-right: 2rem;
-      }
-    }
-  }
-
-  // Navbar Fixed
-
-  &.navbar--fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-
-  // Make navbar transparent when scrolling down
-
-  &.navbar--fixed-transparent.navbar--scrolled {
-    transition: $transition-base;
-    opacity: .25;
-    &:hover {
-      opacity: 1;
-    }
-  }
-
-  // Navbar slides out of view when scrolling down and slides back in when scrolling up
-
-  &.navbar--fixed-showhide {
-    transition: $transition-base;
-    body.navbar--opened & {
-      transform: none;
-    }
-    &.navbar-hidden {
-      transform: translateY(-100%);
-    }
-    &.navbar-visible {
-      transform: translateY(0);
+    .menu-item:not(:last-child) {
+      margin-right: 2rem;
     }
   }
 
 }
 
-// Prevent vertical scrollbar when navbar is opened on smaller devices
-
-body.navbar--opened {
-  overflow: hidden;
-}
-
-// When the navbar is fixed you should also add some padding to body tag as well - most likely that should be height of the navbar
-
+// Adding some spacing to the body tag when the navbar is fixed
 body {
   @include media-breakpoint-down(sm) {
     padding-top: navbar(height-mobile);
@@ -224,4 +177,41 @@ body {
   @include media-breakpoint-up(md) {
     padding-top: navbar(height-desktop);
   }
+}
+
+// Navbar Fixed
+.navbar--fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+// Navbar transparent when scrolling down
+.navbar--fixed-transparent.navbar--scrolled {
+  transition: $transition-base;
+  opacity: .25;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+// Navbar slides out of view when scrolling down and slides back in
+// when scrolling up
+.navbar--fixed-showhide {
+  transition: $transition-base;
+  body.navbar--opened & {
+    transform: none;
+  }
+  &.navbar-hidden {
+    transform: translateY(-100%);
+  }
+  &.navbar-visible {
+    transform: translateY(0);
+  }
+}
+
+// Prevent vertical scrollbar when navbar is opened on smaller devices
+body.navbar--opened {
+  overflow: hidden;
 }

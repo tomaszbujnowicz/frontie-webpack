@@ -1,24 +1,28 @@
 {#
-  HTML: navbar.twig
-  CSS: /modules/navbar/navbar.scss
-  JS: /modules/navbar/navbar.js
+  HTML: /modules/navbar/navbar.twig
+  CSS:  /modules/navbar/navbar.scss
+  JS:   /modules/navbar/navbar.js
 
-  Fixed to top:
-    "navbar--fixed"
-    If navbar shouldn't be fixed, remove the class "navbar--fixed" and top padding from "body" in the navbar.scss
+  States:
 
-  Animations:
-    Add some animations by adding the following classes to the navbar:
+  * Default:
+    <nav class="navbar">
 
-    "navbar--fixed-transparent"
-      Navbar becomes transparent when scrolling down.
+  * Fixed to top:
+    <nav class="navbar navbar--fixed">
 
-    "navbar--fixed-showhide"
-      Navbar slides out of view when scrolling down and slides back in when scrolling up
+  * Fixed to top with "transparent animation":
+  * Navbar becomes transparent when scrolling down.
+    <nav class="navbar navbar--fixed navbar--fixed-transparent js-navbar">
 
-    Note:
-    It fires when we scroll more than 150px from to the top.
-    You can change it in navbar.js
+  * Fixed to top with "show / hide animation":
+  * Navbar slides out of view when scrolling down and slides back in
+  * when scrolling up.
+    <nav class="navbar navbar--fixed navbar--fixed-showhide js-navbar">
+
+  * Notes:
+  * It fires when we scroll more than 150px from to the top.
+  * You can change the value in the navbar.js
 #}
 
   <nav class="navbar navbar--fixed navbar--fixed-transparent js-navbar">
@@ -47,7 +51,7 @@
         <div class="navbar__collapse">
           <ul class="navbar__menu">
             <li class="menu-item{% if menu_active == 'demo-page' %} current-menu-item{% endif %}">
-              <a href="page.html">Demo Page</a>
+              <a href="demo.html">Demo Page</a>
             </li>
             <li class="menu-item{% if menu_active == 'blank-page' %} current-menu-item{% endif %}">
               <a href="blank.html">Blank Page</a>
