@@ -76,6 +76,10 @@
       margin-bottom: 3rem;
     }
 
+    .mb-2 {
+      margin-bottom: 5rem;
+    }
+
     @media (min-width: 768px) {
       .demo {
         display: -webkit-box;
@@ -119,20 +123,16 @@
           <span class="navbar__toggler-line"></span>
           <span class="navbar__toggler-line"></span>
         </button>
-
-
-
         <div class="navbar__collapse">
           <ul class="navbar__menu">
-            <li class="menu-item current-menu-item">
-              <a href="demo.html">Demo Page</a>
+            <li class="navbar__item navbar__item--selected">
+              <a class="navbar__link" href="demo.html">Demo Page</a>
             </li>
-            <li class="menu-item">
-              <a href="blank.html">Blank Page</a>
+            <li class="navbar__item">
+              <a class="navbar__link" href="blank.html">Blank Page</a>
             </li>
           </ul>
         </div>
-
       </div>
     </div>
   </nav>
@@ -752,7 +752,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
             <button class="btn">Button</button>
             <button class="btn" disabled>Button Disabled</button>
           </p>
-          <div class="highlight mb">
+          <div class="highlight mb-2">
             <pre><code class="html">
 &lt;button class=&quot;btn&quot;&gt;Button&lt;/button&gt;
 &lt;button class=&quot;btn&quot; disabled&gt;Button Disabled&lt;/button&gt;
@@ -764,7 +764,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
             <a href="#" class="btn">Button</a>
             <a href="#" class="btn btn-lg">Button LG</a>
           </p>
-          <div class="highlight mb">
+          <div class="highlight mb-2">
             <pre><code class="html">
 &lt;a href=&quot;#&quot; class=&quot;btn btn-sm&quot;&gt;Button SM&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Button&lt;/a&gt;
@@ -782,7 +782,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
             <a href="#" class="btn btn-block">Button Block</a>
           </p>
 
-          <div class="highlight mb">
+          <div class="highlight mb-2">
             <pre><code class="html">
 &lt;a href=&quot;#&quot; class=&quot;btn btn-outline&quot;&gt;Button Outline&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;Button Link&lt;/a&gt;
