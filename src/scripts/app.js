@@ -9,7 +9,7 @@ import carousel from '../modules/carousel/carousel';
 
 // Components
 import collapse from './components/collapse.js';
-import smoothscroll from './components/smooth-scroll';
+import smoothscroll from './components/smoothscroll';
 import toggle from './components/toggle';
 
 document.addEventListener('DOMContentLoaded', function() {

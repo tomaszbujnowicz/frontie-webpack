@@ -66,14 +66,14 @@ export function navbar() {
 
     if (navbarElement.classList.contains('navbar--fixed-showhide')) {
 
-      const navbarShowHidetPixels = 150;
+      const navbarShowHidePixels = 150;
       let scrollPos = 0;
 
       function navbarShowHide() {
 
         var scrolled = document.scrollingElement.scrollTop;
         var position = navbarElement.offsetTop;
-        if (scrolled > position + navbarShowHidetPixels) {
+        if (scrolled > position + navbarShowHidePixels) {
 
           let windowY = window.scrollY;
           if (windowY < scrollPos) {

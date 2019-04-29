@@ -11,12 +11,12 @@ export function collapse() {
   const triggers = Array.from(document.querySelectorAll('[data-toggle="collapse"]'));
 
   window.addEventListener('click', function (event) {
-    const elm = event.target;
-    if (triggers.includes(elm)) {
+    const element = event.target;
+    if (triggers.includes(element)) {
       event.preventDefault();
-      const selector = elm.getAttribute('data-target');
-      const selectorTextClosed = elm.getAttribute('data-text-closed');
-      const selectorTextOpened = elm.getAttribute('data-text-opened');
+      const selector = element.getAttribute('data-target');
+      const selectorTextClosed = element.getAttribute('data-text-closed');
+      const selectorTextOpened = element.getAttribute('data-text-opened');
       collapse(selector, 'toggle');
       if (event.target.classList.contains('collapse-trigger--opened')) {
         event.target.classList.remove('collapse-trigger--opened');
