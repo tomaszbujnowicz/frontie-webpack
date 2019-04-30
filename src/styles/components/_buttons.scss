@@ -2,8 +2,8 @@
  * Buttons
  */
 
-$btn-color-bg: $primary !default;
-$btn-color-bg-hover: darken($primary, 10%) !default;
+$btn-color-bg: $color-primary !default;
+$btn-color-bg-hover: darken($color-primary, 10%) !default;
 
 $btn-color-text: white !default;
 $btn-color-text-hover: white !default;
@@ -95,7 +95,7 @@ $btn-lg: 1.25 !default;
   box-shadow: none;
   background-color: transparent;
   border-color: transparent;
-  color: $primary;
+  color: $color-primary;
   text-shadow: none;
   text-transform: none;
 
@@ -109,132 +109,132 @@ $btn-lg: 1.25 !default;
 // Colors
 .btn-primary {
   &.btn-link {
-    color: $primary;
+    color: $color-primary;
     &:hover {
-      color: darken($primary, 10%);
-      border-color: darken($primary, 10%);
+      color: darken($color-primary, 10%);
+      border-color: darken($color-primary, 10%);
     }
   }
 }
 .btn-secondary {
-  background-color: $secondary;
+  background-color: $color-secondary;
   &:hover {
-    background-color: darken($secondary, 10%);
-    border-color: darken($secondary, 10%);
+    background-color: darken($color-secondary, 10%);
+    border-color: darken($color-secondary, 10%);
   }
   &.btn-outline {
     background-color: transparent;
-    border-color: $secondary;
-    color: $secondary;
+    border-color: $color-secondary;
+    color: $color-secondary;
     &:hover {
-      background-color: darken($secondary, 10%);
-      border-color: darken($secondary, 10%);
-      color: $white;
+      background-color: darken($color-secondary, 10%);
+      border-color: darken($color-secondary, 10%);
+      color: $color-white;
     }
   }
   &.btn-link {
     background-color: transparent;
-    color: $secondary;
+    color: $color-secondary;
     &:hover {
-      color: darken($secondary, 10%);
+      color: darken($color-secondary, 10%);
     }
   }
 }
 .btn-success {
-  background-color: $success;
+  background-color: $color-success;
   &:hover {
-    background-color: darken($success, 10%);
-    border-color: darken($success, 10%);
+    background-color: darken($color-success, 10%);
+    border-color: darken($color-success, 10%);
   }
   &.btn-outline {
     background-color: transparent;
-    border-color: $success;
-    color: $success;
+    border-color: $color-success;
+    color: $color-success;
     &:hover {
-      background-color: darken($success, 10%);
-      border-color: darken($success, 10%);
-      color: $white;
+      background-color: darken($color-success, 10%);
+      border-color: darken($color-success, 10%);
+      color: $color-white;
     }
   }
   &.btn-link {
     background-color: transparent;
-    color: $success;
+    color: $color-success;
     &:hover {
-      color: darken($success, 10%);
+      color: darken($color-success, 10%);
     }
   }
 }
 .btn-error {
-  background-color: $error;
+  background-color: $color-error;
   &:hover {
-    background-color: darken($error, 10%);
-    border-color: darken($error, 10%);
+    background-color: darken($color-error, 10%);
+    border-color: darken($color-error, 10%);
   }
   &.btn-outline {
     background-color: transparent;
-    border-color: $error;
-    color: $error;
+    border-color: $color-error;
+    color: $color-error;
     &:hover {
-      background-color: darken($error, 10%);
-      border-color: darken($error, 10%);
-      color: $white;
+      background-color: darken($color-error, 10%);
+      border-color: darken($color-error, 10%);
+      color: $color-white;
     }
   }
   &.btn-link {
     background-color: transparent;
-    color: $error;
+    color: $color-error;
     &:hover {
-      color: darken($error, 10%);
+      color: darken($color-error, 10%);
     }
   }
 }
 .btn-white {
-  background-color: $white;
-  color: $black;
+  background-color: $color-white;
+  color: $color-black;
   &:hover {
-    background-color: darken($black, 10%);
-    border-color: darken($black, 10%);
-    color: $white;
+    background-color: darken($color-black, 10%);
+    border-color: darken($color-black, 10%);
+    color: $color-white;
   }
   &.btn-outline {
     background-color: transparent;
-    border-color: $white;
-    color: $white;
+    border-color: $color-white;
+    color: $color-white;
     &:hover {
-      background-color: darken($black, 10%);
-      border-color: darken($black, 10%);
-      color: $white;
+      background-color: darken($color-black, 10%);
+      border-color: darken($color-black, 10%);
+      color: $color-white;
     }
   }
   &.btn-link {
     background-color: transparent;
-    color: $white;
+    color: $color-white;
     &:hover {
-      color: $black;
+      color: $color-black;
     }
   }
 }
 .btn-black {
-  background-color: $black;
+  background-color: $color-black;
   &:hover {
-    background-color: lighten($black, 10%);
-    border-color: lighten($black, 10%);
+    background-color: lighten($color-black, 10%);
+    border-color: lighten($color-black, 10%);
   }
   &.btn-outline {
     background-color: transparent;
-    border-color: $black;
-    color: $black;
+    border-color: $color-black;
+    color: $color-black;
     &:hover {
-      background-color: lighten($black, 10%);
-      border-color: lighten($black, 10%);
-      color: $white;
+      background-color: lighten($color-black, 10%);
+      border-color: lighten($color-black, 10%);
+      color: $color-white;
     }
   }
   &.btn-link {
     background-color: transparent;
-    color: $black;
+    color: $color-black;
     &:hover {
-      color: lighten($black, 10%);
+      color: lighten($color-black, 10%);
     }
   }
 }

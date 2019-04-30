@@ -2,17 +2,17 @@
  * Colors
  */
 
-// Default body color
-$body-color: #222 !default;
+// Default text color
+$color-text: #222 !default;
 
 // Theme colors
-$primary: #007bff !default;
-$secondary: #7f19e6 !default;
-$white: #fff !default;
-$black: #000 !default;
-$success: #00b300 !default;
-$error: #c00 !default;
+$color-primary: #007bff !default;
+$color-secondary: #7f19e6 !default;
+$color-white: #fff !default;
+$color-black: #000 !default;
+$color-success: #00b300 !default;
+$color-error: #c00 !default;
 
 // Links
-$link-color: #007bff !default;
-$link-color-hover: darken($link-color, 20%) !default;
+$color-link-color: #007bff !default;
+$color-link-color-hover: darken($color-link-color, 20%) !default;
