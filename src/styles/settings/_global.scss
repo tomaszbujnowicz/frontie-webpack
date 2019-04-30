@@ -37,19 +37,7 @@ $paragraph-margin-bottom: 1rem !default;
 // Headings
 $headings-margin-bottom: 1rem !default;
 $headings-font-family: $font-family !default;
-$headings-font-weight: 500 !default;
+$headings-font-weight: $font-weight-medium !default;
 $headings-line-height: 1.2 !default;
 $headings-color: inherit !default;
-
-$headings-font-size-h1: $font-size-base * 2.5 !default;
-$headings-font-size-h2: $font-size-base * 2 !default;
-$headings-font-size-h3: $font-size-base * 1.75 !default;
-$headings-font-size-h4: $font-size-base * 1.5 !default;
-$headings-font-size-h5: $font-size-base * 1.25 !default;
-$headings-font-size-h6: $font-size-base !default;
-
-$headings-xs: .875 !default;
-$headings-sm: .875 !default;
-$headings-md: 1 !default;
-$headings-lg: 1.125 !default;
-$headings-xl: 1.25 !default;
+$headings-text-transform: inherit !default;

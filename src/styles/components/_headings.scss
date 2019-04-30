@@ -20,70 +20,73 @@ h6,
   font-weight: $headings-font-weight;
   line-height: $headings-line-height;
   color: $headings-color;
+  text-transform: $headings-text-transform;
 }
+
+// @include responsive-font-size(xs, sm, md, lg, xl);
 
 h1,
 .h1 {
   @include responsive-font-size(
-    $headings-font-size-h1 * $headings-xs,
-    $headings-font-size-h1 * $headings-sm,
-    $headings-font-size-h1 * $headings-md,
-    $headings-font-size-h1 * $headings-lg,
-    $headings-font-size-h1 * $headings-xl
+    rem(28),
+    '',
+    rem(32),
+    rem(40),
+    ''
   );
 }
 
 h2,
 .h2 {
   @include responsive-font-size(
-    $headings-font-size-h2 * $headings-xs,
-    $headings-font-size-h2 * $headings-sm,
-    $headings-font-size-h2 * $headings-md,
-    $headings-font-size-h2 * $headings-lg,
-    $headings-font-size-h2 * $headings-xl
+    rem(24),
+    '',
+    rem(26),
+    rem(32),
+    ''
   );
 }
 
 h3,
 .h3 {
   @include responsive-font-size(
-    $headings-font-size-h3 * $headings-xs,
-    $headings-font-size-h3 * $headings-sm,
-    $headings-font-size-h3 * $headings-md,
-    $headings-font-size-h3 * $headings-lg,
-    $headings-font-size-h3 * $headings-xl
+    rem(22),
+    '',
+    rem(24),
+    rem(28),
+    ''
   );
 }
 
 h4,
 .h4 {
   @include responsive-font-size(
-    $headings-font-size-h4 * $headings-xs,
-    $headings-font-size-h4 * $headings-sm,
-    $headings-font-size-h4 * $headings-md,
-    $headings-font-size-h4 * $headings-lg,
-    $headings-font-size-h4 * $headings-xl
+    rem(20),
+    '',
+    rem(22),
+    rem(24),
+    ''
   );
 }
 
 h5,
 .h5 {
   @include responsive-font-size(
-    $headings-font-size-h5 * $headings-xs,
-    $headings-font-size-h5 * $headings-sm,
-    $headings-font-size-h5 * $headings-md,
-    $headings-font-size-h5 * $headings-lg,
-    $headings-font-size-h5 * $headings-xl
+    rem(18),
+    '',
+    rem(20),
+    '',
+    ''
   );
 }
 
 h6,
 .h6 {
   @include responsive-font-size(
-    $headings-font-size-h6 * $headings-xs,
-    $headings-font-size-h6 * $headings-sm,
-    $headings-font-size-h6 * $headings-md,
-    $headings-font-size-h6 * $headings-lg,
-    $headings-font-size-h6 * $headings-xl
+    rem(16),
+    '',
+    rem(18),
+    '',
+    ''
   );
 }
