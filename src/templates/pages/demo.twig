@@ -30,7 +30,7 @@
     .demo-sidebar__title {
       font-size: .875rem;
       text-transform: uppercase;
-      color: #b8c2cc;
+      color: black;
       margin-bottom: .5rem;
     }
     .demo-sidebar ul {
@@ -626,7 +626,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
             <small><a href="https://gomakethings.com/how-to-show-and-hide-elements-with-vanilla-javascript/">Docs</a></small>
           </h2>
           <p>
-            <a class="js-toggle" href="#example">Toggle element</a>
+            <a class="js-toggle" href="#example" role="button">Toggle element</a>
           </p>
           <p id="example" class="is-hidden">
             Here's some text we want to toggle visibility of. Let's do it!
@@ -634,7 +634,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
           <div class="highlight">
             <pre><code class="html">
 &lt;p&gt;
-  &lt;a class=&quot;js-toggle&quot; href=&quot;#example&quot;&gt;Toggle element&lt;/a&gt;
+  &lt;a class=&quot;js-toggle&quot; href=&quot;#example&quot; role=&quot;button&quot;&gt;Toggle element&lt;/a&gt;
 &lt;/p&gt;
 &lt;p id=&quot;example&quot; class=&quot;is-hidden&quot;&gt;
   Here&apos;s some text we want to toggle visibility of. Let&apos;s do it!
@@ -657,7 +657,8 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
               data-toggle="collapse"
               data-target=".collapse.collapse-more-1"
               data-text-closed="Read More"
-              data-text-opened="Read Less">Read More</a>
+              data-text-opened="Read Less"
+              role="button">Read More</a>
           </p>
           <div class="highlight">
             <pre><code class="html">
@@ -670,7 +671,8 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
   data-toggle=&quot;collapse&quot;
   data-target=&quot;.collapse.collapse-more-1&quot;
   data-text-closed=&quot;Read More&quot;
-  data-text-opened=&quot;Read Less&quot;&gt;Read More&lt;/a&gt;
+  data-text-opened=&quot;Read Less&quot;
+  role=&quot;button&quot;&gt;Read More&lt;/a&gt;
 &lt;/p&gt;
             </code></pre>
           </div>
@@ -682,17 +684,17 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
             <small><a href="https://github.com/tsuyoshiwada/sweet-scroll">Docs</a></small>
           </h2>
           <p>
-            <a href="#buttons" data-scroll>Scroll to buttons section</a>
+            <a href="#buttons" data-scroll role="button">Scroll to buttons section</a>
           </p>
           <p>
-            <a href="#" data-scroll="0">Scroll to top</a>
+            <a href="#" data-scroll="0" role="button">Scroll to top</a>
           </p>
           <div class="highlight">
             <pre><code class="html">
-&lt;a href=&quot;#buttons&quot; data-scroll&gt;Scroll to buttons section&lt;/a&gt;
+&lt;a href=&quot;#buttons&quot; data-scroll role=&quot;button&quot;&gt;Scroll to buttons section&lt;/a&gt;
 &lt;div id=&quot;buttons&quot;&gt;Introduction&lt;/div&gt;
 ...
-&lt;a href=&quot;#&quot; data-scroll=&quot;0&quot;&gt;Scroll to top&lt;/a&gt;
+&lt;a href=&quot;#&quot; data-scroll=&quot;0&quot; role=&quot;button&quot;&gt;Scroll to top&lt;/a&gt;
             </code></pre>
           </div>
         </div>

@@ -3,18 +3,21 @@
  */
 
 $btn-color-bg: $primary !default;
+$btn-color-bg-hover: darken($primary, 10%) !default;
+
 $btn-color-text: white !default;
+$btn-color-text-hover: white !default;
+
 $btn-font-weight: inherit !default;
 $btn-font-size: 1rem !default;
+
 $btn-padding-x: .75rem !default;
 $btn-padding-y: .5rem !default;
-$btn-border-color: transparent !default;
-$btn-border-width: 1px !default;
-$btn-border-radius: 0 !default;
 
-$btn-color-bg-hover: darken($primary, 15%) !default;
-$btn-color-text-hover: white !default;
-$btn-color-hover-border: transparent !default;
+$btn-border-color: transparent !default;
+$btn-border-color-hover: transparent !default;
+$btn-border-width: 1px !default;
+$btn-border-radius: 4px !default;
 
 $btn-sm: .75 !default;
 $btn-lg: 1.25 !default;
@@ -45,7 +48,7 @@ $btn-lg: 1.25 !default;
   &:hover {
     background-color: $btn-color-bg-hover;
     color: $btn-color-text-hover;
-    border-color: $btn-color-hover-border;
+    border-color: $btn-border-color-hover;
   }
 
   &:focus {
@@ -69,9 +72,15 @@ $btn-lg: 1.25 !default;
   width: 100%;
 }
 
+// Disabled
+.btn:disabled {
+  opacity: .65;
+  pointer-events: none;
+}
+
 // Outline
 .btn-outline {
-  border: 1px solid $btn-color-bg;
+  border-color: $btn-color-bg;
   background-color: transparent;
   color: $btn-color-bg;
   &:hover {
@@ -81,101 +90,101 @@ $btn-lg: 1.25 !default;
   }
 }
 
-// Disabled
-.btn:disabled {
-  opacity: .65;
-  pointer-events: none;
+// Link
+.btn-link {
+  box-shadow: none;
+  background-color: transparent;
+  border-color: transparent;
+  color: $primary;
+  text-shadow: none;
+  text-transform: none;
+
+  &:hover {
+    border-color: $btn-color-bg;
+    background-color: transparent;
+    color: $btn-color-bg-hover;
+  }
 }
 
 // Colors
 .btn-primary {
-  background-color: $primary;
-  &:hover {
-    background-color: darken($primary, 15%);
-  }
-  &.btn-outline {
-    background-color: transparent;
-    border-color: $primary;
-    &:hover {
-      background-color: darken($primary, 15%);
-      border-color: darken($primary, 15%);
-      color: $white;
-    }
-  }
   &.btn-link {
     color: $primary;
     &:hover {
-      color: darken($primary, 15%);
-      border-color: darken($primary, 15%);
+      color: darken($primary, 10%);
+      border-color: darken($primary, 10%);
     }
   }
 }
 .btn-secondary {
   background-color: $secondary;
   &:hover {
-    background-color: darken($secondary, 15%);
-    border-color: darken($secondary, 15%);
+    background-color: darken($secondary, 10%);
+    border-color: darken($secondary, 10%);
   }
   &.btn-outline {
     background-color: transparent;
     border-color: $secondary;
     color: $secondary;
     &:hover {
-      background-color: darken($secondary, 15%);
-      border-color: darken($secondary, 15%);
+      background-color: darken($secondary, 10%);
+      border-color: darken($secondary, 10%);
       color: $white;
     }
   }
   &.btn-link {
+    background-color: transparent;
     color: $secondary;
     &:hover {
-      color: darken($secondary, 15%);
+      color: darken($secondary, 10%);
     }
   }
 }
 .btn-success {
   background-color: $success;
   &:hover {
-    background-color: darken($success, 15%);
-    border-color: darken($success, 15%);
+    background-color: darken($success, 10%);
+    border-color: darken($success, 10%);
   }
   &.btn-outline {
     background-color: transparent;
     border-color: $success;
     color: $success;
     &:hover {
-      background-color: darken($success, 15%);
-      border-color: darken($success, 15%);
+      background-color: darken($success, 10%);
+      border-color: darken($success, 10%);
       color: $white;
     }
   }
   &.btn-link {
+    background-color: transparent;
     color: $success;
     &:hover {
-      color: darken($success, 15%);
+      color: darken($success, 10%);
     }
   }
 }
 .btn-error {
   background-color: $error;
   &:hover {
-    background-color: darken($error, 15%);
-    border-color: darken($error, 15%);
+    background-color: darken($error, 10%);
+    border-color: darken($error, 10%);
   }
   &.btn-outline {
     background-color: transparent;
     border-color: $error;
     color: $error;
     &:hover {
-      background-color: darken($error, 15%);
-      border-color: darken($error, 15%);
+      background-color: darken($error, 10%);
+      border-color: darken($error, 10%);
       color: $white;
     }
   }
   &.btn-link {
+    background-color: transparent;
     color: $error;
     &:hover {
-      color: darken($error, 15%);
+      color: darken($error, 10%);
     }
   }
 }
@@ -183,8 +192,8 @@ $btn-lg: 1.25 !default;
   background-color: $white;
   color: $black;
   &:hover {
-    background-color: darken($black, 15%);
-    border-color: darken($black, 15%);
+    background-color: darken($black, 10%);
+    border-color: darken($black, 10%);
     color: $white;
   }
   &.btn-outline {
@@ -192,12 +201,13 @@ $btn-lg: 1.25 !default;
     border-color: $white;
     color: $white;
     &:hover {
-      background-color: darken($black, 15%);
-      border-color: darken($black, 15%);
+      background-color: darken($black, 10%);
+      border-color: darken($black, 10%);
       color: $white;
     }
   }
   &.btn-link {
+    background-color: transparent;
     color: $white;
     &:hover {
       color: $black;
@@ -207,39 +217,24 @@ $btn-lg: 1.25 !default;
 .btn-black {
   background-color: $black;
   &:hover {
-    background-color: lighten($black, 15%);
-    border-color: lighten($black, 15%);
+    background-color: lighten($black, 10%);
+    border-color: lighten($black, 10%);
   }
   &.btn-outline {
     background-color: transparent;
     border-color: $black;
     color: $black;
     &:hover {
-      background-color: lighten($black, 15%);
-      border-color: lighten($black, 15%);
+      background-color: lighten($black, 10%);
+      border-color: lighten($black, 10%);
       color: $white;
     }
   }
   &.btn-link {
+    background-color: transparent;
     color: $black;
     &:hover {
-      color: lighten($black, 15%);
+      color: lighten($black, 10%);
     }
-  }
-}
-
-// Link
-.btn-link {
-  box-shadow: none;
-  background: transparent;
-  border-color: transparent;
-  color: $primary;
-  text-shadow: none;
-  text-transform: none;
-
-  &:hover,
-  &:focus {
-    background: transparent;
-    color: black;
   }
 }

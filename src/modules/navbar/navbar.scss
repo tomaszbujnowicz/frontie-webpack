@@ -34,6 +34,7 @@ $navbar-z-index-toggler: 1010;
 }
 .navbar__menu {
   display: flex;
+  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -46,8 +47,7 @@ $navbar-z-index-toggler: 1010;
   color: $navbar-color-link;
   text-decoration: none;
 }
-.navbar__link,
-.navbar__link--selected {
+.navbar__item--selected .navbar__link {
   color: $navbar-color-link-hover;
 }
 
