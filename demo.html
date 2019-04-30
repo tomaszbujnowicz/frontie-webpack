@@ -82,6 +82,20 @@
       margin-bottom: 5rem;
     }
 
+    .demo-text {
+      background-color: #f5f5f5;
+      padding: 1rem;
+    }
+
+    .demo-background {
+      padding: 1rem;
+      color: white;
+    }
+
+    .demo-background.bg-white {
+      color: black;
+    }
+
     @media (min-width: 768px) {
       .demo {
         display: -webkit-box;
@@ -157,11 +171,6 @@
               </a>
             </li>
             <li>
-              <a href="#alignment" data-scroll>
-                Text Alignment
-              </a>
-            </li>
-            <li>
               <a href="#font-family" data-scroll>
                 Font Family
               </a>
@@ -177,55 +186,23 @@
               </a>
             </li>
             <li>
-              <a href="#paragraph" data-scroll>
-                Paragraph
-              </a>
-            </li>
-            <li>
               <a href="#lists" data-scroll>
                 Lists
               </a>
             </li>
             <li>
-              <a href="#blockquote" data-scroll>
-                Blockquote
-              </a>
-            </li>
-          </ul>
-
-          <h3 class="demo-sidebar__title">
-            Bootstrap
-          </h3>
-          <ul class="list-unstyled">
-            <li>
-              <a href="#bootstrap-grid" data-scroll>
-                Grid
+              <a href="#paragraph" data-scroll>
+                Paragraph
               </a>
             </li>
             <li>
-              <a href="#bootstrap-media-queries" data-scroll>
-                Responsive Breakpoints
-              </a>
-            </li>
-          </ul>
-
-          <h3 class="demo-sidebar__title">
-            JS Modules
-          </h3>
-          <ul class="list-unstyled">
-            <li>
-              <a href="#js-toggle" data-scroll>
-                Toggle Element
+              <a href="#style-decoration" data-scroll>
+                Style & Decoration
               </a>
             </li>
             <li>
-              <a href="#js-collapse" data-scroll>
-                Collapse
-              </a>
-            </li>
-            <li>
-              <a href="#js-smooth-scroll" data-scroll>
-                Smooth Scroll
+              <a href="#alignment" data-scroll>
+                Text Alignment
               </a>
             </li>
           </ul>
@@ -258,6 +235,43 @@
           </ul>
 
           <h3 class="demo-sidebar__title">
+            JS Components
+          </h3>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#js-collapse" data-scroll>
+                Collapse
+              </a>
+            </li>
+            <li>
+              <a href="#js-smooth-scroll" data-scroll>
+                Smooth Scroll
+              </a>
+            </li>
+            <li>
+              <a href="#js-toggle" data-scroll>
+                Toggle Element
+              </a>
+            </li>
+          </ul>
+
+          <h3 class="demo-sidebar__title">
+            Bootstrap
+          </h3>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#bootstrap-grid" data-scroll>
+                Grid
+              </a>
+            </li>
+            <li>
+              <a href="#bootstrap-media-queries" data-scroll>
+                Responsive Breakpoints
+              </a>
+            </li>
+          </ul>
+
+          <h3 class="demo-sidebar__title">
             Mixins / Utilities
           </h3>
           <ul class="list-unstyled">
@@ -285,44 +299,57 @@
           <h2 class="section-title">
             Colors
           </h2>
-          <p class="text-default">
-            .text-default
-          </p>
-          <p class="text-primary">
-            .text-primary
-          </p>
-          <p class="text-secondary">
-            .text-secondary
-          </p>
-          <p class="text-success">
-            .text-success
-          </p>
-          <p class="text-error">
-            .text-error
-          </p>
-          <p class="text-white">
-            .text-white
-          </p>
-          <p class="text-black">
-            .text-black
-          </p>
-        </div>
 
-        <div id="alignment" class="section">
-          <h2 class="section-title">
-            Text Alignment
-          </h2>
-          <p class="text-left">
-            .text-left
+          <div class="mb-2">
+            <p>
+              Text Colors.
+            </p>
+            <p class="demo-text text-default">
+              .text-default
+            </p>
+            <p class="demo-text text-primary">
+              .text-primary
+            </p>
+            <p class="demo-text text-secondary">
+              .text-secondary
+            </p>
+            <p class="demo-text text-success">
+              .text-success
+            </p>
+            <p class="demo-text text-error">
+              .text-error
+            </p>
+            <p class="demo-text text-white">
+              .text-white
+            </p>
+            <p class="demo-text text-black">
+              .text-black
+            </p>
+          </div>
+
+          <p>
+            Background Colors.
           </p>
-          <p class="text-center">
-            .text-center
+          <p class="demo-background bg-default">
+            .bg-default
           </p>
-          <p class="text-right">
-            .text-right
+          <p class="demo-background bg-primary">
+            .bg-primary
           </p>
-          <p class="text-justify">
-            .text-justify
+          <p class="demo-background bg-secondary">
+            .bg-secondary
+          </p>
+          <p class="demo-background bg-success">
+            .bg-success
+          </p>
+          <p class="demo-background bg-error">
+            .bg-error
+          </p>
+          <p class="demo-background bg-white">
+            .bg-white
+          </p>
+          <p class="demo-background bg-black">
+            .bg-black
           </p>
         </div>
 
@@ -389,7 +416,7 @@
           <h4>Responsive Headline 4</h4>
           <h5>Responsive Headline 5</h5>
           <h6>Responsive Headline 6</h6>
-          <div class="highlight">
+          <div class="highlight mb-2">
             <pre><code class="html">
 &lt;h1&gt;Responsive Headline 1&lt;/h1&gt;
 &lt;h2&gt;Responsive Headline 2&lt;/h2&gt;
@@ -399,47 +426,24 @@
 &lt;h6&gt;Responsive Headline 6&lt;/h6&gt;
             </code></pre>
           </div>
-        </div>
 
-        <div id="paragraph" class="section">
-          <h2 class="section-title">
-            Paragraph
-          </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores explicabo architecto perferendis ut nemo! Sapiente, eum quidem placeat, blanditiis, maiores, labore.
+            .h1 through .h6 classes are also available
           </p>
-          <p>
-            <a href="#">Sample link</a>
-          </p>
-          <p>
-            You can use the mark tag to <mark>highlight</mark> text.
-          </p>
-          <p>
-            <s>This line of text is meant to be treated as no longer accurate.</s>
-          </p>
-          <p>
-            <u>This line of text will render as underlined</u>
-          </p>
-          <p>
-            <strong>This line rendered as bold text.</strong>
-          </p>
-          <p>
-            <em>This line rendered as italicized text.</em>
-          </p>
-
+          <p class="h1">Responsive Headline 1</p>
+          <p class="h2">Responsive Headline 2</p>
+          <p class="h3">Responsive Headline 3</p>
+          <p class="h4">Responsive Headline 4</p>
+          <p class="h5">Responsive Headline 5</p>
+          <p class="h6">Responsive Headline 6</p>
           <div class="highlight">
             <pre><code class="html">
-&lt;p&gt;
-Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores explicabo architecto perferendis ut nemo! Sapiente, eum quidem placeat, blanditiis, maiores, labore.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&quot;#&quot;&gt;Sample link&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;
-&lt;p&gt;&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;&lt;/p&gt;
-&lt;p&gt;&lt;u&gt;This line of text will render as underlined&lt;/u&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;This line rendered as bold text.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;This line rendered as italicized text.&lt;/em&gt;&lt;/p&gt;
+&lt;p class=&quot;h1&quot;&gt;Responsive Headline 1&lt;/p&gt;
+&lt;p class=&quot;h2&quot;&gt;Responsive Headline 2&lt;/p&gt;
+&lt;p class=&quot;h3&quot;&gt;Responsive Headline 3&lt;/p&gt;
+&lt;p class=&quot;h4&quot;&gt;Responsive Headline 4&lt;/p&gt;
+&lt;p class=&quot;h5&quot;&gt;Responsive Headline 5&lt;/p&gt;
+&lt;p class=&quot;h6&quot;&gt;Responsive Headline 6&lt;/p&gt;
             </code></pre>
           </div>
         </div>
@@ -587,10 +591,51 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
 
         </div>
 
-        <div id="blockquote" class="section">
+        <div id="paragraph" class="section">
           <h2 class="section-title">
-            Blockquote
+            Paragraph
           </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores explicabo architecto perferendis ut nemo! Sapiente, eum quidem placeat, blanditiis, maiores, labore.
+          </p>
+          <p>
+            <a href="#">Sample link</a>
+          </p>
+          <p>
+            You can use the mark tag to <mark>highlight</mark> text.
+          </p>
+          <p>
+            <s>This line of text is meant to be treated as no longer accurate.</s>
+          </p>
+          <p>
+            <u>This line of text will render as underlined</u>
+          </p>
+          <p>
+            <strong>This line rendered as bold text.</strong>
+          </p>
+          <p>
+            <em>This line rendered as italicized text.</em>
+          </p>
+
+          <div class="highlight mb-2">
+            <pre><code class="html">
+&lt;p&gt;
+Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores explicabo architecto perferendis ut nemo! Sapiente, eum quidem placeat, blanditiis, maiores, labore.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&quot;#&quot;&gt;Sample link&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;This line of text will render as underlined&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This line rendered as bold text.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This line rendered as italicized text.&lt;/em&gt;&lt;/p&gt;
+            </code></pre>
+          </div>
+
+          <p>
+            Blockquote
+          </p>
           <blockquote>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod atque accusamus voluptate optio ea! Pariatur ipsam nihil, maiores dignissimos blanditiis natus, nostrum voluptas eveniet accusantium iste recusandae cum laborum reiciendis.
@@ -605,146 +650,55 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
 &lt;/blockquote&gt;
             </code></pre>
           </div>
+
         </div>
 
-        <div id="bootstrap-grid" class="section">
+        <div id="style-decoration" class="section">
           <h2 class="section-title">
-            Bootstrap Grid
-            <small><a href="https://getbootstrap.com/docs/4.3/layout/grid/">Docs</a></small>
+            Style & Decorations
           </h2>
-          <div class="mb">
-            <div class="row">
-              <div class="col-sm">
-                One of three columns
-              </div>
-              <div class="col-sm">
-                One of three columns
-              </div>
-              <div class="col-sm">
-                One of three columns
-              </div>
-            </div>
-          </div>
-          <div class="highlight">
-            <pre><code class="html">
-&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;col-sm&quot;&gt;
-    One of three columns
-  &lt;/div&gt;
-  &lt;div class=&quot;col-sm&quot;&gt;
-    One of three columns
-  &lt;/div&gt;
-  &lt;div class=&quot;col-sm&quot;&gt;
-    One of three columns
-  &lt;/div&gt;
-&lt;/div&gt;
-            </code></pre>
-          </div>
+          <p class="italic">
+            .italic
+          </p>
+          <p class="uppercase">
+            .uppercase
+          </p>
+          <p class="lowercase">
+            .lowercase
+          </p>
+          <p class="capitalize">
+            .capitalize
+          </p>
+          <p class="normal-case">
+            .normal-case
+          </p>
+          <p class="underline">
+            .underline
+          </p>
+          <p class="line-through">
+            .line-through
+          </p>
+          <p class="no-underline">
+            .no-underline
+          </p>
         </div>
 
-        <div id="bootstrap-media-queries" class="section">
+        <div id="alignment" class="section">
           <h2 class="section-title">
-            Bootstrap Responsive Breakpoints<br>
-            Media Queries
-            <small><a href="https://getbootstrap.com/docs/4.3/layout/overview/#responsive-breakpoints">Docs</a></small>
+            Text Alignment
           </h2>
-          <p>
-            CSS:
+          <p class="text-left">
+            .text-left
           </p>
-          <div class="highlight">
-            <pre><code class="css">
-@include media-breakpoint-up(sm) { ... }
-@include media-breakpoint-up(md) { ... }
-@include media-breakpoint-up(lg) { ... }
-@include media-breakpoint-up(xl) { ... }
-
-@include media-breakpoint-down(xs) { ... }
-@include media-breakpoint-down(sm) { ... }
-@include media-breakpoint-down(md) { ... }
-@include media-breakpoint-down(lg) { ... }
-
-@include media-breakpoint-only(xs) { ... }
-@include media-breakpoint-only(sm) { ... }
-@include media-breakpoint-only(md) { ... }
-@include media-breakpoint-only(lg) { ... }
-@include media-breakpoint-only(xl) { ... }
-
-@include media-breakpoint-between(md, xl) { ... }
-            </code></pre>
-          </div>
-        </div>
-
-        <div id="js-toggle" class="section">
-          <h2 class="section-title">
-            JS Component: Toggle Element
-            <small><a href="https://gomakethings.com/how-to-show-and-hide-elements-with-vanilla-javascript/">Docs</a></small>
-          </h2>
-          <p>
-            <a class="js-toggle" href="#example" role="button">Toggle element</a>
+          <p class="text-center">
+            .text-center
           </p>
-          <p id="example" class="is-hidden">
-            Here's some text we want to toggle visibility of. Let's do it!
+          <p class="text-right">
+            .text-right
           </p>
-          <div class="highlight">
-            <pre><code class="html">
-&lt;p&gt;
-  &lt;a class=&quot;js-toggle&quot; href=&quot;#example&quot; role=&quot;button&quot;&gt;Toggle element&lt;/a&gt;
-&lt;/p&gt;
-&lt;p id=&quot;example&quot; class=&quot;is-hidden&quot;&gt;
-  Here&apos;s some text we want to toggle visibility of. Let&apos;s do it!
-&lt;/p&gt;
-            </code></pre>
-          </div>
-        </div>
-
-        <div id="js-collapse" class="section">
-          <h2 class="section-title">
-            JS Component: Collapse
-            <small><a href="https://medium.com/dailyjs/mimicking-bootstraps-collapse-with-vanilla-javascript-b3bb389040e7">Docs</a></small>
-          </h2>
-          <div class="collapse collapse-more-1">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident doloribus, eos rem. Nostrum possimus reiciendis, neque iure repudiandae explicabo hic veritatis ad, deleniti provident soluta, facere, voluptates tenetur quae. Maiores!
-          </div>
-          <p>
-            <a href="#" data-toggle="collapse" data-target=".collapse.collapse-more-1" data-text-closed="Read More" data-text-opened="Read Less" role="button">Read More</a>
+          <p class="text-justify">
+            .text-justify
           </p>
-          <div class="highlight">
-            <pre><code class="html">
-&lt;div class=&quot;collapse collapse-more-1&quot;&gt;
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident doloribus, eos rem. Nostrum possimus reiciendis, neque iure repudiandae explicabo hic veritatis ad, deleniti provident soluta, facere, voluptates tenetur quae. Maiores!
-&lt;/div&gt;
-&lt;p&gt;
-&lt;a
-  href=&quot;#&quot;
-  data-toggle=&quot;collapse&quot;
-  data-target=&quot;.collapse.collapse-more-1&quot;
-  data-text-closed=&quot;Read More&quot;
-  data-text-opened=&quot;Read Less&quot;
-  role=&quot;button&quot;&gt;Read More&lt;/a&gt;
-&lt;/p&gt;
-            </code></pre>
-          </div>
-        </div>
-
-        <div id="js-smooth-scroll" class="section">
-          <h2 class="section-title">
-            JS Component: Smooth Scroll
-            <small><a href="https://github.com/tsuyoshiwada/sweet-scroll">Docs</a></small>
-          </h2>
-          <p>
-            <a href="#buttons" data-scroll role="button">Scroll to buttons section</a>
-          </p>
-          <p>
-            <a href="#" data-scroll="0" role="button">Scroll to top</a>
-          </p>
-          <div class="highlight">
-            <pre><code class="html">
-&lt;a href=&quot;#buttons&quot; data-scroll role=&quot;button&quot;&gt;Scroll to buttons section&lt;/a&gt;
-&lt;div id=&quot;buttons&quot;&gt;Introduction&lt;/div&gt;
-...
-&lt;a href=&quot;#&quot; data-scroll=&quot;0&quot; role=&quot;button&quot;&gt;Scroll to top&lt;/a&gt;
-            </code></pre>
-          </div>
         </div>
 
         <div id="buttons" class="section">
@@ -928,6 +882,146 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
             <div class="carousel-cell">
               Architecto laborum, autem officiis fugiat, iure quis modi nam, laudantium totam incidunt maxime sapiente omnis vitae doloribus voluptatibus ex. Vitae maiores, enim! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </div>
+          </div>
+        </div>
+
+        <div id="js-collapse" class="section">
+          <h2 class="section-title">
+            JS Component: Collapse
+            <small><a href="https://medium.com/dailyjs/mimicking-bootstraps-collapse-with-vanilla-javascript-b3bb389040e7">Docs</a></small>
+          </h2>
+          <div class="collapse collapse-more-1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident doloribus, eos rem. Nostrum possimus reiciendis, neque iure repudiandae explicabo hic veritatis ad, deleniti provident soluta, facere, voluptates tenetur quae. Maiores!
+          </div>
+          <p>
+            <a href="#" data-toggle="collapse" data-target=".collapse.collapse-more-1" data-text-closed="Read More" data-text-opened="Read Less" role="button">Read More</a>
+          </p>
+          <div class="highlight">
+            <pre><code class="html">
+&lt;div class=&quot;collapse collapse-more-1&quot;&gt;
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident doloribus, eos rem. Nostrum possimus reiciendis, neque iure repudiandae explicabo hic veritatis ad, deleniti provident soluta, facere, voluptates tenetur quae. Maiores!
+&lt;/div&gt;
+&lt;p&gt;
+&lt;a
+  href=&quot;#&quot;
+  data-toggle=&quot;collapse&quot;
+  data-target=&quot;.collapse.collapse-more-1&quot;
+  data-text-closed=&quot;Read More&quot;
+  data-text-opened=&quot;Read Less&quot;
+  role=&quot;button&quot;&gt;Read More&lt;/a&gt;
+&lt;/p&gt;
+            </code></pre>
+          </div>
+        </div>
+
+        <div id="js-smooth-scroll" class="section">
+          <h2 class="section-title">
+            JS Component: Smooth Scroll
+            <small><a href="https://github.com/tsuyoshiwada/sweet-scroll">Docs</a></small>
+          </h2>
+          <p>
+            <a href="#js-toggle" data-scroll role="button">Scroll to the next JS component</a>
+          </p>
+          <p>
+            <a href="#" data-scroll="0" role="button">Scroll to top</a>
+          </p>
+          <div class="highlight">
+            <pre><code class="html">
+&lt;a href=&quot;#buttons&quot; data-scroll role=&quot;button&quot;&gt;Scroll to buttons section&lt;/a&gt;
+&lt;div id=&quot;buttons&quot;&gt;Introduction&lt;/div&gt;
+...
+&lt;a href=&quot;#&quot; data-scroll=&quot;0&quot; role=&quot;button&quot;&gt;Scroll to top&lt;/a&gt;
+            </code></pre>
+          </div>
+        </div>
+
+        <div id="js-toggle" class="section">
+          <h2 class="section-title">
+            JS Component: Toggle Element
+            <small><a href="https://gomakethings.com/how-to-show-and-hide-elements-with-vanilla-javascript/">Docs</a></small>
+          </h2>
+          <p>
+            <a class="js-toggle" href="#example" role="button">Toggle element</a>
+          </p>
+          <p id="example" class="is-hidden">
+            Here's some text we want to toggle visibility of. Let's do it!
+          </p>
+          <div class="highlight">
+            <pre><code class="html">
+&lt;p&gt;
+  &lt;a class=&quot;js-toggle&quot; href=&quot;#example&quot; role=&quot;button&quot;&gt;Toggle element&lt;/a&gt;
+&lt;/p&gt;
+&lt;p id=&quot;example&quot; class=&quot;is-hidden&quot;&gt;
+  Here&apos;s some text we want to toggle visibility of. Let&apos;s do it!
+&lt;/p&gt;
+            </code></pre>
+          </div>
+        </div>
+
+        <div id="bootstrap-grid" class="section">
+          <h2 class="section-title">
+            Bootstrap Grid
+            <small><a href="https://getbootstrap.com/docs/4.3/layout/grid/">Docs</a></small>
+          </h2>
+          <div class="mb">
+            <div class="row">
+              <div class="col-sm">
+                One of three columns
+              </div>
+              <div class="col-sm">
+                One of three columns
+              </div>
+              <div class="col-sm">
+                One of three columns
+              </div>
+            </div>
+          </div>
+          <div class="highlight">
+            <pre><code class="html">
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-sm&quot;&gt;
+    One of three columns
+  &lt;/div&gt;
+  &lt;div class=&quot;col-sm&quot;&gt;
+    One of three columns
+  &lt;/div&gt;
+  &lt;div class=&quot;col-sm&quot;&gt;
+    One of three columns
+  &lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+          </div>
+        </div>
+
+        <div id="bootstrap-media-queries" class="section">
+          <h2 class="section-title">
+            Bootstrap Responsive Breakpoints<br>
+            Media Queries
+            <small><a href="https://getbootstrap.com/docs/4.3/layout/overview/#responsive-breakpoints">Docs</a></small>
+          </h2>
+          <p>
+            CSS:
+          </p>
+          <div class="highlight">
+            <pre><code class="css">
+@include media-breakpoint-up(sm) { ... }
+@include media-breakpoint-up(md) { ... }
+@include media-breakpoint-up(lg) { ... }
+@include media-breakpoint-up(xl) { ... }
+
+@include media-breakpoint-down(xs) { ... }
+@include media-breakpoint-down(sm) { ... }
+@include media-breakpoint-down(md) { ... }
+@include media-breakpoint-down(lg) { ... }
+
+@include media-breakpoint-only(xs) { ... }
+@include media-breakpoint-only(sm) { ... }
+@include media-breakpoint-only(md) { ... }
+@include media-breakpoint-only(lg) { ... }
+@include media-breakpoint-only(xl) { ... }
+
+@include media-breakpoint-between(md, xl) { ... }
+            </code></pre>
           </div>
         </div>
 
