@@ -22,7 +22,7 @@ These tools make it a solid front-end boilerplate to get a new project off the g
 Make sure all dependencies have been installed before moving on:
 
 * [yarn](https://yarnpkg.com/lang/en/) or [npm](https://www.npmjs.com/get-npm)
-* [Node.js](https://nodejs.org/en/download/)
+* [Node.js](https://nodejs.org/en/download/) >= 8.16.0
 * [Gulp](http://gulpjs.com/)
 
 ### Quick start: Installation
@@ -59,6 +59,7 @@ Clone this repository and run
 |  |  |--components/       # →  Templates: Components
 |  |  |--pages/            # →  Templates: Pages
 |--.babelrc                # →  Babel presets
+|--.browserslistrc         # →  Browserslist config, browsers that we support
 |--.eslintrc               # →  ESLint config
 |--.gitignore              # →  Gitignore
 |--.stylelintrc            # →  Stylelint config
