@@ -96,6 +96,17 @@
       color: black;
     }
 
+    .demo-square {
+      display: inline-block;
+      padding: .5rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      line-height: 1;
+      margin-right: .25rem;
+      margin-bottom: .25rem;
+      vertical-align: middle;
+    }
+
     @media (min-width: 768px) {
       .demo {
         display: -webkit-box;
@@ -176,6 +187,11 @@
               </a>
             </li>
             <li>
+              <a href="#font-size" data-scroll>
+                Font Size
+              </a>
+            </li>
+            <li>
               <a href="#font-weights" data-scroll>
                 Font Weights
               </a>
@@ -203,6 +219,17 @@
             <li>
               <a href="#alignment" data-scroll>
                 Text Alignment
+              </a>
+            </li>
+          </ul>
+
+          <h3 class="demo-sidebar__title">
+            Spacing
+          </h3>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#spacing" data-scroll>
+                Margin & Padding
               </a>
             </li>
           </ul>
@@ -368,6 +395,30 @@
           </p>
           <p class="font-family-mono">
             .font-family-mono
+          </p>
+        </div>
+
+        <div id="font-size" class="section">
+          <h2 class="section-title">
+            Font Size
+          </h2>
+          <p class="text-xs">
+            .text-xs (font-size: .75rem)
+          </p>
+          <p class="text-sm">
+            .text-sm (font-size: .875rem)
+          </p>
+          <p class="text-base">
+            .text-base (font-size: 1rem)
+          </p>
+          <p class="text-lg">
+            .text-lg (font-size: 1.125rem)
+          </p>
+          <p class="text-xl">
+            .text-xl (font-size: 1.25rem)
+          </p>
+          <p class="text-xxl">
+            .text-xxl (font-size: 1.5rem)
           </p>
         </div>
 
@@ -699,6 +750,90 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
           <p class="text-justify">
             .text-justify
           </p>
+        </div>
+
+        <div id="spacing" class="section">
+          <h2 class="section-title">
+            Spacing
+          </h2>
+          <p>
+            Utilities for controlling an element's padding and margin.<br>
+            For example <code class="text-secondary">.mb-4</code> would add <code class="text-secondary">.2rem</code> of margin to the bottom of the element
+          </p>
+          <p>
+            <code class="text-secondary">.{property}{side}-{size}</code>
+          </p>
+          <div class="row">
+            <div class="col-4">
+              <p>
+                <strong>Property</strong>
+              </p>
+              <ul class="list-unstyled text-sm">
+                <li>
+                  <code class="demo-square">p</code> padding
+                </li>
+                <li>
+                  <code class="demo-square">m</code> Margin
+                </li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <p>
+                <strong>Side</strong>
+              </p>
+              <ul class="list-unstyled text-sm">
+                <li>
+                  <code class="demo-square">&nbsp;</code> All
+                </li>
+                <li>
+                  <code class="demo-square">t</code> Top
+                </li>
+                <li>
+                  <code class="demo-square">r</code> Right
+                </li>
+                <li>
+                  <code class="demo-square">b</code> Bottom
+                </li>
+                <li>
+                  <code class="demo-square">l</code> Left
+                </li>
+                <li>
+                  <code class="demo-square">x</code> Horizontal
+                </li>
+                <li>
+                  <code class="demo-square">y</code> Vertical
+                </li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <p>
+                <strong>Space</strong>
+              </p>
+              <ul class="list-unstyled text-sm mb-5">
+                <li>
+                  <code class="demo-square">0</code> 0
+                </li>
+                <li>
+                  <code class="demo-square">1</code> .5rem
+                </li>
+                <li>
+                  <code class="demo-square">2</code> 1rem
+                </li>
+                <li>
+                  <code class="demo-square">3</code> 1.5rem
+                </li>
+                <li>
+                  <code class="demo-square">4</code> 2rem
+                </li>
+                <li>
+                  <code class="demo-square">5</code> 4rem
+                </li>
+                <li>
+                  <code class="demo-square">auto</code> Auto <span class="text-xs">(margins only)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div id="buttons" class="section">
