@@ -11,7 +11,10 @@ $space-values : (
   2 : $space-2,
   3 : $space-3,
   4 : $space-4,
-  5 : $space-5
+  5 : $space-5,
+  6 : $space-6,
+  7 : $space-7,
+  8 : $space-8
 ) !default;
 
 $space-prefixes : (
@@ -37,16 +40,24 @@ $space-prefixes : (
   }
 }
 
-@include make-space($space-values, $space-prefixes);
+@if $use-spacing {
 
-// Margin Auto
-.mr-auto {
-  margin-right: auto;
-}
-.ml-auto {
-  margin-left: auto;
-}
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+  @include make-space($space-values, $space-prefixes);
+
+  // Margin Auto
+  .mr-auto {
+    margin-right: auto;
+  }
+  .ml-auto {
+    margin-left: auto;
+  }
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
 }

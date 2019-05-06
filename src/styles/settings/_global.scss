@@ -7,3 +7,19 @@
  * all configuration variables should be defined with the !default flag
  * so they can be overwritten.
  */
+
+// Bootstrap
+// .row, .container, .col, .col-sm etc..
+$enable-grid-classes: true !default;
+
+// Utilities
+$use-aspect-ratio: true !default;
+$use-background-size: true !default;
+$use-clearfix: true !default;
+$use-colors: true !default;
+$use-font-family: true !default;
+$use-font-size: true !default;
+$use-font-weight: true !default;
+$use-spacing: true !default;
+$use-text-alignment: true !default;
+$use-text-style: true !default;

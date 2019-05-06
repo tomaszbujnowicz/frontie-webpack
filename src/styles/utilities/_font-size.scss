@@ -2,21 +2,25 @@
  * Font Size
  */
 
-.text-xs {
-  font-size: .75rem;
-}
-.text-sm {
-  font-size: .875rem;
-}
-.text-base {
-  font-size: $font-size-base;
-}
-.text-lg {
-  font-size: 1.125rem;
-}
-.text-xl {
-  font-size: 1.25rem;
-}
-.text-xxl {
-  font-size: 1.5rem;
+@if $use-font-size {
+
+  .text-xs {
+    font-size: $font-size-xs;
+  }
+  .text-sm {
+    font-size: $font-size-sm;
+  }
+  .text-base {
+    font-size: $font-size-base;
+  }
+  .text-lg {
+    font-size: $font-size-lg;
+  }
+  .text-xl {
+    font-size: $font-size-xl;
+  }
+  .text-xxl {
+    font-size: $font-size-xxl;
+  }
+
 }

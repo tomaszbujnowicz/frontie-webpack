@@ -2,15 +2,19 @@
  * Font Family
  */
 
-.font-family-base {
-  font-family: $font-family;
-}
-.font-family-sans {
-  font-family: $font-family-sans;
-}
-.font-family-serif {
-  font-family: $font-family-serif;
-}
-.font-family-mono {
-  font-family: $font-family-mono;
+@if $use-font-family {
+
+  .font-family-base {
+    font-family: $font-family;
+  }
+  .font-family-sans {
+    font-family: $font-family-sans;
+  }
+  .font-family-serif {
+    font-family: $font-family-serif;
+  }
+  .font-family-mono {
+    font-family: $font-family-mono;
+  }
+
 }

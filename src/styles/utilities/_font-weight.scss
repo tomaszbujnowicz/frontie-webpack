@@ -2,30 +2,34 @@
  * Font Weight
  */
 
-.font-weight-hairline {
-  font-weight: $font-weight-hairline;
-}
-.font-weight-thin {
-  font-weight: $font-weight-thin;
-}
-.font-weight-light {
-  font-weight: $font-weight-light;
-}
-.font-weight-normal {
-  font-weight: $font-weight-normal;
-}
-.font-weight-medium {
-  font-weight: $font-weight-medium;
-}
-.font-weight-semibold {
-  font-weight: $font-weight-semibold;
-}
-.font-weight-bold {
-  font-weight: $font-weight-bold;
-}
-.font-weight-extrabold	{
-  font-weight: $font-weight-extrabold;
-}
-.font-weight-black {
-  font-weight: $font-weight-black;
+@if $use-font-weight {
+
+  .font-weight-hairline {
+    font-weight: $font-weight-hairline;
+  }
+  .font-weight-thin {
+    font-weight: $font-weight-thin;
+  }
+  .font-weight-light {
+    font-weight: $font-weight-light;
+  }
+  .font-weight-normal {
+    font-weight: $font-weight-normal;
+  }
+  .font-weight-medium {
+    font-weight: $font-weight-medium;
+  }
+  .font-weight-semibold {
+    font-weight: $font-weight-semibold;
+  }
+  .font-weight-bold {
+    font-weight: $font-weight-bold;
+  }
+  .font-weight-extrabold	{
+    font-weight: $font-weight-extrabold;
+  }
+  .font-weight-black {
+    font-weight: $font-weight-black;
+  }
+
 }

@@ -1,0 +1,32 @@
+/**
+ * Text: style & decorations
+ */
+
+@if $use-text-style {
+
+  .italic {
+    font-style: italic;
+  }
+  .uppercase {
+    text-transform: uppercase;
+  }
+  .lowercase {
+    text-transform: lowercase;
+  }
+  .capitalize {
+    text-transform: capitalize;
+  }
+  .normal-case {
+    text-transform: none;
+  }
+  .underline {
+    text-decoration: underline;
+  }
+  .line-through {
+    text-decoration: line-through;
+  }
+  .no-underline {
+    text-decoration: none;
+  }
+
+}

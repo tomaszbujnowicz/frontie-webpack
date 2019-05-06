@@ -2,48 +2,52 @@
  * Colors
  */
 
-// Text Colors
-.text-default {
-  color: $color-text;
-}
-.text-white {
-  color: $color-white;
-}
-.text-black {
-  color: $color-black;
-}
-.text-primary {
-  color: $color-primary;
-}
-.text-secondary {
-  color: $color-secondary;
-}
-.text-success {
-  color: $color-success;
-}
-.text-error {
-  color: $color-error;
-}
+@if $use-colors {
 
-// Background Colors
-.bg-default {
-  background-color: $color-text;
-}
-.bg-white {
-  background-color: $color-white;
-}
-.bg-black {
-  background-color: $color-black;
-}
-.bg-primary {
-  background-color: $color-primary;
-}
-.bg-secondary {
-  background-color: $color-secondary;
-}
-.bg-success {
-  background-color: $color-success;
-}
-.bg-error {
-  background-color: $color-error;
+  // Text Colors
+  .text-default {
+    color: $color-text;
+  }
+  .text-white {
+    color: $color-white;
+  }
+  .text-black {
+    color: $color-black;
+  }
+  .text-primary {
+    color: $color-primary;
+  }
+  .text-secondary {
+    color: $color-secondary;
+  }
+  .text-success {
+    color: $color-success;
+  }
+  .text-error {
+    color: $color-error;
+  }
+
+  // Background Colors
+  .bg-default {
+    background-color: $color-text;
+  }
+  .bg-white {
+    background-color: $color-white;
+  }
+  .bg-black {
+    background-color: $color-black;
+  }
+  .bg-primary {
+    background-color: $color-primary;
+  }
+  .bg-secondary {
+    background-color: $color-secondary;
+  }
+  .bg-success {
+    background-color: $color-success;
+  }
+  .bg-error {
+    background-color: $color-error;
+  }
+
 }

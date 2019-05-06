@@ -2,6 +2,10 @@
  * Clearfix
  */
 
-.clearfix {
-  @include clearfix();
+@if $use-clearfix {
+
+  .clearfix {
+    @include clearfix();
+  }
+
 }
