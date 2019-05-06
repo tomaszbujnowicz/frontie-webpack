@@ -43,15 +43,19 @@
     }
 
     .demo-sidebar__title {
-      font-size: .875rem;
+      font-size: .75rem;
       text-transform: uppercase;
       color: black;
-      margin-bottom: .5rem;
+      margin-bottom: .375rem;
     }
 
     .demo-sidebar ul {
       margin-bottom: 1.5rem;
       font-size: .8125rem;
+    }
+
+    .demo-sidebar li {
+      margin-bottom: .25rem;
     }
 
     .demo-sidebar a {
@@ -72,14 +76,6 @@
 
     code.hljs {
       background-color: transparent;
-    }
-
-    .mb {
-      margin-bottom: 3rem;
-    }
-
-    .mb-2 {
-      margin-bottom: 5rem;
     }
 
     .demo-text {
@@ -105,6 +101,10 @@
       margin-right: .25rem;
       margin-bottom: .25rem;
       vertical-align: middle;
+    }
+
+    .buttons .btn {
+      margin-bottom: .25rem;
     }
 
     @media (min-width: 768px) {
@@ -133,6 +133,10 @@
         max-width: 680px;
         margin-left: 210px;
         padding-left: 2rem;
+      }
+
+      .buttons .btn {
+        margin-bottom: 0;
       }
     }
   </style>
@@ -287,6 +291,16 @@
           </h3>
           <ul class="list-unstyled">
             <li>
+              <a href="#bootstrap-display" data-scroll>
+                Display
+              </a>
+            </li>
+            <li>
+              <a href="#bootstrap-flex" data-scroll>
+                Flex
+              </a>
+            </li>
+            <li>
               <a href="#bootstrap-grid" data-scroll>
                 Grid
               </a>
@@ -327,7 +341,7 @@
             Colors
           </h2>
 
-          <div class="mb-2">
+          <div class="mb-7">
             <p>
               Text Colors.
             </p>
@@ -403,22 +417,22 @@
             Font Size
           </h2>
           <p class="text-xs">
-            .text-xs (font-size: .75rem)
+            .text-xs <span class="ml-3">font-size: .75rem</span>
           </p>
           <p class="text-sm">
-            .text-sm (font-size: .875rem)
+            .text-sm <span class="ml-3">font-size: .875rem</span>
           </p>
           <p class="text-base">
-            .text-base (font-size: 1rem)
+            .text-base <span class="ml-3">font-size: 1rem</span>
           </p>
           <p class="text-lg">
-            .text-lg (font-size: 1.125rem)
+            .text-lg <span class="ml-3">font-size: 1.125rem</span>
           </p>
           <p class="text-xl">
-            .text-xl (font-size: 1.25rem)
+            .text-xl <span class="ml-3">font-size: 1.25rem</span>
           </p>
           <p class="text-xxl">
-            .text-xxl (font-size: 1.5rem)
+            .text-xxl <span class="ml-3">font-size: 1.5rem</span>
           </p>
         </div>
 
@@ -467,7 +481,7 @@
           <h4>Responsive Headline 4</h4>
           <h5>Responsive Headline 5</h5>
           <h6>Responsive Headline 6</h6>
-          <div class="highlight mb-2">
+          <div class="highlight mb-7">
             <pre><code class="html">
 &lt;h1&gt;Responsive Headline 1&lt;/h1&gt;
 &lt;h2&gt;Responsive Headline 2&lt;/h2&gt;
@@ -668,7 +682,7 @@
             <em>This line rendered as italicized text.</em>
           </p>
 
-          <div class="highlight mb-2">
+          <div class="highlight mb-7">
             <pre><code class="html">
 &lt;p&gt;
 Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores explicabo architecto perferendis ut nemo! Sapiente, eum quidem placeat, blanditiis, maiores, labore.
@@ -758,7 +772,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
           </h2>
           <p>
             Utilities for controlling an element's padding and margin.<br>
-            For example <code class="text-secondary">.mb-4</code> would add <code class="text-secondary">.2rem</code> of margin to the bottom of the element
+            For example <code class="text-secondary">.mb-4</code> would add <code class="text-secondary">2rem</code> of margin to the bottom of the element
           </p>
           <p>
             <code class="text-secondary">.{property}{side}-{size}</code>
@@ -809,24 +823,33 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
               <p>
                 <strong>Space</strong>
               </p>
-              <ul class="list-unstyled text-sm mb-5">
+              <ul class="list-unstyled text-sm mb-6">
                 <li>
                   <code class="demo-square">0</code> 0
                 </li>
                 <li>
-                  <code class="demo-square">1</code> .5rem
+                  <code class="demo-square">1</code> .25rem
                 </li>
                 <li>
-                  <code class="demo-square">2</code> 1rem
+                  <code class="demo-square">2</code> .5rem
                 </li>
                 <li>
-                  <code class="demo-square">3</code> 1.5rem
+                  <code class="demo-square">3</code> .75rem
                 </li>
                 <li>
-                  <code class="demo-square">4</code> 2rem
+                  <code class="demo-square">4</code> 1rem
                 </li>
                 <li>
-                  <code class="demo-square">5</code> 4rem
+                  <code class="demo-square">5</code> 2rem
+                </li>
+                <li>
+                  <code class="demo-square">6</code> 4rem
+                </li>
+                <li>
+                  <code class="demo-square">7</code> 6rem
+                </li>
+                <li>
+                  <code class="demo-square">8</code> 8rem
                 </li>
                 <li>
                   <code class="demo-square">auto</code> Auto <span class="text-xs">(margins only)</span>
@@ -836,7 +859,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
           </div>
         </div>
 
-        <div id="buttons" class="section">
+        <div id="buttons" class="section buttons">
           <h2 class="section-title">
             Component: Buttons
           </h2>
@@ -844,7 +867,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
             <button class="btn">Button</button>
             <button class="btn" disabled>Button Disabled</button>
           </p>
-          <div class="highlight mb-2">
+          <div class="highlight mb-7">
             <pre><code class="html">
 &lt;button class=&quot;btn&quot;&gt;Button&lt;/button&gt;
 &lt;button class=&quot;btn&quot; disabled&gt;Button Disabled&lt;/button&gt;
@@ -856,7 +879,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
             <a href="#" class="btn">Button</a>
             <a href="#" class="btn btn-lg">Button LG</a>
           </p>
-          <div class="highlight mb-2">
+          <div class="highlight mb-7">
             <pre><code class="html">
 &lt;a href=&quot;#&quot; class=&quot;btn btn-sm&quot;&gt;Button SM&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Button&lt;/a&gt;
@@ -874,7 +897,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
             <a href="#" class="btn btn-block">Button Block</a>
           </p>
 
-          <div class="highlight mb-2">
+          <div class="highlight mb-7">
             <pre><code class="html">
 &lt;a href=&quot;#&quot; class=&quot;btn btn-outline&quot;&gt;Button Outline&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;Button Link&lt;/a&gt;
@@ -940,7 +963,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
           <p>
             Default:
           </p>
-          <div class="highlight mb">
+          <div class="highlight mb-6">
             <pre><code class="html">
 &lt;nav class=&quot;navbar&quot;&gt;...&lt;/nav&gt;
             </code></pre>
@@ -948,7 +971,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
           <p>
             Fixed to top:
           </p>
-          <div class="highlight mb">
+          <div class="highlight mb-6">
             <pre><code class="html">
 &lt;nav class=&quot;navbar navbar--fixed&quot;&gt;...&lt;/nav&gt;
             </code></pre>
@@ -961,7 +984,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
             <br>
             It fires when we scroll more than 150px from to the top.
           </p>
-          <div class="highlight mb">
+          <div class="highlight mb-6">
             <pre><code class="html">
 &lt;nav class=&quot;navbar navbar--fixed navbar--fixed-transparent js-navbar&quot;&gt;...&lt;/nav&gt;
             </code></pre>
@@ -989,7 +1012,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
           <p>
             Fade in carousel for no Flash Of Unstyled Content (FOUC)
           </p>
-          <div class="highlight mb">
+          <div class="highlight mb-6">
             <pre><code class="html">
 &lt;div class=&quot;carousel js-carousel is-hidden&quot;&gt;
   &lt;div class=&quot;carousel-cell&quot;&gt;...&lt;/div&gt;
@@ -1095,10 +1118,30 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
 
         <div id="bootstrap-grid" class="section">
           <h2 class="section-title">
+            Bootstrap Display
+            <small><a href="https://getbootstrap.com/docs/4.3/utilities/display/">Docs</a></small>
+          </h2>
+          <p>
+            Quickly and responsively toggle the display value of components and more with our display utilities.
+          </p>
+        </div>
+
+        <div id="bootstrap-grid" class="section">
+          <h2 class="section-title">
+            Bootstrap Flex
+            <small><a href="https://getbootstrap.com/docs/4.3/utilities/flex/">Docs</a></small>
+          </h2>
+          <p>
+            Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities.
+          </p>
+        </div>
+
+        <div id="bootstrap-grid" class="section">
+          <h2 class="section-title">
             Bootstrap Grid
             <small><a href="https://getbootstrap.com/docs/4.3/layout/grid/">Docs</a></small>
           </h2>
-          <div class="mb">
+          <div class="mb-6">
             <div class="row">
               <div class="col-sm">
                 One of three columns
@@ -1172,7 +1215,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
             <p>
               You can define various aspect ratios. e.g.:<br>
             </p>
-            <div class="row mb">
+            <div class="row mb-6">
               <div class="col-sm">
                 <p>
                   Ratio 4:3
@@ -1187,13 +1230,13 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
               </div>
             </div>
             <p>CSS</p>
-            <div class="highlight mb">
+            <div class="highlight mb-6">
               <pre><code class="css">
 @include aspect-ratio(16,9);
               </code></pre>
             </div>
             <p>HTML</p>
-            <div class="highlight mb">
+            <div class="highlight mb-6">
               <pre><code class="html">
 &lt;div class=&quot;ratio-4-3&quot; style=&quot;background-image: url(&apos;...&apos;)&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;ratio-16-9&quot; style=&quot;background-image: url(&apos;...&apos;)&quot;&gt;&lt;/div&gt;
@@ -1206,13 +1249,13 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
               Mixin: Clearfix
             </h2>
             <p>CSS</p>
-            <div class="highlight mb">
+            <div class="highlight mb-6">
               <pre><code class="css">
 @include clearfix;
               </code></pre>
             </div>
             <p>HTML</p>
-            <div class="highlight mb">
+            <div class="highlight mb-6">
               <pre><code class="html">
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
               </code></pre>
@@ -1227,7 +1270,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
               Set max width for an element and make it centered
             </p>
             <p>CSS</p>
-            <div class="highlight mb">
+            <div class="highlight mb-6">
               <pre><code class="css">
 @include max-width(600px);
               </code></pre>
@@ -1242,7 +1285,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
               Absolute element with top,right,bottom,left = 0
             </p>
             <p>CSS</p>
-            <div class="highlight mb">
+            <div class="highlight mb-6">
               <pre><code class="css">
 @include overlay();
               </code></pre>
@@ -1257,7 +1300,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
               Pseudo elements after / before
             </p>
             <p>CSS</p>
-            <div class="highlight mb">
+            <div class="highlight mb-6">
               <pre><code class="css">
  @include pseudo;
               </code></pre>
@@ -1272,7 +1315,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
               Px to rem
             </p>
             <p>CSS</p>
-            <div class="highlight mb">
+            <div class="highlight mb-6">
               <pre><code class="css">
 font-size: rem(20)
 margin: rem(40) rem(40);
@@ -1288,7 +1331,7 @@ margin: rem(40) rem(40);
               Responsive font size for various media query breakpoints
             </p>
             <p>CSS</p>
-            <div class="highlight mb">
+            <div class="highlight mb-6">
               <pre><code class="css">
 @include responsive-font-size(xs, sm, md, lg, xl);
 @include responsive-font-size(12px, 14px, 16px, 18px, 20px);
@@ -1307,7 +1350,7 @@ If you want to omit specific breakpoint please use ''
               Responsive size for different media query breakpoints
             </p>
             <p>CSS</p>
-            <div class="highlight mb">
+            <div class="highlight mb-6">
               <pre><code class="css">
 Type:
 h    : height,
@@ -1334,7 +1377,7 @@ If you want to omit specific breakpoint please use ''
               Responsive spacing for different media query breakpoints
             </p>
             <p>CSS</p>
-            <div class="highlight mb">
+            <div class="highlight mb-6">
               <pre><code class="css">
 @include responsive-space('type, xs, sm, md, lg, xl);
 @include responsive-space('mb', 10px, 20px, 30px, 40px, 50px);
@@ -1369,7 +1412,7 @@ py : (vertical) padding-top and padding bottom
             <p>
               CSS triangle
             </p>
-            <div class="highlight mb">
+            <div class="highlight mb-6">
               <pre><code class="css">
 @include triangle(red, up, 20px);
               </code></pre>
