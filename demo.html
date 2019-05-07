@@ -79,7 +79,7 @@
     }
 
     .demo-text {
-      background-color: #f5f5f5;
+      background-color: #f2f2f2;
       padding: 1rem;
     }
 
@@ -88,7 +88,8 @@
       color: white;
     }
 
-    .demo-background.bg-white {
+    .demo-background.bg-white,
+    .demo-background.bg-light {
       color: black;
     }
 
@@ -341,7 +342,7 @@
             Colors
           </h2>
 
-          <div class="mb-7">
+          <div class="mb-6">
             <p>
               Text Colors.
             </p>
@@ -354,17 +355,23 @@
             <p class="demo-text text-secondary">
               .text-secondary
             </p>
+            <p class="demo-text text-white">
+              .text-white
+            </p>
+            <p class="demo-text text-light">
+              .text-light
+            </p>
+            <p class="demo-text text-dark">
+              .text-dark
+            </p>
+            <p class="demo-text text-black">
+              .text-black
+            </p>
             <p class="demo-text text-success">
               .text-success
             </p>
             <p class="demo-text text-error">
               .text-error
-            </p>
-            <p class="demo-text text-white">
-              .text-white
-            </p>
-            <p class="demo-text text-black">
-              .text-black
             </p>
           </div>
 
@@ -380,17 +387,23 @@
           <p class="demo-background bg-secondary">
             .bg-secondary
           </p>
+          <p class="demo-background bg-white">
+            .bg-white
+          </p>
+          <p class="demo-background bg-light">
+            .bg-light
+          </p>
+          <p class="demo-background bg-dark">
+            .bg-dark
+          </p>
+          <p class="demo-background bg-black">
+            .bg-black
+          </p>
           <p class="demo-background bg-success">
             .bg-success
           </p>
           <p class="demo-background bg-error">
             .bg-error
-          </p>
-          <p class="demo-background bg-white">
-            .bg-white
-          </p>
-          <p class="demo-background bg-black">
-            .bg-black
           </p>
         </div>
 
@@ -481,7 +494,7 @@
           <h4>Responsive Headline 4</h4>
           <h5>Responsive Headline 5</h5>
           <h6>Responsive Headline 6</h6>
-          <div class="highlight mb-7">
+          <div class="highlight mb-6">
             <pre><code class="html">
 &lt;h1&gt;Responsive Headline 1&lt;/h1&gt;
 &lt;h2&gt;Responsive Headline 2&lt;/h2&gt;
@@ -682,7 +695,7 @@
             <em>This line rendered as italicized text.</em>
           </p>
 
-          <div class="highlight mb-7">
+          <div class="highlight mb-6">
             <pre><code class="html">
 &lt;p&gt;
 Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores explicabo architecto perferendis ut nemo! Sapiente, eum quidem placeat, blanditiis, maiores, labore.
@@ -771,10 +784,20 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
             Spacing
           </h2>
           <p>
-            Utilities for controlling an element's padding and margin.<br>
-            For example <code class="text-secondary">.mb-4</code> would add <code class="text-secondary">2rem</code> of margin to the bottom of the element
+            Utilities for controlling an element's padding and margin.
           </p>
-          <p>
+          <ul class="text-sm">
+            <li>
+              <code class="text-secondary">.mb-4</code> would add <code class="text-secondary">4rem</code> of margin to the bottom of the element.
+            </li>
+            <li>
+              <code class="text-secondary">.pt-0.25</code> would add <code class="text-secondary">.25rem</code> of padding to the top of the element.
+            </li>
+            <li>
+              <code class="text-secondary">.mx-auto</code> would add <code class="text-secondary">margin-left: auto; margin-right: auto;</code> to the element.
+            </li>
+          </ul>
+          <p class="mb-2">
             <code class="text-secondary">.{property}{side}-{size}</code>
           </p>
           <div class="row">
@@ -828,25 +851,34 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
                   <code class="demo-square">0</code> 0
                 </li>
                 <li>
-                  <code class="demo-square">1</code> .25rem
+                  <code class="demo-square">0.25</code> .25rem
                 </li>
                 <li>
-                  <code class="demo-square">2</code> .5rem
+                  <code class="demo-square">0.5</code> .5rem
                 </li>
                 <li>
-                  <code class="demo-square">3</code> .75rem
+                  <code class="demo-square">0.75</code> .75rem
                 </li>
                 <li>
-                  <code class="demo-square">4</code> 1rem
+                  <code class="demo-square">1</code> 1rem
                 </li>
                 <li>
-                  <code class="demo-square">5</code> 2rem
+                  <code class="demo-square">2</code> 2rem
                 </li>
                 <li>
-                  <code class="demo-square">6</code> 4rem
+                  <code class="demo-square">3</code> 3rem
                 </li>
                 <li>
-                  <code class="demo-square">7</code> 6rem
+                  <code class="demo-square">4</code> 4rem
+                </li>
+                <li>
+                  <code class="demo-square">5</code> 5rem
+                </li>
+                <li>
+                  <code class="demo-square">6</code> 6rem
+                </li>
+                <li>
+                  <code class="demo-square">7</code> 7rem
                 </li>
                 <li>
                   <code class="demo-square">8</code> 8rem
@@ -867,7 +899,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
             <button class="btn">Button</button>
             <button class="btn" disabled>Button Disabled</button>
           </p>
-          <div class="highlight mb-7">
+          <div class="highlight mb-6">
             <pre><code class="html">
 &lt;button class=&quot;btn&quot;&gt;Button&lt;/button&gt;
 &lt;button class=&quot;btn&quot; disabled&gt;Button Disabled&lt;/button&gt;
@@ -879,7 +911,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
             <a href="#" class="btn">Button</a>
             <a href="#" class="btn btn-lg">Button LG</a>
           </p>
-          <div class="highlight mb-7">
+          <div class="highlight mb-6">
             <pre><code class="html">
 &lt;a href=&quot;#&quot; class=&quot;btn btn-sm&quot;&gt;Button SM&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Button&lt;/a&gt;
@@ -897,7 +929,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
             <a href="#" class="btn btn-block">Button Block</a>
           </p>
 
-          <div class="highlight mb-7">
+          <div class="highlight mb-6">
             <pre><code class="html">
 &lt;a href=&quot;#&quot; class=&quot;btn btn-outline&quot;&gt;Button Outline&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;Button Link&lt;/a&gt;
@@ -1116,7 +1148,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
           </div>
         </div>
 
-        <div id="bootstrap-grid" class="section">
+        <div id="bootstrap-display" class="section">
           <h2 class="section-title">
             Bootstrap Display
             <small><a href="https://getbootstrap.com/docs/4.3/utilities/display/">Docs</a></small>
@@ -1126,7 +1158,7 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
           </p>
         </div>
 
-        <div id="bootstrap-grid" class="section">
+        <div id="bootstrap-flex" class="section">
           <h2 class="section-title">
             Bootstrap Flex
             <small><a href="https://getbootstrap.com/docs/4.3/utilities/flex/">Docs</a></small>
