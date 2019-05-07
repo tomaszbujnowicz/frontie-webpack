@@ -3,6 +3,7 @@
  */
 
 @if $use-background-size {
+
   .bg-auto {
     background-size: auto;
   }
@@ -12,4 +13,5 @@
   .bg-contain {
     background-size: contain;
   }
+
 }
