@@ -8,17 +8,23 @@
   .text-default {
     color: $color-text;
   }
-  .text-white {
-    color: $color-white;
-  }
-  .text-black {
-    color: $color-black;
-  }
   .text-primary {
     color: $color-primary;
   }
   .text-secondary {
     color: $color-secondary;
+  }
+  .text-white {
+    color: $color-white;
+  }
+  .text-light {
+    color: $color-light;
+  }
+  .text-dark {
+    color: $color-dark;
+  }
+  .text-black {
+    color: $color-black;
   }
   .text-success {
     color: $color-success;
@@ -31,18 +37,24 @@
   .bg-default {
     background-color: $color-text;
   }
-  .bg-white {
-    background-color: $color-white;
-  }
-  .bg-black {
-    background-color: $color-black;
-  }
   .bg-primary {
     background-color: $color-primary;
   }
   .bg-secondary {
     background-color: $color-secondary;
   }
+  .bg-white {
+    background-color: $color-white;
+  }
+  .bg-light {
+    background-color: $color-light;
+  }
+  .bg-dark {
+    background-color: $color-dark;
+  }
+  .bg-black {
+    background-color: $color-black;
+  }  
   .bg-success {
     background-color: $color-success;
   }

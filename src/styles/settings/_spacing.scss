@@ -1,14 +1,27 @@
 /**
- * Spaces
- * We use it for Utility _spacing
+ * Spacing
+ * Spaces, used by Utility _spacing
  */
 
-$space-0: 0 !default;
-$space-1: .25rem !default;
-$space-2: .5rem !default;
-$space-3: .75rem !default;
-$space-4: 1rem !default;
-$space-5: 2rem !default;
-$space-6: 4rem !default;
-$space-7: 6rem !default;
-$space-8: 8rem !default;
+// $space-0: 0 !default;
+// $space-1: .25rem !default;
+// $space-2: .5rem !default;
+// $space-3: .75rem !default;
+// $space-4: 1rem !default;
+// $space-5: 2rem !default;
+// $space-6: 4rem !default;
+// $space-7: 6rem !default;
+// $space-8: 8rem !default;
+
+$space-0:    0 !default;
+$space-0-25: .25rem !default;
+$space-0-5:  .5rem !default;
+$space-0-75: .75rem !default;
+$space-1:    1rem !default;
+$space-2:    2rem !default;
+$space-3:    3rem !default;
+$space-4:    4rem !default;
+$space-5:    5rem !default;
+$space-6:    6rem !default;
+$space-7:    7rem !default;
+$space-8:    8rem !default;
