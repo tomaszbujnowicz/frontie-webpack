@@ -15,6 +15,18 @@ $color-black: #000 !default;
 $color-success: #00b300 !default;
 $color-error: #c00 !default;
 
+$colors: (
+  default:   $color-text,
+  primary:   $color-primary,
+  secondary: $color-secondary,
+  white:     $color-white,
+  light:     $color-light,
+  dark:      $color-dark,
+  black:     $color-black,
+  success:   $color-success,
+  error:     $color-error
+) !default
+
 // Links
 $color-link-color: #007bff !default;
 $color-link-color-hover: darken($color-link-color, 20%) !default;

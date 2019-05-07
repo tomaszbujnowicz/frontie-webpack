@@ -2,64 +2,17 @@
  * Colors
  */
 
-@if $use-colors {
+@mixin make-colors($colors, $attr, $prefix) {
+  @each $value-short, $value-long in $colors {
+    .#{$prefix}-#{$value-short} {
+      #{$attr}: #{$value-long};
+    }
+  }
+}
 
-  // Text Colors
-  .text-default {
-    color: $color-text;
-  }
-  .text-primary {
-    color: $color-primary;
-  }
-  .text-secondary {
-    color: $color-secondary;
-  }
-  .text-white {
-    color: $color-white;
-  }
-  .text-light {
-    color: $color-light;
-  }
-  .text-dark {
-    color: $color-dark;
-  }
-  .text-black {
-    color: $color-black;
-  }
-  .text-success {
-    color: $color-success;
-  }
-  .text-error {
-    color: $color-error;
-  }
-
-  // Background Colors
-  .bg-default {
-    background-color: $color-text;
-  }
-  .bg-primary {
-    background-color: $color-primary;
-  }
-  .bg-secondary {
-    background-color: $color-secondary;
-  }
-  .bg-white {
-    background-color: $color-white;
-  }
-  .bg-light {
-    background-color: $color-light;
-  }
-  .bg-dark {
-    background-color: $color-dark;
-  }
-  .bg-black {
-    background-color: $color-black;
-  }
-  .bg-success {
-    background-color: $color-success;
-  }
-  .bg-error {
-    background-color: $color-error;
-  }
-
+@if $use-text-colors {
+  @include make-colors($colors, 'color', 'text');
+}
+@if $use-bg-colors {
+  @include make-colors($colors, 'background-color', 'bg');
 }
