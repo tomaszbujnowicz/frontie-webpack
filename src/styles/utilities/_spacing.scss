@@ -4,40 +4,28 @@
  * Based on https://github.com/tailwindcss/tailwindcss
  */
 
-// Margin and padding values array
-$space-values : (
-  0 : $space-0,
-  '0.25' : $space-0-25,
-  '0.5' : $space-0-5,
-  '0.75' : $space-0-75,
-  1 : $space-1,
-  2 : $space-2,
-  3 : $space-3,
-  4 : $space-4,
-  5 : $space-5,
-  6 : $space-6,
-  7 : $space-7,
-  8 : $space-8
-) !default;
-
-$space-prefixes : (
-  p  : padding,
-  pt : padding-top,
-  pr : padding-right,
-  pb : padding-bottom,
-  pl : padding-left,
-  m  : margin,
-  mt : margin-top,
-  mr : margin-right,
-  mb : margin-bottom,
-  ml : margin-left,
-) !default;
-
-@mixin make-space($values, $prefixes) {
-  @each $attr-short, $attr-long in $prefixes {
-    @each $value-short, $value-long in $values {
-      .#{$attr-short}-#{$value-short} {
-        #{$attr-long}: #{$value-long};
+@mixin make-space($values, $prefixes, $grid-breakpoints) {
+  @each $breakpoint-name, $breakpoint-value in $grid-breakpoints {
+    // xs
+    @if ($breakpoint-value == 0) {
+      @each $attr-short, $attr-long in $prefixes {
+        @each $value-short, $value-long in $values {
+          .#{$attr-short}-#{$value-short} {
+            #{$attr-long}: #{$value-long};
+          }
+        }
+      }
+    }
+    // sm, md, lg, xl
+    @else {
+      @media screen and (min-width: $breakpoint-value) {
+        @each $attr-short, $attr-long in $prefixes {
+          @each $value-short, $value-long in $values {
+            .#{$breakpoint-name}-#{$attr-short}-#{$value-short} {
+              #{$attr-long}: #{$value-long};
+            }
+          }
+        }
       }
     }
   }
@@ -45,7 +33,7 @@ $space-prefixes : (
 
 @if $use-spacing {
 
-  @include make-space($space-values, $space-prefixes);
+  @include make-space($space-values, $space-prefixes, $grid-breakpoints);
 
   .mr-auto {
     margin-right: auto;

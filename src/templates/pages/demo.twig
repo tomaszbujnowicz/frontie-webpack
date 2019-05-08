@@ -775,19 +775,17 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
           <p>
             Utilities for controlling an element's padding and margin.
           </p>
-          <ul class="text-sm">
-            <li>
-              <code class="text-secondary">.mb-4</code> would add <code class="text-secondary">4rem</code> of margin to the bottom of the element.
-            </li>
-            <li>
-              <code class="text-secondary">.pt-0.25</code> would add <code class="text-secondary">.25rem</code> of padding to the top of the element.
-            </li>
-            <li>
-              <code class="text-secondary">.mx-auto</code> would add <code class="text-secondary">margin-left: auto; margin-right: auto;</code> to the element.
-            </li>
-          </ul>
+          <p>
+            All:
+          </p>
           <p class="mb-2">
             <code class="text-secondary">.{property}{side}-{size}</code>
+          </p>
+          <p>
+            Breakpoints: sm, md, lg, xl
+          </p>
+          <p class="mb-3">
+            <code class="text-secondary">.{breakpoint}-{property}{side}-{size}</code>
           </p>
           <div class="row">
             <div class="col-sm-4">
@@ -879,9 +877,26 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
             </div>
           </div>
           <p>
-            Example: Margin bottom
+            Example:
           </p>
-          <div class="highlight">
+          <ul class="text-sm mb-3">
+            <li>
+              <code class="text-secondary">.mb-4</code> would add <code class="text-secondary">4rem</code> of margin to the bottom of the element.
+            </li>
+            <li>
+              <code class="text-secondary">.pt-0.25</code> would add <code class="text-secondary">.25rem</code> of padding to the top of the element.
+            </li>
+            <li>
+              <code class="text-secondary">.mb-2 sm-mb-3 md-mb-4 lg-mb-5 xl-mb-6</code> would add <code class="text-secondary">2rem, sm: 3rem, md: 4rem, lg: 5rem, xl: 6rem</code> of margin to the bottom of the element.
+            </li>
+            <li>
+              <code class="text-secondary">.mx-auto</code> would add <code class="text-secondary">margin-left: auto; margin-right: auto;</code> to the element.
+            </li>
+          </ul>
+          <p>
+            Example
+          </p>
+          <div class="highlight mb-3">
             <pre><code class="html">
 &lt;div class=&quot;mb-0&quot;&gt;&lt;/div&gt;      margin-bottom: 0;
 &lt;div class=&quot;mb-0-25&quot;&gt;&lt;/div&gt;   margin-bottom: .25rem;
@@ -890,6 +905,21 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
 &lt;div class=&quot;mb-1&quot;&gt;&lt;/div&gt;      margin-bottom: 1rem;
 &lt;div class=&quot;mb-2&quot;&gt;&lt;/div&gt;      margin-bottom: 2rem;
 ...
+            </code></pre>
+          </div>
+
+          <p>
+            Responsive
+          </p>
+          <div class="highlight">
+            <pre><code class="html">
+&lt;p class=&quot;mb-2 sm-mb-3 md-mb-4 lg-mb-5 xl-mb-6&quot;&gt;
+
+margin-bottom: 2rem;
+@media screen and (min-width: 576px) { margin-bototm: 3rem; }
+@media screen and (min-width: 768px) { margin-bototm: 4rem; }
+@media screen and (min-width: 992px) { margin-bototm: 5rem; }
+@media screen and (min-width: 1200px){ margin-bototm: 6rem; }
             </code></pre>
           </div>
         </div>

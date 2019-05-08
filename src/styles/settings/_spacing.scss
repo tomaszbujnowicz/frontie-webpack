@@ -15,3 +15,32 @@ $space-5:     5rem !default;
 $space-6:     6rem !default;
 $space-7:     7rem !default;
 $space-8:     8rem !default;
+
+// Margin and padding values array
+$space-values : (
+  0 : $space-0,
+  '0.25' : $space-0-25,
+  '0.5' : $space-0-5,
+  '0.75' : $space-0-75,
+  1 : $space-1,
+  2 : $space-2,
+  3 : $space-3,
+  4 : $space-4,
+  5 : $space-5,
+  6 : $space-6,
+  7 : $space-7,
+  8 : $space-8
+) !default;
+
+$space-prefixes : (
+  p  : padding,
+  pt : padding-top,
+  pr : padding-right,
+  pb : padding-bottom,
+  pl : padding-left,
+  m  : margin,
+  mt : margin-top,
+  mr : margin-right,
+  mb : margin-bottom,
+  ml : margin-left,
+) !default;
