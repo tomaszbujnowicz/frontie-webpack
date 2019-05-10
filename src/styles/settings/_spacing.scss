@@ -4,9 +4,9 @@
  */
 
 $space-0:     0 !default;
-$space-0-25:  .25rem !default;
-$space-0-5:   .5rem !default;
-$space-0-75:  .75rem !default;
+$space-025:  .25rem !default;
+$space-05:   .5rem !default;
+$space-075:  .75rem !default;
 $space-1:     1rem !default;
 $space-2:     2rem !default;
 $space-3:     3rem !default;
@@ -19,9 +19,9 @@ $space-8:     8rem !default;
 // Margin and padding values array
 $space-values : (
   0 : $space-0,
-  '0.25' : $space-0-25,
-  '0.5' : $space-0-5,
-  '0.75' : $space-0-75,
+  '025' : $space-025,
+  '05' : $space-05,
+  '075' : $space-075,
   1 : $space-1,
   2 : $space-2,
   3 : $space-3,
