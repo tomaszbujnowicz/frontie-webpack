@@ -56,18 +56,6 @@
     code.hljs {
       background-color: transparent;
     }
-    .demo-text {
-      background-color: #f2f2f2;
-      padding: 1rem;
-    }
-    .demo-background {
-      padding: 1rem;
-      color: white;
-    }
-    .demo-background.bg-white,
-    .demo-background.bg-light {
-      color: black;
-    }
     .demo-square {
       display: inline-block;
       padding: .5rem;
@@ -288,65 +276,65 @@
 
           <div class="mb-6">
             <p>
-              Text Colors.
+              <strong>Text Colors:</strong>
             </p>
-            <p class="demo-text text-default">
+            <p class="p-1 text-default bg-light">
               .text-default
             </p>
-            <p class="demo-text text-primary">
+            <p class="p-1 text-primary bg-light">
               .text-primary
             </p>
-            <p class="demo-text text-secondary">
+            <p class="p-1 text-secondary bg-light">
               .text-secondary
             </p>
-            <p class="demo-text text-white">
+            <p class="p-1 text-white bg-dark">
               .text-white
             </p>
-            <p class="demo-text text-light">
+            <p class="p-1 text-light bg-dark">
               .text-light
             </p>
-            <p class="demo-text text-dark">
+            <p class="p-1 text-dark bg-light">
               .text-dark
             </p>
-            <p class="demo-text text-black">
+            <p class="p-1 text-black bg-light">
               .text-black
             </p>
-            <p class="demo-text text-success">
+            <p class="p-1 text-success bg-light">
               .text-success
             </p>
-            <p class="demo-text text-error">
+            <p class="p-1 text-error bg-light">
               .text-error
             </p>
           </div>
 
           <p>
-            Background Colors.
+            <strong>Background Colors:</strong>
           </p>
-          <p class="demo-background bg-default">
+          <p class="p-1 bg-default text-white">
             .bg-default
           </p>
-          <p class="demo-background bg-primary">
+          <p class="p-1 bg-primary text-white">
             .bg-primary
           </p>
-          <p class="demo-background bg-secondary">
+          <p class="p-1 bg-secondary text-white">
             .bg-secondary
           </p>
-          <p class="demo-background bg-white">
+          <p class="p-1 bg-white">
             .bg-white
           </p>
-          <p class="demo-background bg-light">
+          <p class="p-1 bg-light">
             .bg-light
           </p>
-          <p class="demo-background bg-dark">
+          <p class="p-1 bg-dark text-white">
             .bg-dark
           </p>
-          <p class="demo-background bg-black">
+          <p class="p-1 bg-black text-white">
             .bg-black
           </p>
-          <p class="demo-background bg-success">
+          <p class="p-1 bg-success text-white">
             .bg-success
           </p>
-          <p class="demo-background bg-error">
+          <p class="p-1 bg-error text-white">
             .bg-error
           </p>
         </div>
@@ -880,6 +868,9 @@ Lorem ipsum dolor sit amet, consectetur sample link adipisicing elit. Dolores ex
             Example:
           </p>
           <ul class="text-sm mb-3">
+            <li>
+              <code class="text-secondary">.m-1</code> would add <code class="text-secondary">1rem</code> of margin to the each side of the element.
+            </li>
             <li>
               <code class="text-secondary">.mb-4</code> would add <code class="text-secondary">4rem</code> of margin to the bottom of the element.
             </li>
