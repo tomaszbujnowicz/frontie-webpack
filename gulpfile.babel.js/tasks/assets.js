@@ -1,6 +1,6 @@
 /*
- * @title Images
- * @description A task to copy images.
+ * @title Assets
+ * @description A task to copy assets.
  */
 
 // Dependencies
@@ -14,9 +14,9 @@ import errorHandler from '../util/errorHandler.js';
 import { paths } from "../config";
 
 // Task
-export function images() {
-  return src(paths.images.src)
+export function assets() {
+  return src(paths.assets.src)
     .pipe(plumber({errorHandler}))
-    .pipe(changed(paths.images.dest))
-    .pipe(dest(paths.images.dest));
+    .pipe(changed(paths.assets.dest))
+    .pipe(dest(paths.assets.dest));
 }

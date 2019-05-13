@@ -26,13 +26,9 @@ export const paths = {
     modules: 'src/modules/**/*.{twig,html}',
     dest: 'dist/'
   },
-  images: {
-    src: 'src/assets/img/**/*',
-    dest: 'dist/assets/img'
-  },
-  fonts: {
-    src: 'src/assets/fonts/**/*',
-    dest: 'dist/assets/fonts'
+  assets: {
+    src: 'src/assets/**/*',
+    dest: 'dist/assets'
   },
   copy: {
     src: 'src/robots.txt',

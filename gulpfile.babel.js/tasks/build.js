@@ -11,8 +11,7 @@ import { clean } from './clean';
 import { styles } from './styles';
 import { scripts } from './scripts';
 import { templates } from './templates';
-import { images } from './images';
-import { fonts } from './fonts';
+import { assets } from './assets';
 import { copy } from './copy';
 
 // Config
@@ -20,5 +19,5 @@ import { paths } from "../config";
 
 export const build = series(
   clean,
-  parallel(styles, scripts, templates, images, fonts, copy)
+  parallel(styles, scripts, templates, assets, copy)
 );
