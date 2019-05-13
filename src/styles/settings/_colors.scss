@@ -16,15 +16,15 @@ $color-success: #00b300 !default;
 $color-error: #c00 !default;
 
 $colors: (
-  default:   $color-text,
-  primary:   $color-primary,
-  secondary: $color-secondary,
-  white:     $color-white,
-  light:     $color-light,
-  dark:      $color-dark,
-  black:     $color-black,
-  success:   $color-success,
-  error:     $color-error
+  "default":   $color-text,
+  "primary":   $color-primary,
+  "secondary": $color-secondary,
+  "white":     $color-white,
+  "light":     $color-light,
+  "dark":      $color-dark,
+  "black":     $color-black,
+  "success":   $color-success,
+  "error":     $color-error
 ) !default;
 
 // Links
