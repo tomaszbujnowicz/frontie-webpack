@@ -5,8 +5,8 @@
 $navbar-height-desktop: 80px;
 $navbar-height-mobile: 50px;
 $navbar-color-bg: #fafafa;
-$navbar-color-link: $color-primary;
-$navbar-color-link-hover: darken($navbar-color-link, 15%);
+$navbar-color-link: $color-link-color;
+$navbar-color-link-hover: $color-link-color-hover;
 $navbar-size-toggler: 8px;
 $navbar-z-index: 1000;
 $navbar-z-index-toggler: 1010;
