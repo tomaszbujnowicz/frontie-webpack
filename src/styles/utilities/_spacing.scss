@@ -10,7 +10,15 @@
     @if ($breakpoint-value == 0) {
       @each $prefix-short, $prefix-long in $prefixes {
         @each $value-short, $value-long in $values {
-          @if ($value-short == 'auto') and ($prefix-short == 'm') or ($prefix-short == 'mt') or ($prefix-short == 'mr') or ($prefix-short == 'mb') or ($prefix-short == 'ml') or ($prefix-short == 'mx') or ($prefix-short == 'my') {
+
+          @if ($prefix-short == 'p' and $value-short == 'auto') or
+            ($prefix-short == 'pt' and $value-short == 'auto') or
+            ($prefix-short == 'pr' and $value-short == 'auto') or
+            ($prefix-short == 'pb' and $value-short == 'auto') or
+            ($prefix-short == 'pl' and $value-short == 'auto') or
+            ($prefix-short == 'px' and $value-short == 'auto') or
+            ($prefix-short == 'py' and $value-short == 'auto') {
+          } @else {
             .#{$prefix-short}-#{$value-short} {
               @if (length($prefix-long)) {
                 @each $a in $prefix-long {
@@ -21,6 +29,7 @@
               }
             }
           }
+
         }
       }
     }
@@ -29,7 +38,15 @@
       @media screen and (min-width: $breakpoint-value) {
         @each $prefix-short, $prefix-long in $prefixes {
           @each $value-short, $value-long in $values {
-            @if ($value-short == 'auto') and ($prefix-short == 'm') or ($prefix-short == 'mt') or ($prefix-short == 'mr') or ($prefix-short == 'mb') or ($prefix-short == 'ml') or ($prefix-short == 'mx') or ($prefix-short == 'my') {
+
+            @if ($prefix-short == 'p' and $value-short == 'auto') or
+              ($prefix-short == 'pt' and $value-short == 'auto') or
+              ($prefix-short == 'pr' and $value-short == 'auto') or
+              ($prefix-short == 'pb' and $value-short == 'auto') or
+              ($prefix-short == 'pl' and $value-short == 'auto') or
+              ($prefix-short == 'px' and $value-short == 'auto') or
+              ($prefix-short == 'py' and $value-short == 'auto') {
+            } @else {
               .#{$breakpoint-name}-#{$prefix-short}-#{$value-short} {
                 @if (length($prefix-long)) {
                   @each $a in $prefix-long {
@@ -40,6 +57,7 @@
                 }
               }
             }
+
           }
         }
       }
