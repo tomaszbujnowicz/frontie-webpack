@@ -8,10 +8,18 @@
   @each $breakpoint-name, $breakpoint-value in $grid-breakpoints {
     // xs
     @if ($breakpoint-value == 0) {
-      @each $attr-short, $attr-long in $prefixes {
+      @each $prefix-short, $prefix-long in $prefixes {
         @each $value-short, $value-long in $values {
-          .#{$attr-short}-#{$value-short} {
-            #{$attr-long}: #{$value-long};
+          @if ($value-short == 'auto') and ($prefix-short == 'm') or ($prefix-short == 'mt') or ($prefix-short == 'mr') or ($prefix-short == 'mb') or ($prefix-short == 'ml') or ($prefix-short == 'mx') or ($prefix-short == 'my') {
+            .#{$prefix-short}-#{$value-short} {
+              @if (length($prefix-long)) {
+                @each $a in $prefix-long {
+                  #{$a}: #{$value-long};
+                }
+              } @else {
+                #{$prefix-long}: #{$value-long};
+              }
+            }
           }
         }
       }
@@ -19,10 +27,18 @@
     // sm, md, lg, xl
     @else {
       @media screen and (min-width: $breakpoint-value) {
-        @each $attr-short, $attr-long in $prefixes {
+        @each $prefix-short, $prefix-long in $prefixes {
           @each $value-short, $value-long in $values {
-            .#{$breakpoint-name}-#{$attr-short}-#{$value-short} {
-              #{$attr-long}: #{$value-long};
+            @if ($value-short == 'auto') and ($prefix-short == 'm') or ($prefix-short == 'mt') or ($prefix-short == 'mr') or ($prefix-short == 'mb') or ($prefix-short == 'ml') or ($prefix-short == 'mx') or ($prefix-short == 'my') {
+              .#{$breakpoint-name}-#{$prefix-short}-#{$value-short} {
+                @if (length($prefix-long)) {
+                  @each $a in $prefix-long {
+                    #{$a}: #{$value-long};
+                  }
+                } @else {
+                  #{$prefix-long}: #{$value-long};
+                }
+              }
             }
           }
         }
@@ -34,20 +50,5 @@
 @if $use-spacing {
 
   @include make-space($space-values, $space-prefixes, $grid-breakpoints);
-
-  .mr-auto {
-    margin-right: auto;
-  }
-  .ml-auto {
-    margin-left: auto;
-  }
-  .mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .my-auto {
-    margin-top: auto;
-    margin-bottom: auto;
-  }
 
 }
