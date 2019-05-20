@@ -1,12 +1,12 @@
 /**
- * Responsive size for different media query breakpoints
+ * Responsive size for various media query breakpoints
  *
  * Usage:
- * @include responsive-size('h', 10px, 20px, 30px, 40px, 50px);
- * @include responsive-size('type, xs, sm, md, lg, xl);
+ * @include size('h', 10px, 20px, 30px, 40px, 50px);
+ * @include size('type', xs, sm, md, lg, xl);
 
  * If you want to omit specific breakpoint please use ''
- * e.g. @include responsive-size('h', 10px, '', '', 40px, 50px);
+ * e.g. @include size('h', 10px, '', '', 40px, 50px);
 
    Type:
 
@@ -18,7 +18,7 @@
    maxw : max-width
  */
 
-@mixin responsive-size($type: null, $size-xs: null, $size-sm: null, $size-md: null, $size-lg: null, $size-xl: null) {
+@mixin size($type: null, $size-xs: null, $size-sm: null, $size-md: null, $size-lg: null, $size-xl: null) {
   @if ($type == 'h') {
     $type: 'height';
   }

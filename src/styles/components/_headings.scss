@@ -23,11 +23,11 @@ h6,
   text-transform: $headings-text-transform;
 }
 
-// @include responsive-font-size(xs, sm, md, lg, xl);
+// @include font-size(xs, sm, md, lg, xl);
 
 h1,
 .h1 {
-  @include responsive-font-size(
+  @include font-size(
     rem(28),
     '',
     rem(32),
@@ -38,7 +38,7 @@ h1,
 
 h2,
 .h2 {
-  @include responsive-font-size(
+  @include font-size(
     rem(24),
     '',
     rem(26),
@@ -49,7 +49,7 @@ h2,
 
 h3,
 .h3 {
-  @include responsive-font-size(
+  @include font-size(
     rem(22),
     '',
     rem(24),
@@ -60,7 +60,7 @@ h3,
 
 h4,
 .h4 {
-  @include responsive-font-size(
+  @include font-size(
     rem(20),
     '',
     rem(22),
@@ -71,7 +71,7 @@ h4,
 
 h5,
 .h5 {
-  @include responsive-font-size(
+  @include font-size(
     rem(18),
     '',
     rem(20),
@@ -82,7 +82,7 @@ h5,
 
 h6,
 .h6 {
-  @include responsive-font-size(
+  @include font-size(
     rem(16),
     '',
     rem(18),

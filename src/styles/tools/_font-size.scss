@@ -9,7 +9,7 @@
  * e.g. @include responsive-font-size(12px, '', '', '', 20px);
  */
 
-@mixin responsive-font-size($font-size-xs: null, $font-size-sm: null, $font-size-md: null, $font-size-lg: null, $font-size-xl: null) {
+@mixin font-size($font-size-xs: null, $font-size-sm: null, $font-size-md: null, $font-size-lg: null, $font-size-xl: null) {
   @if ($font-size-xs != '') {
     font-size: $font-size-xs;
   }
