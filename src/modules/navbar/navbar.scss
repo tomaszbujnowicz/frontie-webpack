@@ -189,7 +189,7 @@ body {
 
 // Navbar slides out of view when scrolling down
 // and slides back in when scrolling up
-.navbar--fixed-showhide {
+.navbar--fixed-toggle {
   transition: $transition-base;
   body.navbar--opened & {
     transform: none;

@@ -5,8 +5,6 @@
 
 import SweetScroll from 'sweet-scroll';
 
-export function smoothscroll() {
+export default function smoothScroll() {
   const sweetScroll = new SweetScroll({ /* some options */ });
 }
-
-export default smoothscroll;

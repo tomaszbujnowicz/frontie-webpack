@@ -6,22 +6,24 @@
 import Flickity from 'flickity';
 import 'flickity/css/flickity.css';
 
-export function carousel() {
+export default function carousel() {
 
-  const carousel = document.querySelector('.js-carousel');
+  var carouselInit = function () {
+    const carousel = document.querySelector('[data-carousel]');
 
-  if (carousel) {
-    // Flickity - fade in for no FOUC, vanilla JS
-    // https://codepen.io/desandro/pen/JGoGpm
-    carousel.classList.remove('is-hidden');
-    carousel.offsetHeight;
-    new Flickity( carousel, {
-      // options
-      cellAlign: 'left',
-      wrapAround: true
-    } );
-  }
+    if (carousel) {
+      // Flickity - fade in for no FOUC, vanilla JS
+      // https://codepen.io/desandro/pen/JGoGpm
+      carousel.classList.remove('is-hidden');
+      carousel.offsetHeight;
+      new Flickity( carousel, {
+        // options
+        cellAlign: 'left',
+        wrapAround: true
+      } );
+    }
+  };
+
+  carouselInit();
 
 }
-
-export default carousel;

@@ -13,25 +13,25 @@
 
   * Fixed to top with "transparent animation":
   * Navbar becomes transparent when scrolling down.
-    <nav class="navbar navbar--fixed navbar--fixed-transparent js-navbar">
+    <nav class="navbar navbar--fixed navbar--fixed-transparent">
 
   * Fixed to top with "show / hide animation":
   * Navbar slides out of view when scrolling down
   * and slides back in when scrolling up.
-    <nav class="navbar navbar--fixed navbar--fixed-showhide js-navbar">
+    <nav class="navbar navbar--fixed navbar--fixed-toggle">
 
   * Notes:
   * It fires when we scroll more than 150px from to the top.
   * You can change the value in the navbar.js
 #}
 
-  <nav class="navbar navbar--fixed navbar--fixed-transparent js-navbar">
+  <nav class="navbar navbar--fixed navbar--fixed-transparent" data-navbar>
     <div class="container">
       <div class="navbar__wrapper">
         <a class="navbar__brand" href="index.html">
           Logo
         </a>
-        <button class="navbar__toggler js-navbar-toggler" role="button">
+        <button class="navbar__toggler" role="button" data-navbar-toggler>
           <span class="navbar__toggler-line"></span>
           <span class="navbar__toggler-line"></span>
           <span class="navbar__toggler-line"></span>

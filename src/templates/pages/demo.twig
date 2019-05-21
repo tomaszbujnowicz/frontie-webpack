@@ -1042,7 +1042,7 @@ margin-bottom: 2rem;
           </p>
           <div class="highlight mb-6">
             <pre><code class="html">
-&lt;nav class=&quot;navbar navbar--fixed navbar--fixed-transparent js-navbar&quot;&gt;...&lt;/nav&gt;
+&lt;nav class=&quot;navbar navbar--fixed navbar--fixed-transparent&quot; data-navbar&gt;...&lt;/nav&gt;
             </code></pre>
           </div>
 
@@ -1055,7 +1055,7 @@ margin-bottom: 2rem;
           </p>
           <div class="highlight">
             <pre><code class="html">
-&lt;nav class=&quot;navbar navbar--fixed navbar--fixed-showhide js-navbar&quot;&gt;...&lt;/nav&gt;
+&lt;nav class=&quot;navbar navbar--fixed navbar--fixed-toggle&quot; data-navbar&gt;...&lt;/nav&gt;
             </code></pre>
           </div>
         </div>
@@ -1070,7 +1070,7 @@ margin-bottom: 2rem;
           </p>
           <div class="highlight mb-6">
             <pre><code class="html">
-&lt;div class=&quot;carousel js-carousel is-hidden&quot;&gt;
+&lt;div class=&quot;carousel is-hidden&quot; data-carousel&gt;
   &lt;div class=&quot;carousel-cell&quot;&gt;...&lt;/div&gt;
   &lt;div class=&quot;carousel-cell&quot;&gt;...&lt;/div&gt;
   &lt;div class=&quot;carousel-cell&quot;&gt;...&lt;/div&gt;
@@ -1142,7 +1142,7 @@ margin-bottom: 2rem;
             <small><a href="https://gomakethings.com/how-to-show-and-hide-elements-with-vanilla-javascript/">Docs</a></small>
           </h2>
           <p>
-            <a class="js-toggle" href="#example" role="button">Toggle element</a>
+            <a href="#example" role="button" data-toggle="toggle-element">Toggle element</a>
           </p>
           <p id="example" class="is-hidden">
             Here's some text we want to toggle visibility of. Let's do it!
@@ -1150,7 +1150,7 @@ margin-bottom: 2rem;
           <div class="highlight">
             <pre><code class="html">
 &lt;p&gt;
-  &lt;a class=&quot;js-toggle&quot; href=&quot;#example&quot; role=&quot;button&quot;&gt;Toggle element&lt;/a&gt;
+  &lt;a href=&quot;#example&quot; role=&quot;button&quot; data-toggle=&quot;toggle-element&quot;&gt;Toggle element&lt;/a&gt;
 &lt;/p&gt;
 &lt;p id=&quot;example&quot; class=&quot;is-hidden&quot;&gt;
   Here&apos;s some text we want to toggle visibility of. Let&apos;s do it!
