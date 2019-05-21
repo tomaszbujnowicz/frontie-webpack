@@ -129,13 +129,13 @@
 
 
 
-  <nav class="navbar navbar--fixed navbar--fixed-transparent js-navbar">
+  <nav class="navbar navbar--fixed navbar--fixed-transparent" data-navbar>
     <div class="container">
       <div class="navbar__wrapper">
         <a class="navbar__brand" href="index.html">
           Logo
         </a>
-        <button class="navbar__toggler js-navbar-toggler" role="button">
+        <button class="navbar__toggler" role="button" data-navbar-toggler>
           <span class="navbar__toggler-line"></span>
           <span class="navbar__toggler-line"></span>
           <span class="navbar__toggler-line"></span>
@@ -1101,7 +1101,7 @@ margin-bottom: 2rem;
           </p>
           <div class="highlight mb-6">
             <pre><code class="html">
-&lt;nav class=&quot;navbar navbar--fixed navbar--fixed-transparent js-navbar&quot;&gt;...&lt;/nav&gt;
+&lt;nav class=&quot;navbar navbar--fixed navbar--fixed-transparent&quot; data-navbar&gt;...&lt;/nav&gt;
             </code></pre>
           </div>
 
@@ -1114,7 +1114,7 @@ margin-bottom: 2rem;
           </p>
           <div class="highlight">
             <pre><code class="html">
-&lt;nav class=&quot;navbar navbar--fixed navbar--fixed-showhide js-navbar&quot;&gt;...&lt;/nav&gt;
+&lt;nav class=&quot;navbar navbar--fixed navbar--fixed-toggle&quot; data-navbar&gt;...&lt;/nav&gt;
             </code></pre>
           </div>
         </div>
@@ -1129,14 +1129,14 @@ margin-bottom: 2rem;
           </p>
           <div class="highlight mb-6">
             <pre><code class="html">
-&lt;div class=&quot;carousel js-carousel is-hidden&quot;&gt;
+&lt;div class=&quot;carousel is-hidden&quot; data-carousel&gt;
   &lt;div class=&quot;carousel-cell&quot;&gt;...&lt;/div&gt;
   &lt;div class=&quot;carousel-cell&quot;&gt;...&lt;/div&gt;
   &lt;div class=&quot;carousel-cell&quot;&gt;...&lt;/div&gt;
 &lt;/div&gt;
             </code></pre>
           </div>
-          <div class="carousel js-carousel is-hidden">
+          <div class="carousel is-hidden" data-carousel>
             <div class="carousel-cell">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste fuga tempora, nam eligendi hic possimus quae quod officiis, aut, harum, commodi maiores repellendus. Nihil dolorem dicta fugiat at quas pariatur.
             </div>
@@ -1214,7 +1214,7 @@ margin-bottom: 2rem;
             <small><a href="https://gomakethings.com/how-to-show-and-hide-elements-with-vanilla-javascript/">Docs</a></small>
           </h2>
           <p>
-            <a class="js-toggle" href="#example" role="button">Toggle element</a>
+            <a href="#example" role="button" data-toggle="toggle-element">Toggle element</a>
           </p>
           <p id="example" class="is-hidden">
             Here's some text we want to toggle visibility of. Let's do it!
@@ -1222,7 +1222,7 @@ margin-bottom: 2rem;
           <div class="highlight">
             <pre><code class="html">
 &lt;p&gt;
-  &lt;a class=&quot;js-toggle&quot; href=&quot;#example&quot; role=&quot;button&quot;&gt;Toggle element&lt;/a&gt;
+  &lt;a href=&quot;#example&quot; role=&quot;button&quot; data-toggle=&quot;toggle-element&quot;&gt;Toggle element&lt;/a&gt;
 &lt;/p&gt;
 &lt;p id=&quot;example&quot; class=&quot;is-hidden&quot;&gt;
   Here&apos;s some text we want to toggle visibility of. Let&apos;s do it!
@@ -1387,7 +1387,7 @@ margin-bottom: 2rem;
             <p>CSS</p>
             <div class="highlight mb-6">
               <pre><code class="css">
-@include max-width(600px);
+@include max-width-center(600px);
               </code></pre>
             </div>
           </div>
@@ -1448,11 +1448,11 @@ margin: rem(40) rem(40);
             <p>CSS</p>
             <div class="highlight mb-6">
               <pre><code class="css">
-@include responsive-font-size(xs, sm, md, lg, xl);
-@include responsive-font-size(12px, 14px, 16px, 18px, 20px);
+@include font-size(xs, sm, md, lg, xl);
+@include font-size(12px, 14px, 16px, 18px, 20px);
 
 If you want to omit specific breakpoint please use ''
-@include responsive-font-size(12px, '', '', '', 20px);
+@include font-size(12px, '', '', '', 20px);
               </code></pre>
             </div>
           </div>
@@ -1462,7 +1462,7 @@ If you want to omit specific breakpoint please use ''
               Mixin: Responsive Size
             </h2>
             <p>
-              Responsive size for different media query breakpoints
+              Responsive size for various media query breakpoints
             </p>
             <p>CSS</p>
             <div class="highlight mb-6">
@@ -1475,11 +1475,11 @@ w    : width,
 minw : min-width,
 maxw : max-width
 
-@include responsive-size('type, xs, sm, md, lg, xl);
-@include responsive-size('h', 10px, 20px, 30px, 40px, 50px);
+@include size('type', xs, sm, md, lg, xl);
+@include size('h', 10px, 20px, 30px, 40px, 50px);
 
 If you want to omit specific breakpoint please use ''
-@include responsive-size('h', 10px, '', '', 40px, 50px);
+@include size('h', 10px, '', '', 40px, 50px);
               </code></pre>
             </div>
           </div>
@@ -1489,16 +1489,16 @@ If you want to omit specific breakpoint please use ''
               Mixin: Responsive Spacing
             </h2>
             <p>
-              Responsive spacing for different media query breakpoints
+              Responsive spacing for various media query breakpoints
             </p>
             <p>CSS</p>
             <div class="highlight mb-6">
               <pre><code class="css">
-@include responsive-space('type, xs, sm, md, lg, xl);
-@include responsive-space('mb', 10px, 20px, 30px, 40px, 50px);
+@include space('type', xs, sm, md, lg, xl);
+@include space('mb', 10px, 20px, 30px, 40px, 50px);
 
 If you want to omit specific breakpoint please use ''
-@include responsive-space('mb', 10px, '', '', 40px, 50px);
+@include space('mb', 10px, '', '', 40px, 50px);
 
 Type:
 m  : margin
