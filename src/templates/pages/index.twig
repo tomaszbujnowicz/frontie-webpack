@@ -62,13 +62,14 @@
       <br>
       Tip: can be useful when showing the site preview to a client.
     </p>
+    {% set pages = {
+      1: { t: "Demo Page", u: "demo" },
+      2: { t: "Blank Page", u: "blank" },
+    } %}
     <ul class="demo-list">
-      <li>
-        <a href="demo.html">Demo Page</a>
-      </li>
-      <li>
-        <a href="blank.html">Blank Page</a>
-      </li>
+      {% for page in pages %}
+      <li><a href="{{ page.u }}.html">{{ page.t }}</a></li>
+      {% endfor %}
     </ul>
   </div>
 
