@@ -249,6 +249,11 @@
                 Carousel
               </a>
             </li>
+            <li>
+              <a href="#module-search-overlay" data-scroll>
+                Search Overlay
+              </a>
+            </li>
           </ul>
 
           <h3 class="demo-sidebar__title">
@@ -1158,6 +1163,45 @@ margin-bottom: 2rem;
           </div>
         </div>
 
+        <div id="module-search-overlay" class="section">
+          <h2 class="section-title">
+            Module: Search Overlay
+          </h2>
+          <p>
+            Most likely it could be used in e.g. navbar.<br>
+            When an overlay is opened, we focus on input field.<br>
+            The overlay can be closed clicking "x" close icon or Escape key.
+          </p>
+          <p>
+            <a href="#" role="button" data-search-overlay-trigger>Trigger</a>
+          </p>
+          <div class="search-overlay is-hidden" data-search-overlay-target>
+            <a href="#" role="button" class="search-overlay__close" data-search-overlay-close>x</a>
+            <form action="" class="search-overlay__form">
+              <input class="search-overlay__input" type="text" name="q" id="" placeholder="Search..." data-search-overlay-input>
+              <button class="search-overlay__btn btn btn-link">
+                Search
+              </button>
+            </form>
+          </div>
+          <div class="highlight">
+            <pre><code class="html">
+&lt;p&gt;
+  &lt;a href=&quot;#&quot; role=&quot;button&quot; data-search-overlay-trigger&gt;Trigger&lt;/a&gt;
+&lt;/p&gt;
+&lt;div class=&quot;search-overlay is-hidden&quot; data-search-overlay-target&gt;
+  &lt;a href=&quot;#&quot; role=&quot;button&quot; class=&quot;search-overlay__close&quot; data-search-overlay-close&gt;x&lt;/a&gt;
+  &lt;form action=&quot;&quot; class=&quot;search-overlay__form&quot;&gt;
+    &lt;input class=&quot;search-overlay__input&quot; type=&quot;text&quot; name=&quot;q&quot; id=&quot;&quot; placeholder=&quot;Search&quot;&gt;
+    &lt;button class=&quot;search-overlay__btn btn btn-link&quot;&gt;
+      Search
+    &lt;/button&gt;
+  &lt;/form&gt;
+&lt;/div&gt;
+            </code></pre>
+          </div>
+        </div>
+
         <div id="js-collapse" class="section">
           <h2 class="section-title">
             JS Component: Collapse
@@ -1175,13 +1219,13 @@ margin-bottom: 2rem;
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident doloribus, eos rem. Nostrum possimus reiciendis, neque iure repudiandae explicabo hic veritatis ad, deleniti provident soluta, facere, voluptates tenetur quae. Maiores!
 &lt;/div&gt;
 &lt;p&gt;
-&lt;a
-  href=&quot;#&quot;
-  data-toggle=&quot;collapse&quot;
-  data-target=&quot;.collapse.collapse-more-1&quot;
-  data-text-closed=&quot;Read More&quot;
-  data-text-opened=&quot;Read Less&quot;
-  role=&quot;button&quot;&gt;Read More&lt;/a&gt;
+  &lt;a
+    href=&quot;#&quot;
+    data-toggle=&quot;collapse&quot;
+    data-target=&quot;.collapse.collapse-more-1&quot;
+    data-text-closed=&quot;Read More&quot;
+    data-text-opened=&quot;Read Less&quot;
+    role=&quot;button&quot;&gt;Read More&lt;/a&gt;
 &lt;/p&gt;
             </code></pre>
           </div>
