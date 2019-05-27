@@ -7,7 +7,7 @@
 export default function searchOverlay() {
 
   const target = document.querySelector('[data-search-overlay-target]');
-  const input = document.querySelector('[data-search-overlay-input]')
+  const input = target.querySelector('[data-search-overlay-input]')
 
   var showOverlay = function() {
     show(target);
@@ -38,14 +38,9 @@ export default function searchOverlay() {
 
   document.addEventListener('keydown', function(e) {
 
-    // Check if the search overlay is opened
-    if (document.body.classList.contains('overflow-hidden')) {
-
-      // Close an overlay on Escape key click
-      if (e.key === 'Escape' || e.keyCode === 27) {
-        closeOverlay();
-      }
-
+    // Close an overlay on Escape key click
+    if (e.key === 'Escape' || e.keyCode === 27) {
+      closeOverlay();
     }
 
   });
