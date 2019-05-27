@@ -2,7 +2,7 @@
  * Search Overlay
  */
 
- import { show, hide, toggle } from '../../scripts/lib/visibility.js'
+import { show, hide, toggle } from '../../scripts/lib/visibility.js'
 
 export default function searchOverlay() {
 
@@ -13,7 +13,7 @@ export default function searchOverlay() {
     show(target);
     input.focus();
     document.body.classList.add('overflow-hidden');
-	};
+  };
 
   var closeOverlay = function() {
     hide(target);
@@ -23,16 +23,16 @@ export default function searchOverlay() {
   document.addEventListener('click', function(e) {
 
     // Open an overlay
-  	if (e.target.matches('[data-search-overlay-trigger]')) {
+    if (e.target.matches('[data-search-overlay-trigger]')) {
       e.preventDefault();
-  		showOverlay();
-  	}
+      showOverlay();
+    }
 
     // Close an overlay
     if (e.target.matches('[data-search-overlay-close]')) {
       e.preventDefault();
-  		closeOverlay();
-  	}
+      closeOverlay();
+    }
 
   }, false);
 
