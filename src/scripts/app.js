@@ -4,17 +4,17 @@
  */
 
 // Libs
-import './lib/polyfill-closest.js';
+import 'Utils/polyfill-closest.js';
 
 // Modules
-import navbar from '../modules/navbar/navbar';
-import carousel from '../modules/carousel/carousel';
-import searchOverlay from '../modules/search-overlay/search-overlay';
+import navbar from 'Modules/navbar/navbar';
+import carousel from 'Modules/carousel/carousel';
+import searchOverlay from 'Modules/search-overlay/search-overlay';
 
 // Components
-import collapse from './components/collapse.js';
-import smoothScroll from './components/smooth-scroll';
-import toggleElement from './components/toggle-element';
+import collapse from 'Components/collapse.js';
+import smoothScroll from 'Components/smooth-scroll';
+import toggleElement from 'Components/toggle-element';
 
 document.addEventListener('DOMContentLoaded', function() {
 

@@ -8,6 +8,8 @@ import webpack from 'webpack';
 // Config
 import { paths } from "./gulpfile.babel.js/config";
 
+const path = require('path');
+
 // Plugins
 var WebpackNotifierPlugin = require('webpack-notifier');
 
@@ -67,7 +69,15 @@ const webpackConfig = {
     new WebpackNotifierPlugin({
       skipFirstNotification: true
     })
-  ]
+  ],
+
+  resolve: {
+    alias: {
+      Modules: path.resolve(__dirname, 'src/modules/'),
+      Components: path.resolve(__dirname, 'src/scripts/components/'),
+      Utils: path.resolve(__dirname, 'src/scripts/utils/'),
+    }
+  }
 
 };
 

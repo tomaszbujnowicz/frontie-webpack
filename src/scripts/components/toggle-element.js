@@ -4,7 +4,7 @@
  * https://gomakethings.com/how-to-show-and-hide-elements-with-vanilla-javascript/
  */
 
-import { toggle } from '../lib/visibility.js'
+import { toggle } from 'Utils/visibility.js'
 
 export default function toggleElement() {
 

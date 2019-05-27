@@ -2,7 +2,7 @@
  * Search Overlay
  */
 
-import { show, hide, toggle } from '../../scripts/lib/visibility.js'
+import { show, hide, toggle } from 'Utils/visibility.js'
 
 export default function searchOverlay() {
 

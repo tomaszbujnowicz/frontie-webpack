@@ -4,7 +4,7 @@
  * https://medium.com/dailyjs/mimicking-bootstraps-collapse-with-vanilla-javascript-b3bb389040e7
  */
 
-export function collapse() {
+export default function collapse() {
 
   // Handler that uses various data-* attributes to trigger
   // specific actions, mimicing bootstraps attributes
@@ -42,5 +42,3 @@ export function collapse() {
   }
 
 }
-
-export default collapse;

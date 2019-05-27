@@ -2,7 +2,7 @@
  * Navbar
  */
 
-import debounce from '../../scripts/lib/debounce.js';
+import debounce from 'Utils/debounce.js';
 
 export default function navbar() {
 
