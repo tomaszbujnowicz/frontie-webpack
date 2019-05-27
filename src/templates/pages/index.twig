@@ -6,24 +6,26 @@
 
   <style>
     /* Inline styling for the demo purpose */
+    body,
+    .demo {
+      padding: 1.5rem;
+    }
     body {
-      background-color: #f5f5f5;
-      padding: 1rem;
+      background-color: #fafafa;
     }
     .demo {
-      background-color: white;
-      border: 1px solid #eee;
-      max-width: 680px;
+      max-width: 640px;
       margin-left: auto;
       margin-right: auto;
-      padding: 1rem;
+      background-color: white;
+      border: 1px solid #eee;
     }
-    .demo-title {
-      font-size: 1.75rem;
+    .demo-title,
+    .demo-subtitle {
+      margin-bottom: 1.5rem;
     }
     .demo-subtitle {
-      color: #777;
-      font-size: 1rem;
+      color: #7a7a7a;
     }
     .demo-list {
       list-style: none;
@@ -34,38 +36,43 @@
     .demo-list li {
       display: block;
       padding: .75rem 0;
+      margin-bottom: 0;
       border-bottom: 1px solid #eee;
     }
     .demo-list li:last-child {
       border-bottom: none;
-      margin-bottom: 0;
     }
     @media (min-width: 768px) {
-      body {
-        padding: 4rem 2rem;
-      }
+      body,
       .demo {
         padding: 2rem;
       }
       .demo-title {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
       }
     }
   </style>
+
+  {% set pages = {
+    1: {
+      t: "Demo Page",
+      u: "demo"
+    },
+    2: {
+      t: "Blank Page",
+      u: "blank"
+    },
+  } %}
 
   <div class="demo">
     <h1 class="demo-title">
       Project Name
     </h1>
     <p class="demo-subtitle">
-      This is the demo index page with basic styles for listing all of your pages.
+      This is the demo index page with basic styling.
       <br>
-      Tip: can be useful when showing the site preview to a client.
+      It might be used to let a client preview the site.
     </p>
-    {% set pages = {
-      1: { t: "Demo Page", u: "demo" },
-      2: { t: "Blank Page", u: "blank" },
-    } %}
     <ul class="demo-list">
       {% for page in pages %}
       <li><a href="{{ page.u }}.html">{{ page.t }}</a></li>
