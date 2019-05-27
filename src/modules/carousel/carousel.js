@@ -8,12 +8,14 @@ import 'flickity/css/flickity.css';
 
 export default function carousel() {
 
-  var carouselInit = function () {
-    const carousel = document.querySelector('[data-carousel]');
+  const carousel = document.querySelector('[data-carousel]');
 
-    if (carousel) {
-      // Flickity - fade in for no FOUC, vanilla JS
-      // https://codepen.io/desandro/pen/JGoGpm
+  // When Carousel exists
+  if (carousel) {
+
+    // Flickity - fade in for no FOUC, vanilla JS
+    // https://codepen.io/desandro/pen/JGoGpm
+    var carouselInit = function () {
       carousel.classList.remove('is-hidden');
       carousel.offsetHeight;
       new Flickity( carousel, {
@@ -21,9 +23,9 @@ export default function carousel() {
         cellAlign: 'left',
         wrapAround: true
       } );
-    }
-  };
+    };
 
-  carouselInit();
+    carouselInit();
+  }
 
 }

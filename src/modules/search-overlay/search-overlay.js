@@ -7,47 +7,53 @@ import { show, hide, toggle } from '../../scripts/lib/visibility.js'
 export default function searchOverlay() {
 
   const target = document.querySelector('[data-search-overlay-target]');
-  const input = document.querySelector('[data-search-overlay-input]')
 
-  var showOverlay = function() {
-    show(target);
-    input.focus();
-    document.body.classList.add('overflow-hidden');
-  };
+  // When Search Overlay exists
+  if (target) {
 
-  var closeOverlay = function() {
-    hide(target);
-    document.body.classList.remove('overflow-hidden');
-  };
+    const input = target.querySelector('[data-search-overlay-input]')
 
-  document.addEventListener('click', function(e) {
+    var showOverlay = function() {
+      show(target);
+      input.focus();
+      document.body.classList.add('overflow-hidden');
+    };
 
-    // Open an overlay
-    if (e.target.matches('[data-search-overlay-trigger]')) {
-      e.preventDefault();
-      showOverlay();
-    }
+    var closeOverlay = function() {
+      hide(target);
+      document.body.classList.remove('overflow-hidden');
+    };
 
-    // Close an overlay
-    if (e.target.matches('[data-search-overlay-close]')) {
-      e.preventDefault();
-      closeOverlay();
-    }
+    document.addEventListener('click', function(e) {
 
-  }, false);
+      // Open an overlay
+      if (e.target.matches('[data-search-overlay-trigger]')) {
+        e.preventDefault();
+        showOverlay();
+      }
 
-  document.addEventListener('keydown', function(e) {
-
-    // Check if the search overlay is opened
-    if (document.body.classList.contains('overflow-hidden')) {
-
-      // Close an overlay on Escape key click
-      if (e.key === 'Escape' || e.keyCode === 27) {
+      // Close an overlay
+      if (e.target.matches('[data-search-overlay-close]')) {
+        e.preventDefault();
         closeOverlay();
       }
 
-    }
+    }, false);
 
-  });
+    document.addEventListener('keydown', function(e) {
+
+      // Check if the search overlay is opened
+      if (document.body.classList.contains('overflow-hidden')) {
+
+        // Close an overlay on Escape key click
+        if (e.key === 'Escape' || e.keyCode === 27) {
+          closeOverlay();
+        }
+
+      }
+
+    });
+
+  }
 
 }
