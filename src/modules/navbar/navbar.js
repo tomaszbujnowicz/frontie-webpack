@@ -22,7 +22,7 @@ export default function navbar() {
     const navbarElement = document.querySelector('[data-navbar]')
     const navbarPixels = 150;
 
-    if (navbarElement.classList.contains('navbar--fixed-transparent')) {
+    if (navbarElement && navbarElement.classList.contains('navbar--fixed-transparent')) {
       function navbarTransparent() {
         let scrolled = document.scrollingElement.scrollTop;
         let position = navbarElement.offsetTop;
@@ -44,7 +44,7 @@ export default function navbar() {
     const navbarPixels = 150;
     let scrollPos = 0;
 
-    if (navbarElement.classList.contains('navbar--fixed-toggle')) {
+    if (navbarElement && navbarElement.classList.contains('navbar--fixed-toggle')) {
       function navbarShowHide() {
         var scrolled = document.scrollingElement.scrollTop;
         var position = navbarElement.offsetTop;
