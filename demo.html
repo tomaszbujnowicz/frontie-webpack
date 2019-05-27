@@ -1407,112 +1407,137 @@ margin-bottom: 2rem;
 
           <div class="section">
             <h2 class="section-title">
-              Mixin: Clearfix
+              Mixin: Center
             </h2>
             <p>CSS</p>
             <div class="highlight mb-6">
               <pre><code class="css">
+@include center;
+              </code></pre>
+            </div>
+            <p>
+              What does it do:
+            </p>
+            <div class="highlight mb-6">
+              <pre><code class="css">                
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+              </code></pre>
+            </div>
+            </code></pre>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">
+            Mixin: Clearfix
+          </h2>
+          <p>CSS</p>
+          <div class="highlight mb-6">
+            <pre><code class="css">
 @include clearfix;
               </code></pre>
-            </div>
-            <p>HTML</p>
-            <div class="highlight mb-6">
-              <pre><code class="html">
+          </div>
+          <p>HTML</p>
+          <div class="highlight mb-6">
+            <pre><code class="html">
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
               </code></pre>
-            </div>
           </div>
+        </div>
 
-          <div class="section">
-            <h2 class="section-title">
-              Mixin: Max Width Center
-            </h2>
-            <p>
-              Set max width for an element and make it centered
-            </p>
-            <p>CSS</p>
-            <div class="highlight mb-6">
-              <pre><code class="css">
+        <div class="section">
+          <h2 class="section-title">
+            Mixin: Max Width Center
+          </h2>
+          <p>
+            Set max width for an element and make it centered
+          </p>
+          <p>CSS</p>
+          <div class="highlight mb-6">
+            <pre><code class="css">
 @include max-width-center(600px);
               </code></pre>
-            </div>
           </div>
+        </div>
 
-          <div class="section">
-            <h2 class="section-title">
-              Mixin: Overlay
-            </h2>
-            <p>
-              Absolute element with top,right,bottom,left = 0
-            </p>
-            <p>CSS</p>
-            <div class="highlight mb-6">
-              <pre><code class="css">
+        <div class="section">
+          <h2 class="section-title">
+            Mixin: Overlay
+          </h2>
+          <p>
+            Absolute element with top,right,bottom,left = 0
+          </p>
+          <p>CSS</p>
+          <div class="highlight mb-6">
+            <pre><code class="css">
 @include overlay();
               </code></pre>
-            </div>
           </div>
+        </div>
 
-          <div class="section">
-            <h2 class="section-title">
-              Mixin: Pseudo
-            </h2>
-            <p>
-              Pseudo elements after / before
-            </p>
-            <p>CSS</p>
-            <div class="highlight mb-6">
-              <pre><code class="css">
+        <div class="section">
+          <h2 class="section-title">
+            Mixin: Pseudo
+          </h2>
+          <p>
+            Pseudo elements after / before
+          </p>
+          <p>CSS</p>
+          <div class="highlight mb-6">
+            <pre><code class="css">
  @include pseudo;
               </code></pre>
-            </div>
           </div>
+        </div>
 
-          <div class="section">
-            <h2 class="section-title">
-              Mixin: Rem
-            </h2>
-            <p>
-              Px to rem
-            </p>
-            <p>CSS</p>
-            <div class="highlight mb-6">
-              <pre><code class="css">
+        <div class="section">
+          <h2 class="section-title">
+            Mixin: Rem
+          </h2>
+          <p>
+            Px to rem
+          </p>
+          <p>CSS</p>
+          <div class="highlight mb-6">
+            <pre><code class="css">
 font-size: rem(20)
 margin: rem(40) rem(40);
               </code></pre>
-            </div>
           </div>
+        </div>
 
-          <div class="section">
-            <h2 class="section-title">
-              Mixin: Responsive Font Size
-            </h2>
-            <p>
-              Responsive font size for various media query breakpoints
-            </p>
-            <p>CSS</p>
-            <div class="highlight mb-6">
-              <pre><code class="css">
+        <div class="section">
+          <h2 class="section-title">
+            Mixin: Responsive Font Size
+          </h2>
+          <p>
+            Responsive font size for various media query breakpoints
+          </p>
+          <p>CSS</p>
+          <div class="highlight mb-6">
+            <pre><code class="css">
 @include font-size(xs, sm, md, lg, xl);
 @include font-size(12px, 14px, 16px, 18px, 20px);
 
 If you want to omit specific breakpoint please use ''
 @include font-size(12px, '', '', '', 20px);
               </code></pre>
-            </div>
           </div>
+        </div>
 
-          <div class="section">
-            <h2 class="section-title">
-              Mixin: Responsive Size
-            </h2>
-            <p>
-              Responsive size for various media query breakpoints
-            </p>
-            <p>CSS</p>
-            <div class="highlight mb-6">
-              <pre><code class="css">
+        <div class="section">
+          <h2 class="section-title">
+            Mixin: Responsive Size
+          </h2>
+          <p>
+            Responsive size for various media query breakpoints
+          </p>
+          <p>CSS</p>
+          <div class="highlight mb-6">
+            <pre><code class="css">
 Type:
 h    : height,
 minh : min-height,
@@ -1527,19 +1552,19 @@ maxw : max-width
 If you want to omit specific breakpoint please use ''
 @include size('h', 10px, '', '', 40px, 50px);
               </code></pre>
-            </div>
           </div>
+        </div>
 
-          <div class="section">
-            <h2 class="section-title">
-              Mixin: Responsive Spacing
-            </h2>
-            <p>
-              Responsive spacing for various media query breakpoints
-            </p>
-            <p>CSS</p>
-            <div class="highlight mb-6">
-              <pre><code class="css">
+        <div class="section">
+          <h2 class="section-title">
+            Mixin: Responsive Spacing
+          </h2>
+          <p>
+            Responsive spacing for various media query breakpoints
+          </p>
+          <p>CSS</p>
+          <div class="highlight mb-6">
+            <pre><code class="css">
 @include space('type', xs, sm, md, lg, xl);
 @include space('mb', 10px, 20px, 30px, 40px, 50px);
 
@@ -1563,28 +1588,28 @@ pl : padding-left
 px : (horizontal) padding-left and padding-right
 py : (vertical) padding-top and padding bottom
               </code></pre>
-            </div>
           </div>
+        </div>
 
-          <div class="section section--last">
-            <h2 class="section-title">
-              Mixin: Triangle
-            </h2>
-            <p>
-              CSS triangle
-            </p>
-            <div class="highlight mb-6">
-              <pre><code class="css">
+        <div class="section section--last">
+          <h2 class="section-title">
+            Mixin: Triangle
+          </h2>
+          <p>
+            CSS triangle
+          </p>
+          <div class="highlight mb-6">
+            <pre><code class="css">
 @include triangle(red, up, 20px);
               </code></pre>
-            </div>
           </div>
-
         </div>
 
       </div>
 
     </div>
+
+  </div>
 
   </div>
 
