@@ -8,7 +8,7 @@ import 'flickity/css/flickity.css';
 
 export default function carousel() {
 
-  const carousel = document.querySelector('[data-carousel]');
+  const carousel = document.querySelector('[data-js="carousel"]');
 
   // When Carousel exists
   if (carousel) {

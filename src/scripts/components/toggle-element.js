@@ -10,7 +10,7 @@ export default function toggleElement() {
 
   document.addEventListener('click', function (e) {
 
-    if (e.target.matches('[data-toggle="toggle-element"]')) {
+    if (e.target.matches('[data-js="toggle-element"]')) {
       e.preventDefault();
 
       // Get the content

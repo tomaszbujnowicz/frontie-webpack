@@ -6,12 +6,12 @@ import { show, hide, toggle } from 'Utils/visibility.js'
 
 export default function searchOverlay() {
 
-  const target = document.querySelector('[data-search-overlay-target]');
+  const target = document.querySelector('[data-js="search-target"]');
 
   // When Search Overlay exists
   if (target) {
 
-    const input = target.querySelector('[data-search-overlay-input]')
+    const input = target.querySelector('[data-js="search-input"]')
 
     var showOverlay = function() {
       show(target);
@@ -27,13 +27,13 @@ export default function searchOverlay() {
     document.addEventListener('click', function(e) {
 
       // Open an overlay
-      if (e.target.matches('[data-search-overlay-trigger]')) {
+      if (e.target.matches('[data-js="search-trigger"]')) {
         e.preventDefault();
         showOverlay();
       }
 
       // Close an overlay
-      if (e.target.matches('[data-search-overlay-close]')) {
+      if (e.target.matches('[data-js="search-close"]')) {
         e.preventDefault();
         closeOverlay();
       }

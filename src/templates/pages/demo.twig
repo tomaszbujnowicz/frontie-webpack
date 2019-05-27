@@ -1047,7 +1047,7 @@ margin-bottom: 2rem;
           </p>
           <div class="highlight mb-6">
             <pre><code class="html">
-&lt;nav class=&quot;navbar navbar--fixed navbar--fixed-transparent&quot; data-navbar&gt;...&lt;/nav&gt;
+&lt;nav class=&quot;navbar navbar--fixed navbar--fixed-transparent&quot; data-js=&quot;navbar&quot;&gt;...&lt;/nav&gt;
             </code></pre>
           </div>
 
@@ -1060,7 +1060,7 @@ margin-bottom: 2rem;
           </p>
           <div class="highlight">
             <pre><code class="html">
-&lt;nav class=&quot;navbar navbar--fixed navbar--fixed-toggle&quot; data-navbar&gt;...&lt;/nav&gt;
+&lt;nav class=&quot;navbar navbar--fixed navbar--fixed-toggle&quot; data-js=&quot;navbar&quot;&gt;...&lt;/nav&gt;
             </code></pre>
           </div>
         </div>
@@ -1075,7 +1075,7 @@ margin-bottom: 2rem;
           </p>
           <div class="highlight mb-6">
             <pre><code class="html">
-&lt;div class=&quot;carousel is-hidden&quot; data-carousel&gt;
+&lt;div class=&quot;carousel is-hidden&quot; data-js=&quot;carousel&quot;&gt;
   &lt;div class=&quot;carousel-cell&quot;&gt;...&lt;/div&gt;
   &lt;div class=&quot;carousel-cell&quot;&gt;...&lt;/div&gt;
   &lt;div class=&quot;carousel-cell&quot;&gt;...&lt;/div&gt;
@@ -1097,13 +1097,13 @@ margin-bottom: 2rem;
           {% include '../../modules/search-overlay/search-overlay.twig' %}
           <div class="highlight">
             <pre><code class="html">
-&lt;p&gt;
-  &lt;a href=&quot;#&quot; role=&quot;button&quot; data-search-overlay-trigger&gt;Trigger&lt;/a&gt;
-&lt;/p&gt;
-&lt;div class=&quot;search-overlay is-hidden&quot; data-search-overlay-target&gt;
-  &lt;a href=&quot;#&quot; role=&quot;button&quot; class=&quot;search-overlay__close&quot; data-search-overlay-close&gt;x&lt;/a&gt;
+&lt;a href=&quot;#&quot; role=&quot;button&quot; data-js=&quot;search-trigger&quot;&gt;
+  Open an overlay
+&lt;/a&gt;
+&lt;div class=&quot;search-overlay is-hidden&quot; data-js=&quot;search-target&quot;&gt;
+  &lt;a href=&quot;#&quot; role=&quot;button&quot; class=&quot;search-overlay__close&quot; data-js=&quot;search-close&quot;&gt;x&lt;/a&gt;
   &lt;form action=&quot;&quot; class=&quot;search-overlay__form&quot;&gt;
-    &lt;input class=&quot;search-overlay__input&quot; type=&quot;text&quot; name=&quot;q&quot; id=&quot;&quot; placeholder=&quot;Search&quot;&gt;
+    &lt;input class=&quot;search-overlay__input&quot; type=&quot;text&quot; name=&quot;q&quot; id=&quot;&quot; placeholder=&quot;Search...&quot; data-js=&quot;search-input&quot;&gt;
     &lt;button class=&quot;search-overlay__btn btn btn-link&quot;&gt;
       Search
     &lt;/button&gt;
@@ -1175,7 +1175,7 @@ margin-bottom: 2rem;
             <small><a href="https://gomakethings.com/how-to-show-and-hide-elements-with-vanilla-javascript/">Docs</a></small>
           </h2>
           <p>
-            <a href="#example" role="button" data-toggle="toggle-element">Toggle element</a>
+            <a href="#example" role="button" data-js="toggle-element">Toggle element</a>
           </p>
           <p id="example" class="is-hidden">
             Here's some text we want to toggle visibility of. Let's do it!
@@ -1183,7 +1183,7 @@ margin-bottom: 2rem;
           <div class="highlight">
             <pre><code class="html">
 &lt;p&gt;
-  &lt;a href=&quot;#example&quot; role=&quot;button&quot; data-toggle=&quot;toggle-element&quot;&gt;Toggle element&lt;/a&gt;
+  &lt;a href=&quot;#example&quot; role=&quot;button&quot; data-js=&quot;toggle-element&quot;&gt;Toggle element&lt;/a&gt;
 &lt;/p&gt;
 &lt;p id=&quot;example&quot; class=&quot;is-hidden&quot;&gt;
   Here&apos;s some text we want to toggle visibility of. Let&apos;s do it!

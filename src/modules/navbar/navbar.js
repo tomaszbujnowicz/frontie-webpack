@@ -6,7 +6,7 @@ import debounce from 'Utils/debounce.js';
 
 export default function navbar() {
 
-  const navbar = document.querySelector('[data-navbar]');
+  const navbar = document.querySelector('[data-js="navbar"]');
 
   // When Navbar exists
   if (navbar) {
@@ -14,7 +14,7 @@ export default function navbar() {
     // Show an overlay on the navbar toggler click
     var trigger = function () {
       document.addEventListener('click', function (e) {
-        if (e.target.closest('[data-navbar-toggler]')) {
+        if (e.target.closest('[data-js="navbar-toggler"]')) {
           e.preventDefault();
           document.body.classList.toggle('navbar--opened');
         }
