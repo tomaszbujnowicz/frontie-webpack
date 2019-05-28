@@ -2,7 +2,10 @@
  * Navbar
  */
 
-import debounce from 'Utils/debounce.js';
+// import debounce from 'lodash/debounce';
+import throttle from 'lodash/throttle';
+
+const throttleTime = 200;
 
 export default function navbar() {
 
@@ -36,7 +39,7 @@ export default function navbar() {
             navbar.classList.remove('navbar--scrolled');
           }
         }
-        window.addEventListener('scroll', debounce(navbarTransparent));
+        window.addEventListener('scroll', throttle(navbarTransparent, throttleTime));
       }
     };
     onScrollTransparent();
@@ -67,7 +70,7 @@ export default function navbar() {
             scrollPos = windowY;
           }
         }
-        window.addEventListener('scroll', debounce(navbarShowHide));
+        window.addEventListener('scroll', throttle(navbarShowHide, throttleTime));
       }
     };
     onScrollToggle();

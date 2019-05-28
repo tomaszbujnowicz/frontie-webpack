@@ -3,12 +3,13 @@
  * @description Application entry point
  */
 
-// Libs
-import 'Utils/polyfill-closest.js';
+// Polyfills
+import 'Utils/_closest.polyfill.js';
+import 'Utils/_matches.polyfill.js';
 
 // Modules
-import navbar from 'Modules/navbar/navbar';
 import carousel from 'Modules/carousel/carousel';
+import navbar from 'Modules/navbar/navbar';
 import searchOverlay from 'Modules/search-overlay/search-overlay';
 
 // Components
@@ -19,8 +20,8 @@ import toggleElement from 'Components/toggle-element';
 document.addEventListener('DOMContentLoaded', function() {
 
   // Modules
-  navbar();
   carousel();
+  navbar();
   searchOverlay();
 
   // Components
