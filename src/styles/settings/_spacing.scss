@@ -4,33 +4,29 @@
  */
 $space-auto: auto !default;
 $space-0:     0 !default;
-$space-025:  .25rem !default;
-$space-05:   .5rem !default;
-$space-075:  .75rem !default;
+$space-025:   .25rem !default;
+$space-050:   .5rem !default;
+$space-075:   .75rem !default;
 $space-1:     1rem !default;
 $space-2:     2rem !default;
 $space-3:     3rem !default;
 $space-4:     4rem !default;
 $space-5:     5rem !default;
 $space-6:     6rem !default;
-$space-7:     7rem !default;
-$space-8:     8rem !default;
 
 // Margin and padding values array
 $space-values : (
-  auto  : $space-auto,
-  0     : $space-0,
-  '025' : $space-025,
-  '05'  : $space-05,
-  '075' : $space-075,
-  1     : $space-1,
-  2     : $space-2,
-  3     : $space-3,
-  4     : $space-4,
-  5     : $space-5,
-  6     : $space-6,
-  7     : $space-7,
-  8     : $space-8
+  auto   : $space-auto,
+  0      : $space-0,
+  '025'  : $space-025,
+  '050'  : $space-050,
+  '075'  : $space-075,
+  1      : $space-1,
+  2      : $space-2,
+  3      : $space-3,
+  4      : $space-4,
+  5      : $space-5,
+  6      : $space-6
 ) !default;
 
 $space-prefixes : (

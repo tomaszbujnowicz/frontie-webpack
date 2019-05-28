@@ -33,8 +33,13 @@
         }
       }
     }
+  }
+}
+
+@mixin make-space-responsive($values, $prefixes, $grid-breakpoints) {
+  @each $breakpoint-name, $breakpoint-value in $grid-breakpoints {
     // sm, md, lg, xl
-    @else {
+    @if ($breakpoint-value != 0) {
       @media screen and (min-width: $breakpoint-value) {
         @each $prefix-short, $prefix-long in $prefixes {
           @each $value-short, $value-long in $values {
@@ -66,7 +71,9 @@
 }
 
 @if $use-spacing {
-
   @include make-space($space-values, $space-prefixes, $grid-breakpoints);
+}
 
+@if $use-spacing-responsive {
+  @include make-space-responsive($space-values, $space-prefixes, $grid-breakpoints);
 }
