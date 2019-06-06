@@ -12,7 +12,7 @@
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/register": "^7.4.4",
-    "autoprefixer": "^9.5.1",
+    "autoprefixer": "^9.6.0",
     "babel-loader": "^8.0.6",
     "browser-sync": "^2.26.5",
     "cross-env": "^5.2.0",
@@ -42,7 +42,7 @@
     "stylelint-config-standard": "^18.3.0",
     "stylelint-order": "^3.0.0",
     "stylelint-scss": "^3.8.0",
-    "webpack": "^4.32.2",
+    "webpack": "^4.33.0",
     "webpack-notifier": "^1.7.0",
     "webpack-stream": "^5.2.1"
   },
