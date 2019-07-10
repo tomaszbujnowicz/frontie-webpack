@@ -7,6 +7,10 @@
 import 'Utils/_closest.polyfill.js';
 import 'Utils/_matches.polyfill.js';
 
+// Misc
+// Use log() instead of console.log()
+// const log = console.log.bind(console);
+
 // Modules
 import carousel from 'Modules/carousel/carousel';
 import navbar from 'Modules/navbar/navbar';
