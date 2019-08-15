@@ -1,4 +1,4 @@
-# There is more up to date boilerplate based on Gulp 4 and Webpack. Please consider using this one instead https://github.com/tomaszbujnowicz/hybrid-utility-itcss/settings
+# There is more up to date boilerplate based on Gulp 4 and Webpack. Please consider using this one instead https://github.com/tomaszbujnowicz/hybrid-utility-itcss
 
 # Frontie Webpack - Front-end Boilerplate
 
